@@ -14,13 +14,13 @@ public class Chemin{
  /* Cette classe contient les différents chemins où sont stockés certains fichiers*/
 
  //public static final String RACINE="c:/o2/Univers/";
- public static final String RACINE="D:/FABRICE/DEV_PERSO/daoo_v4/Univers/";
+ public static final String RACINE="D:/JEU/dao2_v4/Univers/";
   //le repertoire où on va tout ranger.
 
  public static final String CARNET_DE_BORD=RACINE+"carnet.txt";
  public static final String NUMERO_DU_TOUR=RACINE+"tour.txt";
 
- public static final String RACINE_SITE="http://10cotech.free.fr/";
+ public static final String RACINE_SITE="http://millesroyaumes.fr/dao2/";
  public static final String SITE=RACINE_SITE+"principal.htm";
  public static final String SITE_REGISTRE=RACINE_SITE+"static.php?op=dao2/info/reg.htm";
 
