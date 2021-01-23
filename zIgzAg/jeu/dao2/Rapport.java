@@ -19,13 +19,13 @@ public class Rapport{
 
  public static final String[] cC={"#000000","#FFFF00","#008080","#FF0000","#6600FF","#EE82EE","#80FF80","#FA8072",
                                    "#008000","#CCCCCC","#00CC99","#0099FF","#CC99FF"};
- //noir,jaune,bleu foncé(couleur des liens),rouge,bleu clair #00FFFF,violet,vert,saumon,
- //vert foncé,gris clair,vert moyen,bleu ciel,gris-bleu,
+ //noir,jaune,bleu foncï¿½(couleur des liens),rouge,bleu clair #00FFFF,violet,vert,saumon,
+ //vert foncï¿½,gris clair,vert moyen,bleu ciel,gris-bleu,
  private static final String nomRepImage="/images";
  private static final String cI=".."+nomRepImage+"/";
  //le chemin des images.
  private static final String cB=cI+"blueback.jpg";
- //le chemin du bg général.
+ //le chemin du bg gï¿½nï¿½ral.
  private static final String cBVaisseau=cI+"blkbck31.jpg";
  //le bg pour les vaisseaux et certains titres.
  private static final String cBPoste=cI+"blkbck40.gif";
@@ -40,8 +40,8 @@ public class Rapport{
 
 
  private static final String[][] attributsBaseHeadMeta1={{BaliseHTML.HTTP_EQUIV,"Content-Type"},
-                                                         {BaliseHTML.CONTENT,"text/html; charset=iso-8859-1"}};
- private static final String[][] attributsBaseHeadMeta2={{BaliseHTML.NAME,"Author"},{BaliseHTML.CONTENT,"Cosmos"}};
+                                                         {BaliseHTML.CONTENT,"text/html; charset=utf-8"}};
+ private static final String[][] attributsBaseHeadMeta2={{BaliseHTML.NAME,"Author"},{BaliseHTML.CONTENT,"FRDev66"}};
  private static final String[][] attributsBaseBody={{BaliseHTML.BGCOLOR,cC[0]},{BaliseHTML.TEXT,cC[9]},
                                 {BaliseHTML.LINK,cC[2]},{BaliseHTML.VLINK,cC[2]},{BaliseHTML.BACKGROUND,cB}};
  private static final String[][] attributsBaseTable={{BaliseHTML.BORDER,"1"},{BaliseHTML.CELLSPACING,"0"},
@@ -78,7 +78,7 @@ public class Rapport{
 
  private List listeLiens;
 
- //méthodes pour gérer la balise de base et des méthodes standardes.
+ //mï¿½thodes pour gï¿½rer la balise de base et des mï¿½thodes standardes.
 
  public static BaliseHTML getHead(){
   if(HEAD==null){
@@ -160,7 +160,7 @@ public class Rapport{
   return new BaliseHTML(BaliseHTML.P,"&nbsp;");
   }
 
- //méthodes utilitaires
+ //mï¿½thodes utilitaires
 
  public static String getCheminEtoile(int num){
   return cI+"etoile"+Integer.toString(num+1)+".gif";
@@ -227,19 +227,19 @@ public class Rapport{
    "</script><base target=\"p\">")).ajout(b));
   }
 
- //méthodes utilisées au cours du tour de jeu.
+ //mï¿½thodes utilisï¿½es au cours du tour de jeu.
 
  public static String lienRapportEspion(Position p){
   return "./"+p.toString()+"RE.htm";
   }
 
- //méthodes statiques "hors-rapport"
+ //mï¿½thodes statiques "hors-rapport"
 
  public static void ecrireMessagesSystemes(){
   Rapport r=new Rapport(new Commandant());
   BaliseHTML b=r.ecrireMessages(Univers.getMessagesErreurs(),Const.MESSAGE_TYPE_SYSTEME);
   r.listeDocuments.add(getDocument(Chemin.MJ+"syst"+Integer.toString(Univers.getTour())+".htm",
-                                    "Erreurs système",getBody().ajout(b)));
+                                    "Erreurs systÃ¨me",getBody().ajout(b)));
   BaliseHTML b2=r.ecrireMessages(Univers.getMessagesEvenements(),Const.MESSAGE_TYPE_COMMANDANT);
   r.listeDocuments.add(getDocument(Chemin.STATS+"evt.htm","Evenements",getBody().ajout(b2)));
 
@@ -344,7 +344,7 @@ public class Rapport{
 
 /*
   BaliseHTML rC=new BaliseHTML(BaliseHTML.OL);
-  ajouterTypeCombat(rC,Univers.listeCombatsSpatiaux(),"Combats planétaires");
+  ajouterTypeCombat(rC,Univers.listeCombatsSpatiaux(),"Combats planï¿½taires");
   ajouterTypeCombat(rC,Univers.listeCombatsSpatiaux(),"Combats spatiaux");
   r.listeDocuments.add(getDocument(Chemin.MJ+"combats"+Integer.toString(Univers.getTour())+".htm","Combats",
                 getBody().ajout(racine)));
@@ -374,7 +374,7 @@ public class Rapport{
   listeLiens=new ArrayList();
   }
 
- //méthodes des liens
+ //mï¿½thodes des liens
 
  private void ajouterLienPrincipal(BaliseHTML  lien){
   listeLiens.add(lien);
@@ -393,7 +393,7 @@ public class Rapport{
     ((ArrayList)o).add(lien);
   }
 
- //méthode pour écrire le menu
+ //mï¿½thode pour ï¿½crire le menu
 
  private void ecrireMenu(){
   BaliseHTML racine=new BaliseHTML(BaliseHTML.B);
@@ -443,8 +443,8 @@ public class Rapport{
                      getBody().ajout(BaliseHTML.BACKGROUND,cBVaisseau).ajout(racine)));
   }
 
- //méthodes principales
- //méthode permettant de lister dans l'ordres les infos du rapport
+ //mï¿½thodes principales
+ //mï¿½thode permettant de lister dans l'ordres les infos du rapport
 
  public void creation(){
   BaliseHTML body=getBody();
@@ -475,7 +475,7 @@ public class Rapport{
   listeDocuments.add(getDocument(chemin+DETAIL_TECHNOLOGIES,
     (String)Univers.getMessageRapport("TITRE_DETAIL_TECHNOLOGIES",c.getLocale()),getDetailTechnologies()));
   Position[] p=c.listePossession();
-  ajouterLienPrincipal(getALienE(PRINCIPAL).ajout(getText("Détail des systèmes")));
+  ajouterLienPrincipal(getALienE(PRINCIPAL).ajout(getText("DÃ©tail des systÃ¨mes")));
   for(int i=0;i<p.length;i++){
    Systeme s=Univers.getSysteme(p[i]);
    listeDocuments.add(getDocument(chemin+getNomDocHTMLPlanetes(p[i],c.getNumero()),
@@ -510,7 +510,7 @@ public class Rapport{
 
 
 
- //méthodes donnant des balises.
+ //mï¿½thodes donnant des balises.
 
  public BaliseHTML getDetailFlottes(){
   String[] t=(String[])Univers.getMessageRapport("DETAIL_FLOTTES",c.getLocale());
@@ -622,7 +622,7 @@ public class Rapport{
    a[ligne][0]=getTD(null,null).ajout(getFont(cC[11],null).ajout(getText(t2[5])));
    a[ligne][1]=getTD(null,null).ajout(getText(Integer.toString(p.getRadiation())+"mR"));
    a[ligne][2]=getTD(null,null).ajout(getFont(cC[11],null).ajout(getText(t2[6])));
-   a[ligne][3]=getTD(null,null).ajout(getText(Integer.toString(p.getTemperature())+"°C"));
+   a[ligne][3]=getTD(null,null).ajout(getText(Integer.toString(p.getTemperature())+"ï¿½C"));
    a[ligne][4]=getTD(null,null).ajout(getFont(cC[11],null).ajout(getText(t2[7])));
    a[ligne++][5]=getTD(null,null).ajout(getText(Float.toString(Utile.a1D(((float)p.getGravite())/10F))+"g"));
 
@@ -926,7 +926,7 @@ public class Rapport{
    String[] t=(String[])Univers.getMessageRapport("DETECTION_FLOTTES",c.getLocale());
 
    BaliseHTML lien=getABorne("DET_F");
-   ajouterLienPrincipal(getALienE(PRINCIPAL+"#DET_F").ajout(getText("Détection Flottes")));
+   ajouterLienPrincipal(getALienE(PRINCIPAL+"#DET_F").ajout(getText("DÃ©tection Flottes")));
 
    racine.ajout(lien);
 
@@ -942,7 +942,7 @@ public class Rapport{
     a[i+1][1]=getTD(BaliseHTML.CENTER,null).ajout(getText(f.getNom()));
     a[i+1][2]=getTD(BaliseHTML.CENTER,null).ajout(getText(Integer.toString(f.getNombreDeVaisseaux())));
 
-//Mise en place de la couleur des commandant dans la détection des flottes sur le rapport.    
+//Mise en place de la couleur des commandant dans la dï¿½tection des flottes sur le rapport.    
     if(commandant.getRace()==0){
     a[i+1][3]=getTD(BaliseHTML.CENTER,null).ajout(getFont(COULEURS_RACES[0],null).ajout(getText(
        Utile.maj(f.getDescription(b[i][1],commandant.getNomNumero(),c.getLocale())))));
@@ -980,7 +980,7 @@ public class Rapport{
        Utile.maj(f.getDescription(b[i][1],commandant.getNomNumero(),c.getLocale())))));
     }
     //a[i+1][3]=getTD(BaliseHTML.CENTER,null).ajout(getText(Utile.maj(f.getDescription(b[i][1],commandant.getNomNumero(),c.getLocale()))));
-//FIN modification des couleur de détection flottes.
+//FIN modification des couleur de dï¿½tection flottes.
 
     a[i+1][4]=getTD(BaliseHTML.CENTER,null).ajout(getText(Utile.maj(f.getDescriptionPuissance(c.getLocale()))));
 //#############
@@ -1001,7 +1001,7 @@ public class Rapport{
   if(b.length>0){
    String[] t=(String[])Univers.getMessageRapport("DETECTION_SYSTEMES",c.getLocale());   
    BaliseHTML lien=getABorne("DET_S");
-   ajouterLienPrincipal(getALienE(PRINCIPAL+"#DET_S").ajout(getText("Détection Systèmes")));
+   ajouterLienPrincipal(getALienE(PRINCIPAL+"#DET_S").ajout(getText("DÃ©tection SystÃ¨mes")));
 
    racine.ajout(lien);
    racine.ajout(getFont(cC[3],"6").ajout(getABorne(LIEN_DETECTION_SYSTEMES).ajout(getText(t[0]))).ajout(sautP()));
@@ -1081,7 +1081,7 @@ public class Rapport{
    String[] t=(String[])Univers.getMessageRapport("RESUME_SYSTEMES",c.getLocale());
    Position[] p=c.listePossession();
 
-   ajouterLienPrincipal(getALienE(PRINCIPAL+"#"+LIEN_RESUME_SYSTEME).ajout(getText("Résumé systèmes")));
+   ajouterLienPrincipal(getALienE(PRINCIPAL+"#"+LIEN_RESUME_SYSTEME).ajout(getText("RÃ©sumÃ© systÃ¨mes")));
 
    BaliseHTML[][] a=new BaliseHTML[2+c.getNombrePossessions()][t.length-1];
    a[0][0]=getTD(BaliseHTML.CENTER,Integer.toString(t.length-1)).ajout(getFont(cC[3],"6").ajout(getText(t[0])));
@@ -1325,7 +1325,7 @@ public class Rapport{
 
   BaliseHTML lien=getABorne("POSTE"+(n==null ? "1" : "2") );
   ajouterLienPrincipal(getALienE(PRINCIPAL+"#POSTE"+(n==null ? "1" : "2")).
-    ajout(getText("Postes commerciaux"+(n==null ? "" : " étrangers"))));
+    ajout(getText("Postes commerciaux"+(n==null ? "" : " Ã©trangers"))));
 
   for(int i=0;i<p.length;i++){
    Systeme s=Univers.getSysteme(p[i]);
@@ -1374,7 +1374,7 @@ public class Rapport{
    String[] t=(String[])Univers.getMessageRapport("RESUME_FLOTTES",c.getLocale());
    Map.Entry[] m=c.listeFlottesEtNumeros();
 
-   ajouterLienPrincipal(getALienE(PRINCIPAL+"#"+LIEN_RESUME_FLOTTE).ajout(getText("Résumé des Flottes")));
+   ajouterLienPrincipal(getALienE(PRINCIPAL+"#"+LIEN_RESUME_FLOTTE).ajout(getText("RÃ©sumÃ© des Flottes")));
 
    BaliseHTML[][] a=new BaliseHTML[2+c.getNombreDeFlottes()][t.length-1];
    a[0][0]=getTD(BaliseHTML.CENTER,Integer.toString(t.length-1)).ajout(getFont(cC[3],"6").ajout(getText(t[0])));
@@ -1736,7 +1736,7 @@ public class Rapport{
    String[] t=(String[])Univers.getMessageRapport("STRATEGIES",c.getLocale());
 
    BaliseHTML lien=getABorne("STRATEGIES");
-   ajouterLienPrincipal(getALienE(PRINCIPAL+"#STRATEGIES").ajout(getText("Stratégies")));
+   ajouterLienPrincipal(getALienE(PRINCIPAL+"#STRATEGIES").ajout(getText("StratÃ©gies")));
 
    BaliseHTML racine=getDiv();
    racine.ajout(getFont(cC[3],"6").ajout(getText(t[0])));
@@ -1773,7 +1773,7 @@ public class Rapport{
    else return getText("&nbsp;");
   }
 
-//méthodes servant autrepart.
+//mï¿½thodes servant autrepart.
 
  public static BaliseHTML getPopulation(Systeme[] s,Locale l){
   String[] t=(String[])Univers.getMessageRapport("STATS_UNIVERS_POPULATION",l);

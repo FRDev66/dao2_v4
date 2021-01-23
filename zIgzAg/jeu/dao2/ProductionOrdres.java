@@ -304,8 +304,8 @@ public class ProductionOrdres{
       System.out.println("SQLState:     " + e.getSQLState());
       System.out.println("VendorError:  " + e.getErrorCode());
       }
-   if( (c[i].getNumero()==2)||(c[i].getNumero()==3)||(c[i].getNumero()==4)||(c[i].getNumero()==5)||
-       (c[i].getNumero()==6)||(c[i].getNumero()==228)) elimine=false;
+   //if( (c[i].getNumero()==2)||(c[i].getNumero()==3)||(c[i].getNumero()==4)||(c[i].getNumero()==5)||
+       //(c[i].getNumero()==6)||(c[i].getNumero()==228)) elimine=false;
    if(elimine){
     System.out.println("Supression du commandant "+c[i].getNomNumero());
     Joueur.supprimerCommandant(c[i]);

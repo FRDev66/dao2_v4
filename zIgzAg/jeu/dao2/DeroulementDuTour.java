@@ -85,6 +85,7 @@ import java.lang.reflect.*;
 	   //Univers.ajouterPlanDeVaisseau(plan);
 	   //cL[i].creerPlanDeVaisseau("Cuirassier Delivrance","Labo Technologique","privé",0,new String[]{"moteurIV","laserVI","plasmaVI","torpVI","bouclierIV","scanIII","hscanIII","dmineIV"},int[]{1,18,18,18,2,1,1,1});
    }
+   
    }
    
    //spécial pour ce tour.
@@ -104,6 +105,8 @@ import java.lang.reflect.*;
    //Univers.supprimerPlanDeVaisseau("Tick-Tack");
    //Univers.supprimerPlanDeVaisseau("Patrouilleur");
    //Univers.supprimerPlanDeVaisseau("Plate-Forme Radar Mikanok I");
+   
+
    
    //for(int y=1;y<=25;y++){
    //       Univers.ajouterRelationRaces(0,y,0,3,-12000);

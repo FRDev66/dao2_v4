@@ -72,9 +72,16 @@ public class Combat{
     int[] ordre=Utile.ordreAuHasard(vaisseauC[i].length);
     for(int j=0;j<vaisseauC[i].length;j++){
      int f=0;
+     while((f=resolutionAttaqueFlotteJoueur(vaisseaux,dP[i][1],vaisseauC[i][ordre[j]],f,ordre2))!=-1);
+     }
+    }
 
-
-
+// ##13/12/2020## - Ajout de la fonction attaque mode Piratage -->
+  for(int i=0;i<d.length;i++)
+   if(dP[i][0]==Const.DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE){
+    int[] ordre=Utile.ordreAuHasard(vaisseauC[i].length);
+    for(int j=0;j<vaisseauC[i].length;j++){
+     int f=0;
      while((f=resolutionAttaqueFlotteJoueur(vaisseaux,dP[i][1],vaisseauC[i][ordre[j]],f,ordre2))!=-1);
      }
     }

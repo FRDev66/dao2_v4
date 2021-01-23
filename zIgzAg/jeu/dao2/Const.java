@@ -339,6 +339,7 @@ public interface Const{
  public static final int DIRECTIVE_FLOTTE_PILLAGE_SYSTEME=4;
  public static final int DIRECTIVE_FLOTTE_PILLAGE_PLANETE=6;
  public static final int DIRECTIVE_FLOTTE_ERADICATION_PLANETE=7;
+ public static final int DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE=9; // ##13/12/2020## - Directive de combat en mode Piratage
  //Les diff�rents types de directive
 
  public static final int NB_DIRECTIVES=Messages.DIRECTIVES.length;

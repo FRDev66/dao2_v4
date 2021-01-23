@@ -1,6 +1,8 @@
-// v2.00 01/02/01
+// v2.1.0 - 18/01/2021
 // Copyright 2001 Julien Buret All Rights Reserved.
 // Use is subject to license terms.
+// ModifiÃ© par : FRDev66
+// Projet : DAO2_V4
 
 package zIgzAg.jeu.oceane;
 
@@ -10,135 +12,135 @@ public class Messages extends MessagesAbstraits{
 
  public static final String[] NOMS_GALAXIES={"Orion"};
 
- public static final String[] SORTES_ATMOSPHERES={"idéale","vivifiante","classique","toxique","trés toxique"};
-   // les différentes atmosphères.
+ public static final String[] SORTES_ATMOSPHERES={"idÃ©ale","vivifiante","classique","toxique","trÃ©s toxique"};
+   // les diffÃ©rentes atmosphÃ¨res.
 
- public static final String[] MARCHANDISES={"produits alimentaires","matériel agricole","articles de luxe",
-               "holofilms et hololivres","énergie","médicaments","logiciels","robots","composants électroniques",
-               "armement et explosifs","carburants","pièces industrielles","métaux précieux","tixium","lixiam","oxole"};
+ public static final String[] MARCHANDISES={"produits alimentaires","matÃ©riel agricole","articles de luxe",
+               "holofilms et hololivres","Ã©nergie","mÃ©dicaments","logiciels","robots","composants Ã©lectroniques",
+               "armement et explosifs","carburants","piÃ¨ces industrielles","mÃ©taux prÃ©cieux","tixium","lixiam","oxole"};
    //les noms des marchandises.
 
- public static final String[] POLITIQUES={"impôts","commerce","défense","construction","expansion","intégriste",
-   "totalitaire","esclavagiste","anti-Humains","anti-Edhels","anti-Toroks","anti-Shinariis","anti-Morglorhs","anti-Syltaars",
-   "anti-Arachnors","anti-Duegars","civilisation"};
-   //Les différentes formes de politique.
+ public static final String[] POLITIQUES={"impÃ´ts","commerce","dÃ©fense","construction","expansion","intÃ©griste",
+   "totalitaire","esclavagiste","anti-Humains","anti-Edhels","anti-Toroks","anti-Deitys","anti-Morglorhs","anti-Syltarides",
+   "anti-Razarks","anti-Vorgleshs","civilisation"};
+   //Les diffÃ©rentes formes de politique.
 
  public static final String[] MISSIONS={"d'espionnage","de sabotage","de vol de technologie","de propagande"};
-  //Les différentes sortes de mission pour les services spéciaux
+  //Les diffÃ©rentes sortes de mission pour les services spÃ©ciaux
 
- public static final String[] ETOILES={"étoile bleue","nova","étoile blanche","naine orange","naine bleue","naine rouge"};
-   //le nom des différents types d'étoiles.
+ public static final String[] ETOILES={"Ã©toile bleue","nova","Ã©toile blanche","naine orange","naine bleue","naine rouge"};
+   //le nom des diffÃ©rents types d'Ã©toiles.
 
  public static final String[] CARACTERISTIQUES_ARMES={"vitesse de base","dommage bouclier","dommage coque","dommage au sol",
-    "portée","fiabilité"};
-   //Le nom des différentes caractéristiques des armes.
+    "portÃ©e","fiabilitÃ©"};
+   //Le nom des diffÃ©rentes caractÃ©ristiques des armes.
 
- public static final String[] CARAC_SPECIALES_COMPOSANTS={"propulsion","portée scanner de systèmes",
-    "propulsion intragalactique","capacité bouclier magnétique","lanceur de mines",
-    "détection de mines","potentiel navire usine","brouillage radar","capacité rayon tracteur","capacité cargo",
-    "capacité ville spatiale","capacité colonisation","portée scanner de flottes","capacité dragueur mines"};
-   //Le nom des différentes caractéristiques spéciales des composants de vaisseaux.
+ public static final String[] CARAC_SPECIALES_COMPOSANTS={"propulsion","portÃ©e scanner de systÃ¨mes",
+    "propulsion intragalactique","capacitÃ© bouclier magnÃ©tique","lanceur de mines",
+    "dÃ©tection de mines","potentiel navire usine","brouillage radar","capacitÃ© rayon tracteur","capacitÃ© cargo",
+    "capacitÃ© ville spatiale","capacitÃ© colonisation","portÃ©e scanner de flottes","capacitÃ© dragueur mines"};
+   //Le nom des diffÃ©rentes caractÃ©ristiques spÃ©ciales des composants de vaisseaux.
 
  public static final String[] CARAC_SPECIALES_BATIMENTS={"construction de vaisseaux","extraction de minerai",
-  "retraitement de minerai","facilités de construction","présence population non nécessaire",
-  "capacité réparation vaisseaux","bouclier magnétique","capacité production marchandises","portée radar",
-  "capacité extraction avancée","capacité modification gravité"};
-   //Le nom des différentes caractéristiques spéciales des batiments.
+  "retraitement de minerai","facilitÃ©s de construction","prÃ©sence population non nÃ©cessaire",
+  "capacitÃ© rÃ©paration vaisseaux","bouclier magnÃ©tique","capacitÃ© production marchandises","portÃ©e radar",
+  "capacitÃ© extraction avancÃ©e","capacitÃ© modification gravitÃ©"};
+   //Le nom des diffÃ©rentes caractÃ©ristiques spÃ©ciales des batiments.
 
- public static final String[] DOMAINES_BUDGET={"recherche","services spéciaux","contre-espionnage"};
-   //Les différentes possibilités pour le choix du budget d'un système.
+ public static final String[] DOMAINES_BUDGET={"recherche","services spÃ©ciaux","contre-espionnage"};
+   //Les diffÃ©rentes possibilitÃ©s pour le choix du budget d'un systÃ¨me.
 
- public static final String[] RACES={"humain","edhel","torok","shinarii","morglorh",
-                                     "syltaar","arachnor","duegar"};
-   //Les différentes races.
+ public static final String[] RACES={"humain","edhel","torok","deity","morglorh",
+                                     "syltaride","razark","vorglesh"};
+   //Les diffÃ©rentes races.
 
- public static final String[] COMPETENCES_LEADER={"maîtrise de la vitesse","maîtrise de l'attaque",
-  "maîtrise de la défense","maîtrise du moral","maîtrise du marchandage","inspiration fanatique","entretien flotte",
-  "entretien héros","immortalité","voyageur","voyage intragalactique","maîtrise du savoir",
-  "entretien système","maîtrise de la finance"};
-   //Description des différentes compétences spéciales possibles des leaders(héros ou gouverneurs).
+ public static final String[] COMPETENCES_LEADER={"maÃ®trise de la vitesse","maÃ®trise de l'attaque",
+  "maÃ®trise de la dÃ©fense","maÃ®trise du moral","maÃ®trise du marchandage","inspiration fanatique","entretien flotte",
+  "entretien hÃ©ros","immortalitÃ©","voyageur","voyage intragalactique","maÃ®trise du savoir",
+  "entretien systÃ¨me","maÃ®trise de la finance"};
+   //Description des diffÃ©rentes compÃ©tences spÃ©ciales possibles des leaders(hÃ©ros ou gouverneurs).
 
- public static final String[] CARACTERISTIQUES_LEADER={"vitesse","attaque","défense","moral","marchandage"};
-   //Description des différentes caractéristques des leaders(héros ou gouverneurs).
+ public static final String[] CARACTERISTIQUES_LEADER={"vitesse","attaque","dÃ©fense","moral","marchandage"};
+   //Description des diffÃ©rentes caractÃ©ristques des leaders(hÃ©ros ou gouverneurs).
 
- public static final String[] EXPERIENCE={"conscrit","réserviste","soldat","vétéran","élite"};
-   //Les différents niveaux d'expérience pour les équipages de vaisseaux.
+ public static final String[] EXPERIENCE={"conscrit","rÃ©serviste","soldat","vÃ©tÃ©ran","Ã©lite"};
+   //Les diffÃ©rents niveaux d'expÃ©rience pour les Ã©quipages de vaisseaux.
 
- public static final String[] MORAL={"suicidaire","défaitiste","calamiteux","mauvais","médiocre","moyen","assez bon",
-         "bon","trés bon","excellent","extraordinaire","suprême"};
-   //Les différents types de moral pour l'équipage d'un vaisseau
+ public static final String[] MORAL={"suicidaire","dÃ©faitiste","calamiteux","mauvais","mÃ©diocre","moyen","assez bon",
+         "bon","trÃ©s bon","excellent","extraordinaire","suprÃªme"};
+   //Les diffÃ©rents types de moral pour l'Ã©quipage d'un vaisseau
 
- public static final String[] PUISSANCE={"insignifiante","ridicule","trés petite","petite","moyenne","assez grande",
-         "grande","trés grande","gigantesque","titanesque","gargantuesque","cyclopéenne","inimaginable"};
-   //Les différents types de grandeur pour une flotte
+ public static final String[] PUISSANCE={"insignifiante","ridicule","trÃ©s petite","petite","moyenne","assez grande",
+         "grande","trÃ©s grande","gigantesque","titanesque","gargantuesque","cyclopÃ©enne","inimaginable"};
+   //Les diffÃ©rents types de grandeur pour une flotte
 
- public static final String[] DOMMAGES={"neuf","quasi-neuf","moyennement endommagé","sérieusement endommagé",
+ public static final String[] DOMMAGES={"neuf","quasi-neuf","moyennement endommagÃ©","sÃ©rieusement endommagÃ©",
          "catastrophique","en perdition"};
-  //Les différents niveaux de dommages pour une flotte
+  //Les diffÃ©rents niveaux de dommages pour une flotte
 
- public static final String[] REPUTATION={"sanguinaire","pirate","hors-la-loi","neutre","honnête","respecté"};
-  //Les différents status possibles en fonction de la réputation.
+ public static final String[] REPUTATION={"sanguinaire","pirate","hors-la-loi","neutre","honnÃªte","respectÃ©"};
+  //Les diffÃ©rents status possibles en fonction de la rÃ©putation.
 
  public static final String[] GRADE={"chef de bande","hobereau","chevalier","baron","comte","duc","roi","empereur"};
-  //Les différents grades possibles en fonction du nombre de planètes possédées.
+  //Les diffÃ©rents grades possibles en fonction du nombre de planÃ¨tes possÃ©dÃ©es.
 
- public static final String[] RELATIONS={"guerre ouverte","haineuse","catastrophique","détestable","mauvaise",
+ public static final String[] RELATIONS={"guerre ouverte","haineuse","catastrophique","dÃ©testable","mauvaise",
          "neutre","loyale","bonne","amicale","alliance","amour fou"};
-  //Les différents types de relations entre races.
+  //Les diffÃ©rents types de relations entre races.
 
- public static final String[] DIRECTIVES={"attitude neutre","attaque du système","attaque préventive",
-   "attaquer toute flotte rencontrée","pillage du système","attaque de la planète n°","pillage de planète n°",
-   "éradication de la planète n°","attaque des flottes du commandant "};
-  //différentes directives.
+ public static final String[] DIRECTIVES={"attitude neutre","attaque du systÃ¨me","attaque prÃ©ventive",
+   "attaquer toute flotte rencontrÃ©e","pillage du systÃ¨me","attaque de la planÃ¨te nÂ°","pillage de planÃ¨te nÂ°",
+   "Ã©radication de la planÃ¨te nÂ°","attaque des flottes du commandant "};
+  //diffÃ©rentes directives.
 
- public static final String[] DOMAINES_PLAN_DE_VAISSEAU={"public","privé"};
-  //domaine public ou privé...
+ public static final String[] DOMAINES_PLAN_DE_VAISSEAU={"public","privÃ©"};
+  //domaine public ou privÃ©...
 
- public static final String[] CHAMPS_BUDGET={"centaures du tour précedent","revenus des systèmes","revenus des alliances",
-  "taxe d'entrée dans alliance","dons centaures","vente de marchandises","licenciement lieutenant",
-  "politiques d'extermination","perception de royalties","villes spatiales","pillage de planète","revenus divers",
+ public static final String[] CHAMPS_BUDGET={"centaures du tour prÃ©cedent","revenus des systÃ¨mes","revenus des alliances",
+  "taxe d'entrÃ©e dans alliance","dons centaures","vente de marchandises","licenciement lieutenant",
+  "politiques d'extermination","perception de royalties","villes spatiales","pillage de planÃ¨te","revenus divers",
   "vente flotte","revenus commerciaux","","","","","",
-  "total des recettes","création alliance",
-  "adhésion alliance","dons centaures","dons technologie","dons système","don planète","terraformation",
+  "total des recettes","crÃ©ation alliance",
+  "adhÃ©sion alliance","dons centaures","dons technologie","dons systÃ¨me","don planÃ¨te","terraformation",
   "achat de marchandises","achat de lieutenant","changement de capitale","changement de politique",
-  "prêt flotte","don plan de vaisseau","création plan de vaisseau","don stratégie de combat","réalisation construction",
-  "entretien flotte","entretien système","budget technologique","budget services spéciaux",
-  "budget contre-espionnage","entretien des lieutenants","entretien des technologies","réparation des flottes",
+  "prÃªt flotte","don plan de vaisseau","crÃ©ation plan de vaisseau","don stratÃ©gie de combat","rÃ©alisation construction",
+  "entretien flotte","entretien systÃ¨me","budget technologique","budget services spÃ©ciaux",
+  "budget contre-espionnage","entretien des lieutenants","entretien des technologies","rÃ©paration des flottes",
   "achat flotte","divers","franchissement porte intra-galactique",
-  "total des dépenses","total disponible"};
-  //les différents champs de budget.
+  "total des dÃ©penses","total disponible"};
+  //les diffÃ©rents champs de budget.
 
- public static final String[] TYPE_ALLIANCE={"démocratique","autocratique","anarchique"};
-  //les différents types d'alliance possible.
+ public static final String[] TYPE_ALLIANCE={"dÃ©mocratique","autocratique","anarchique"};
+  //les diffÃ©rents types d'alliance possible.
 
- public static final String[] ALLIANCE_SECRET={"secrète","non-secrète"};
+ public static final String[] ALLIANCE_SECRET={"secrÃ¨te","non-secrÃ¨te"};
   //les adjectifs secret et non-secret pour les alliances.
 
  public static final String[] MODE_TRANSFERT={"normal","discret","anonyme"};
-  //les différents modes pour les transferts.
+  //les diffÃ©rents modes pour les transferts.
 
  public static final String[] STRATEGIE_CIBLE={"aucune","chasseur","bombardier","cargo"};
-  //les différentes cible préférentielles dans les stratégies.
+  //les diffÃ©rentes cible prÃ©fÃ©rentielles dans les stratÃ©gies.
 
  public static final String[] STRATEGIE_AGRESSIVITE={"pillage","fuyard","prudent","normal","combatif","rage"};
-  //les différents types d'agressivité dans les stratégies.
+  //les diffÃ©rents types d'agressivitÃ© dans les stratÃ©gies.
 
- public static final String[] ORDRES={"Adhérer à une alliance","Valider l'adhésion à une alliance",
-  "Voter pour élire le dirigeant d'une alliance","Voter pour exclure un membre d'une alliance","Quitter une alliance",
+ public static final String[] ORDRES={"AdhÃ©rer Ã  une alliance","Valider l'adhÃ©sion Ã  une alliance",
+  "Voter pour Ã©lire le dirigeant d'une alliance","Voter pour exclure un membre d'une alliance","Quitter une alliance",
   "Signer un pacte","Rompre un pacte","Affecter un Amiral","Affecter un Gouverneur","Licencier un lieutenant",
-  "Enroler un lieutenant","Changer la capitale","Orienter les recherches","Services spéciaux",
-  "Annuler construction","Construction","Programmer des constructions","Déprogrammer des constructions",
-  "Modifier une politique","Modifier un budget","Modifier la taxation d'un système","Modifier la taxation d'une planète",
-  "Terraformer un système","Terraformer une planète","Détruire des bâtiments","Décharger des cargos","Charger des cargos",
-  "Coloniser","Larguer des mines","Construire à partir d'une flotte","Utiliser une porte intragalactique","Diviser une flotte",
-  "Déplacer une flotte","Pister une flotte","Fusionner une flotte","Donner des centaures",
-  "Donner une technologie","Donner un système","Donner une planète","Préter une flotte",
-  "Vendre une flotte","Donner une stratégie de combat",
-  "Donner un plan de vaisseau","Créer un plan de vaisseau","Créer une alliance","Créer une stratégie de combat",
+  "Enroler un lieutenant","Changer la capitale","Orienter les recherches","Services spÃ©ciaux",
+  "Annuler construction","Construction","Programmer des constructions","DÃ©programmer des constructions",
+  "Modifier une politique","Modifier un budget","Modifier la taxation d'un systÃ¨me","Modifier la taxation d'une planÃ¨te",
+  "Terraformer un systÃ¨me","Terraformer une planÃ¨te","DÃ©truire des bÃ¢timents","DÃ©charger des cargos","Charger des cargos",
+  "Coloniser","Larguer des mines","Construire Ã  partir d'une flotte","Utiliser une porte intragalactique","Diviser une flotte",
+  "DÃ©placer une flotte","Pister une flotte","Fusionner une flotte","Donner des centaures",
+  "Donner une technologie","Donner un systÃ¨me","Donner une planÃ¨te","PrÃ©ter une flotte",
+  "Vendre une flotte","Donner une stratÃ©gie de combat",
+  "Donner un plan de vaisseau","CrÃ©er un plan de vaisseau","CrÃ©er une alliance","CrÃ©er une stratÃ©gie de combat",
   "Abandonner une technologie","Modifier le taux de taxation de vos postes commerciaux",
-  "Renommer un système","Renommer une planète","Renommer une flotte","Renommer un lieutenant","Renommer une alliance",
+  "Renommer un systÃ¨me","Renommer une planÃ¨te","Renommer une flotte","Renommer un lieutenant","Renommer une alliance",
   "Site d'un commandant","Site d'une alliance","Ecrire un article"};
-  //les différents ordres possibles.
+  //les diffÃ©rents ordres possibles.
 
  public static final String[] OUI_NON={"oui","non"};
   //oui ou non ?!
@@ -147,10 +149,10 @@ public class Messages extends MessagesAbstraits{
   //le nom pour les concepteurs d'alliances inconnus.
 
  public static final String PLANETE_MARCHANDISE_INCULTE="aucune";
-  //Si la planète ne produit naturellement aucune marchandise.
+  //Si la planÃ¨te ne produit naturellement aucune marchandise.
 
  public static final String NON_EXISTENCE_DIRIGEANT_ALLIANCE="aucun";
-  //le nom pour les dirigeants des alliances non dirigées..
+  //le nom pour les dirigeants des alliances non dirigÃ©es..
 
  public static final String PLAN_DE_VAISSEAU_CONCEPTEUR_INCONNU="inconnu";
   //le nom pour les concepteurs de plans de vaisseaux inconnus.
@@ -162,38 +164,38 @@ public class Messages extends MessagesAbstraits{
   //le nom pour decrire le minerai.
 
  public static final String DE_TYPE=" de type ";
-  //Sert à faite la liaison pour le nom comple de la technologie. Exemple: mine de type I.
+  //Sert Ã  faite la liaison pour le nom comple de la technologie. Exemple: mine de type I.
 
  public static final String POSTE_COMMERCIAL="poste commercial du commandant ";
-  //le nom pour décrire un poste commercial;
+  //le nom pour dÃ©crire un poste commercial;
 
- public static final String RESERVE_LEADER="en réserve";
-  //la description de la position d'un leader "en réserve";
+ public static final String RESERVE_LEADER="en rÃ©serve";
+  //la description de la position d'un leader "en rÃ©serve";
 
- public static final String POSITION_GOUVERNEUR="gouverneur du système ";
+ public static final String POSITION_GOUVERNEUR="gouverneur du systÃ¨me ";
   //la description de la position d'un gouverneur.
 
- public static final String POSITION_HEROS="commandant de la flotte numéro ";
-  //la description de la position d'un héros.
+ public static final String POSITION_HEROS="commandant de la flotte numÃ©ro ";
+  //la description de la position d'un hÃ©ros.
 
- public static final String DESCRIPTION_FLOTTE1="flotte numéro ";
+ public static final String DESCRIPTION_FLOTTE1="flotte numÃ©ro ";
  public static final String DESCRIPTION_FLOTTE2=" du commandant ";
-  //les phrases nécessaires pour la description d'une flotte.
+  //les phrases nÃ©cessaires pour la description d'une flotte.
 
- public static final String TECHNOLOGIE_AUCUN_PARENT="aucune technologie nécessaire";
+ public static final String TECHNOLOGIE_AUCUN_PARENT="aucune technologie nÃ©cessaire";
   //Pour les technologies "de base".
 
- public static final String DENOMINATION_FLOTTE_DE_DEPART="Flotte de départ";
-  //Le nom de la flotte de départ.
+ public static final String DENOMINATION_FLOTTE_DE_DEPART="Flotte de dÃ©part";
+  //Le nom de la flotte de dÃ©part.
 
- public static final String RETOUR_DE_PRET="Retour de prêt";
-  //Le nom de la flotte de retour de prêt.
+ public static final String RETOUR_DE_PRET="Retour de prÃªt";
+  //Le nom de la flotte de retour de prÃªt.
 
  public static final String SECTEUR="secteur ";
   //Le nom pour les secteurs de galaxie.
 
  public static final String RETOUR_SITE="Retour vers le site de Dark Age of Orion";
-  //La phrase clé du programme !
+  //La phrase clÃ© du programme !
 
  }
 

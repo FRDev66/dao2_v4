@@ -20,9 +20,10 @@ public class Chemin{
  public static final String CARNET_DE_BORD=RACINE+"carnet.txt";
  public static final String NUMERO_DU_TOUR=RACINE+"tour.txt";
 
- public static final String RACINE_SITE="http://millesroyaumes.fr/dao2/";
- public static final String SITE=RACINE_SITE+"principal.htm";
- public static final String SITE_REGISTRE=RACINE_SITE+"static.php?op=dao2/info/reg.htm";
+ public static final String RACINE_SITE="http://dao2.milleroyaumes.fr";
+ public static final String SITE=RACINE_SITE;
+ //public static final String SITE_REGISTRE=RACINE_SITE+"static.php?op=dao2/info/reg.htm";
+ public static final String SITE_REGISTRE="http://millesroyaumes.fr/dao2/registre/registre.php3";
 
  public static final String MJ=RACINE+"mj/";
   //Le repertoire où est stocké les informations nécessaires au mj.
