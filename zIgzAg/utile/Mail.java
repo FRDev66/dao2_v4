@@ -25,13 +25,29 @@ public class Mail {
  System.out.println(InetAddress.getLocalHost());
   }catch(Exception e){e.printStackTrace();}*/
   Properties props = System.getProperties();
-  props.put("mail.smtp.host", host);
+  props.setProperty("mail.transport.protocol", "smtp");
+  props.put("mail.smtp.host", "smtp.ionos.fr");
+  props.put("mail.smtp.user", "frdev66@amp66.fr");
+  props.put("mail.smtp.password", "Lenems66!!");
+  //props.put("mail.smtp.starttls.enable", "true");
+  //props.put("mail.smtp.port", "587");
+  props.put("mail.smtp.auth", "true");
+  props.put("mail.debug", "true");
+  props.put("mail.smtp.ssl.enable", "true");
+  props.put("mail.smtp.port","465");
   //props.put("mail.smtp.localhost","213.228.54.130");
 
 
-  Session session = Session.getDefaultInstance(props, null);
+  //Session session = Session.getDefaultInstance(props, null);
   //session.setDebug(true);
-
+  Session session = Session.getDefaultInstance(props,  
+          new javax.mail.Authenticator(){
+        protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
+            return new javax.mail.PasswordAuthentication(
+                "frdev66@amp66.fr", "Lenems66!!");// Specify the Username and the PassWord
+        }
+});
+  
   try{
    MimeMessage msg = new MimeMessage(session);
    msg.setFrom(new InternetAddress(adresseEnvoi));
