@@ -14,12 +14,12 @@ public interface Const{
  public static final String ADRESSE_MJ="frdev66@amp66.fr"; //np_kab@yahoo.fr / horizon-info@wanadoo.fr
  public static final String SMTP_ENVOI="auth.smtp.1and1.fr"; //smtp.mail.yahoo.fr / smtp.wanadoo.fr
  public static final String ADRESSE_SITE_RAPPORTS="http://milleroyaumes.fr/dao2/rapports/";
- //diverses caractéristiques internet.
+ //diverses caractï¿½ristiques internet.
 
  public static final int NB_GALAXIES=Messages.NOMS_GALAXIES.length;
 
  public static final int BORNE_MAX=140;
-  // Les bornes pour chaque galaxie(multiple de 20 de preference).Les coordonnées vont de 1 à BORNE_MAX.
+  // Les bornes pour chaque galaxie(multiple de 20 de preference).Les coordonnï¿½es vont de 1 ï¿½ BORNE_MAX.
 
  public static final int NB_SECTEURS=(7*BORNE_MAX)/20;
   // Le nombre de secteurs par galaxie.
@@ -28,7 +28,7 @@ public interface Const{
   // nombre de portes galactiques par galaxie.
 
  public static final int NB_PLANETES_PAR_SYSTEMES=20;
- //Le nombre maximal de planètes par système.
+ //Le nombre maximal de planï¿½tes par systï¿½me.
 
 // public static final int[][] PASSAGES_GALACTIQUES={{3,3},{50,50},{3,98},{98,98},{98,3}};
   // localisation des portes galactiques.
@@ -39,26 +39,26 @@ public interface Const{
 
  public static final int[][] REPARTITION_DES_RACES={{0,80,90,140},{0,40,50,90},{100,140,50,90},{0,50,0,50},
                                                     {80,140,90,140},{50,90,0,50},{40,100,50,90},{90,140,0,50}};
-  // Les répartitions initiales des races(miny,maxy,minx,maxx).
-  // La répartition se fait en surfaces rectangulaires homogènes.
+  // Les rï¿½partitions initiales des races(miny,maxy,minx,maxx).
+  // La rï¿½partition se fait en surfaces rectangulaires homogï¿½nes.
 
  public static final int NB_RACES_PAR_GALAXIE=8;
-  // Il y a obligatoirement 5 races différentes par galaxie.
+  // Il y a obligatoirement 5 races diffï¿½rentes par galaxie.
 
  public static final int NB_RACES=Messages.RACES.length;
-  // Le nombre de races différentes.
+  // Le nombre de races diffï¿½rentes.
 
  public static final int TAILLE_MAX_DE_PLANETE=5;
-  // La taille d'une planète va de 1 au max.
+  // La taille d'une planï¿½te va de 1 au max.
 
  public static final int TYPE_MAX_DE_PLANETE=19;
-  // Le type d'une planète va de 0 au max.
+  // Le type d'une planï¿½te va de 0 au max.
 
  public static final int PRODUCTION_MINERAI_MAX=8;
-  // La production "de base" d'une planète va de 0 au max.
+  // La production "de base" d'une planï¿½te va de 0 au max.
 
  public static final int NB_SORTES_ATMOSPHERES=Messages.SORTES_ATMOSPHERES.length;
-  // Le nombre d'atmospheres différentes.
+  // Le nombre d'atmospheres diffï¿½rentes.
 
  public static final int RAD_MAX=200;
  public static final int RAD_MIN=0;
@@ -66,55 +66,55 @@ public interface Const{
  public static final int TEMP_MIN=-150;
  public static final int GRA_MAX=100;
  public static final int GRA_MIN=0;
- // Les max et min de radiations(mR),temperatures(°C) et gravites(g) possibles.
+ // Les max et min de radiations(mR),temperatures(ï¿½C) et gravites(g) possibles.
 
  public static final int NB_POLITIQUES=Messages.POLITIQUES.length;
  //le nombre de formes de politique.
 
  public static final int NB_MISSIONS=Messages.MISSIONS.length;
- //le nombre de sortes de missions possibles pour les services spéciaux.
+ //le nombre de sortes de missions possibles pour les services spï¿½ciaux.
 
  public static final int MISSION_ESPIONNAGE=0;
  public static final int MISSION_SABOTAGE=1;
  public static final int MISSION_VOL_TECHNOLOGIE=2;
  public static final int MISSION_PROPAGANDE=3;
- //les codes pour les différentes sortes de missions.
+ //les codes pour les diffï¿½rentes sortes de missions.
 
  public static final int NB_MARCHANDISES=Messages.MARCHANDISES.length;
- //le nombre de marchandises différentes.
+ //le nombre de marchandises diffï¿½rentes.
 
  public static final int NB_ETOILES=Messages.ETOILES.length;
- //le nombre de types d'étoile.
+ //le nombre de types d'ï¿½toile.
 
  public static final int NB_CARACTERISTIQUES_ARMES=Messages.CARACTERISTIQUES_ARMES.length;
- //le nombre de caracteristiques pour décrire les composants de vaisseau de type arme.
+ //le nombre de caracteristiques pour dï¿½crire les composants de vaisseau de type arme.
 
  public static final int DOMAINES_BUDGET_TECHNOLOGIQUE=0;
  public static final int DOMAINES_BUDGET_SERVICES_SPECIAUX=1;
  public static final int DOMAINES_BUDGET_CONTRE_ESPIONNAGE=2;
- //Les différents champs de budget de système.
+ //Les diffï¿½rents champs de budget de systï¿½me.
 
  public static final int MODIFICATEUR_DIFFICULTE_RECHERCHE=5;
  //plus cette variable est grande, plus il est difficile de trouver des technologies(c'est un coefficient multiplicateur)
 
  public static final int NB_DOMAINES_BUDGET=Messages.DOMAINES_BUDGET.length;
- //le nombre de domaines différents dans l'affectation du budget.
+ //le nombre de domaines diffï¿½rents dans l'affectation du budget.
 
  public static final int TAXATION_MAXIMALE=5;
- //le taux d'impôts le plus élevé possible.
+ //le taux d'impï¿½ts le plus ï¿½levï¿½ possible.
 
  public static final float COUT_TERRAFORMATION=10F;
- //Le cout de terraformation par niveau pour une planète.
+ //Le cout de terraformation par niveau pour une planï¿½te.
 
  public static final String CV_ARME="arme";
  public static final String CV_MOTEUR="moteur";
  public static final String CV_AUTRE="autre";
- //Les caractérisations des différents types de composant de vaisseau.
+ //Les caractï¿½risations des diffï¿½rents types de composant de vaisseau.
 
  public static final String CV_ARME_CS="combat spatial";
  public static final String CV_ARME_M="mixte";
- public static final String CV_ARME_CP="combat planétaire";
- //Les caractérisations des différents types d'armes.
+ public static final String CV_ARME_CP="combat planï¿½taire";
+ //Les caractï¿½risations des diffï¿½rents types d'armes.
 
  public static final int NB_BOUCLIERS_MAX=10;
  //Le nombre maximum de boucliers par vaisseau.
@@ -126,19 +126,19 @@ public interface Const{
   //Le taux maximal de royalties permises sur un plan de vaisseau.
 
  public static final int MODIFICATEUR_MULTIPLICATEUR_CREATION=5;
-  //Le modificateur multiplicateur du prix nécessaire pour créer un plan de vaisseau.
+  //Le modificateur multiplicateur du prix nï¿½cessaire pour crï¿½er un plan de vaisseau.
 
  //public static final int NB_MAX_ALLIANCES=2;
  //Le nombre maximal d'alliances possibles par joueur.
 
  public static final float COUT_CREATION_ALLIANCE_SECRETE=2000F;
  public static final float COUT_CREATION_ALLIANCE_NON_SECRETE=1000F;
- //Les différents coûts de création d'alliance.
+ //Les diffï¿½rents coï¿½ts de crï¿½ation d'alliance.
 
  public static final int ALLIANCE_TYPE_DEMOCRATIQUE=0;
  public static final int ALLIANCE_TYPE_AUTOCRATIQUE=1;
  public static final int ALLIANCE_TYPE_ANARCHIQUE=2;
- //Les différents types d'alliance.
+ //Les diffï¿½rents types d'alliance.
 
  public static final int NB_TYPE_ALLIANCES=Messages.TYPE_ALLIANCE.length;
   //Le nombre de type d'alliance.
@@ -149,7 +149,7 @@ public interface Const{
  public static final int DON_MODE_NORMAL=0;
  public static final int DON_MODE_CACHE=1;
  public static final int DON_MODE_ANONYME=2;
- //Les différents types de don.
+ //Les diffï¿½rents types de don.
 
  public static final int NB_MODES_TRANSFERTS=Messages.MODE_TRANSFERT.length;
  //le nombre de mode de transferts
@@ -158,7 +158,7 @@ public interface Const{
  public static final int SURCOUT_DON_CENTAURES_ANONYME=100;
  //le surcout (en pourcentage) suivant le mode de transmission.
  public static final int DON_MAXIMUM_SECRET=300;
- //la barrière au-delà de laquelle un don classique devient publique.
+ //la barriï¿½re au-delï¿½ de laquelle un don classique devient publique.
 
  public static final float SURCOUT_DON_TECHNO_CACHE=100F;
  public static final float SURCOUT_DON_TECHNO_ANONYME=200F;
@@ -188,7 +188,7 @@ public interface Const{
  public static final float SURCOUT_DON_STRATEGIE_ANONYME=100F;
  //le surcout (en centaures) suivant le mode de transmission
  public static final int CHANCE_DON_STRATEGIE_PUBLIC=5;
- //Le pourcentage de chance que le don de stratégie en mode normal devienne public.
+ //Le pourcentage de chance que le don de stratï¿½gie en mode normal devienne public.
 
  public static final float SURCOUT_DON_PLAN_CACHE=20F;
  public static final float SURCOUT_DON_PLAN_ANONYME=20F;
@@ -199,23 +199,23 @@ public interface Const{
 
 
  //public static final int NB_MAX_RECHERCHES=3;
- //Le nombre maximal de technologies que le joueur peut rechercher en même temps.
+ //Le nombre maximal de technologies que le joueur peut rechercher en mï¿½me temps.
 
  public static final int MORAL_DEPART_EQUIPAGE=4500;
- //la caractéristique moral de l'équipage d'un vaisseau lors de sa création.
+ //la caractï¿½ristique moral de l'ï¿½quipage d'un vaisseau lors de sa crï¿½ation.
 
  public static final int REPUTATION_RUPTURE_DE_PACTE=-100;
  public static final int REPUTATION_SIGNATURE_DE_PACTE=25;
  public static final int REPUTATION_COLONISER_PLANETE=50;
  public static final int REPUTATION_ATTAQUER_PLANETE=-100;
- //les différents éléments agissant sur la réputation.
+ //les diffï¿½rents ï¿½lï¿½ments agissant sur la rï¿½putation.
 
  public static final int RELATION_ATTAQUE_ERADICATION=-800;
  public static final int RELATION_ATTAQUE_PILLAGE=-200;
  public static final int RELATION_ATTAQUE_PLANETE=-80;
  public static final int RELATION_TRANSFERT_TECHNOLOGIE=200;
  public static final int RELATION_TRANSFERT_SYSTEME=40;
- //les différents éléments agissant sur la relation entre les races.
+ //les diffï¿½rents ï¿½lï¿½ments agissant sur la relation entre les races.
 
  public static final int POLITIQUE_IMPOT=0;
  public static final int POLITIQUE_COMMERCE=1;
@@ -235,7 +235,7 @@ public interface Const{
  public static final int POLITIQUE_ANTI_DUEGAR=15;
  public static final int POLITIQUE_CIVILISATION=16;
  //public static final int POLITIQUE_ANTI_ZOOUSH=17;
- //Les différentes politiques.
+ //Les diffï¿½rentes politiques.
 
  public static final int PRODUIT_NOURRITURE=0;
  public static final int PRODUIT_MATERIEL_AGRICOLE=1;
@@ -253,7 +253,7 @@ public interface Const{
  public static final int PRODUIT_TIXIUM=13;
  public static final int PRODUIT_LIXIAM=14;
  public static final int PRODUIT_OXOLE=15;
- //Les différents produits commerciaux.
+ //Les diffï¿½rents produits commerciaux.
 
 
  public static final int BUDGET_COMMANDANT_TOUR_PRECEDENT=0;
@@ -269,7 +269,7 @@ public interface Const{
  public static final int BUDGET_COMMANDANT_PILLAGE_PLANETE=10;
  public static final int BUDGET_COMMANDANT_REVENUS_DIVERS=11;
  public static final int BUDGET_COMMANDANT_VENTE_FLOTTE=12;
- public static final int BUDGET_REVENUS_MARCHANDAGE_HEROS=13; //concerne l'apport financier correspodant au marchandage du héros
+ public static final int BUDGET_REVENUS_MARCHANDAGE_HEROS=13; //concerne l'apport financier correspodant au marchandage du hï¿½ros
  public static final int BUDGET_COMMANDANT_TOTAL_RECETTE=19;
  public static final int BUDGET_COMMANDANT_CREATION_ALLIANCE=20;
  public static final int BUDGET_COMMANDANT_ADHESION_ALLIANCE=21;
@@ -300,7 +300,7 @@ public interface Const{
  public static final int BUDGET_COMMANDANT_FRANCHISSEMENT_PORTE_INTRAGALACTIQUE=46;
  public static final int BUDGET_COMMANDANT_TOTAL_DEPENSE=47;
  public static final int BUDGET_COMMANDANT_TOTAL_DISPONIBLE=48;
- //Les différents champs du budget.
+ //Les diffï¿½rents champs du budget.
 
  public static final int COMPOSANT_CAPACITE_PROPULSION=0;
  public static final int COMPOSANT_PORTEE_SCANNER_SYSTEME=1;
@@ -328,7 +328,7 @@ public interface Const{
  public static final int BATIMENT_PORTEE_RADAR=8;
  public static final int BATIMENT_CAPACITE_EXTRACTION_AVANCE=9;
 // public static final int BATIMENT_CAPACITE_MODIFICATION_GRAVITE=10; //############ 
- //les différentes caractéristiques spéciales.
+ //les diffï¿½rentes caractï¿½ristiques spï¿½ciales.
 
  public static final int DIRECTIVE_FLOTTE_ATTITUDE_NEUTRE=0;
  public static final int DIRECTIVE_FLOTTE_ATTAQUE_JOUEUR=8;
@@ -339,15 +339,15 @@ public interface Const{
  public static final int DIRECTIVE_FLOTTE_PILLAGE_SYSTEME=4;
  public static final int DIRECTIVE_FLOTTE_PILLAGE_PLANETE=6;
  public static final int DIRECTIVE_FLOTTE_ERADICATION_PLANETE=7;
- //Les différents types de directive
+ //Les diffï¿½rents types de directive
 
  public static final int NB_DIRECTIVES=Messages.DIRECTIVES.length;
- //Le nombre de types de directive différents.
+ //Le nombre de types de directive diffï¿½rents.
 
  public static final float COUT_REPARATION_VAISSEAU=0.5F;
-  //Le côut de réparation d'un point de dommage pour un vaisseau.
+  //Le cï¿½ut de rï¿½paration d'un point de dommage pour un vaisseau.
  public static final int POINTS_REPARATION_BATIMENT=5;
-  //Le nombre de points de réparation d'un bâtiment par tour.
+  //Le nombre de points de rï¿½paration d'un bï¿½timent par tour.
 
  public static final int ARME_VITESSE_DE_BASE=0;
  public static final int ARME_DOMMAGES_BOUCLIER=1;
@@ -355,29 +355,29 @@ public interface Const{
  public static final int ARME_DOMMAGES_SOL=3;
  public static final int ARME_PORTEE=4;
  public static final int ARME_FIABILITE=5;
- //les différentes caractéristiques des composants armes.
+ //les diffï¿½rentes caractï¿½ristiques des composants armes.
 
  public static final int PUISSANCE_ATTAQUE_PLANETAIRE_MINIMALE=35;
- //puissance minimale requise pour attaquer une planète.
+ //puissance minimale requise pour attaquer une planï¿½te.
 
  public static final int TRANSPORT_MINERAI=0;
  public static final int TRANSPORT_AUCUN=-1;
  public static final int TRANSPORT_MARCHANDISE=1;
  public static final int TRANSPORT_BATIMENT=2;
  public static final int TRANSPORT_POPULATION=3;
- //Les codes pour les différents types de transport.
+ //Les codes pour les diffï¿½rents types de transport.
 
  public static final int TECHNOLOGIE_TYPE_BATIMENT=0;
  public static final int TECHNOLOGIE_TYPE_COMPOSANT_DE_VAISSEAU=1;
  public static final int TECHNOLOGIE_TYPE_SIMPLE=-1;
- //le type de technologie recherché(pour la recherche des capacités spéciales).
+ //le type de technologie recherchï¿½(pour la recherche des capacitï¿½s spï¿½ciales).
 
  public static final int PRIX_MARCHANDISE_PAR_DEFAUT=50;
- //Le prix des marchandises par défaut.
+ //Le prix des marchandises par dï¿½faut.
 
  public static final int POSITION_HEROS_RESERVE=-1;
  public static final Position POSITION_GOUVERNEUR_RESERVE=null;
- //Les positions de "réserve" pour les leaders.
+ //Les positions de "rï¿½serve" pour les leaders.
 
  public static final int COMPETENCE_LEADER_MAITRISE_VITESSE=0;
  public static final int COMPETENCE_LEADER_MAITRISE_ATTAQUE=1;
@@ -394,41 +394,41 @@ public interface Const{
  public static final int COMPETENCE_LEADER_MAITRISE_SAVOIR=11;
  public static final int COMPETENCE_LEADER_ENTRETIEN_SYSTEME=12;
  public static final int COMPETENCE_LEADER_MAITRISE_FINANCE=13;
- //les différentes compétences de leader.
+ //les diffï¿½rentes compï¿½tences de leader.
 
  public static final int NOMBRE_COMPETENCES=Messages.COMPETENCES_LEADER.length;
- //Le nombre de compétences différentes pour un leader.
+ //Le nombre de compï¿½tences diffï¿½rentes pour un leader.
 
  public static final float VALEUR_UNITE=100F;
  public static final float VALEUR_COMPETENCE_SPECIALE=2000F;
  public static final float VALEUR_COMPETENCE_NORMAL=1000F;
- //la valeur d'un point de caractéristique,d'une compétence spéciale,ou d'une compétence normale d'un leader.
+ //la valeur d'un point de caractï¿½ristique,d'une compï¿½tence spï¿½ciale,ou d'une compï¿½tence normale d'un leader.
 
  public static final int[][] CHANCE_AUGMENTER_CARACTERISTIQUE_LEADER=
   { {15,25,25,15,20},{35,30,10,15,10},{5,15,35,30,15},{20,15,15,35,15},{20,50,5,15,10},
     {30,20,20,5,15},{15,15,30,25,15},{20,20,20,20,20}
   };
- //les différentes possibilités d'augmentation de caractéristique pour un leader par rapport à sa race.
+ //les diffï¿½rentes possibilitï¿½s d'augmentation de caractï¿½ristique pour un leader par rapport ï¿½ sa race.
 
  public static final int[][] CHANCE_TROUVER_COMPETENCE_HEROS=
   { {7,11,11,7,9,7,9,9,7,12,0,11,0,0},{15,13,5,7,5,5,9,9,10,10,0,12,0,0},{3,6,15,15,6,15,8,8,10,7,0,7,0,0},
     {9,7,7,15,7,12,10,5,9,9,0,10,0,0},{10,20,3,7,5,9,12,10,12,7,0,5,0,0},
     {15,8,8,3,11,5,9,10,8,8,0,15,0,0},{7,7,15,10,6,11,8,12,11,5,0,8,0,0},{9,9,9,9,9,10,9,9,9,9,0,9,0,0}
   };
- //les différentes possibilités de répartition de compétence pour un héros par rapport à sa race.
+ //les diffï¿½rentes possibilitï¿½s de rï¿½partition de compï¿½tence pour un hï¿½ros par rapport ï¿½ sa race.
 
  public static final int[][] CHANCE_TROUVER_COMPETENCE_GOUVERNEUR=
   { {7,10,10,7,11,8,0,10,8,0,0,11,10,8},{12,12,6,7,8,6,0,9,10,0,0,12,9,9},{9,6,12,10,8,10,0,8,10,0,0,7,12,8},
     {10,7,7,12,9,9,0,6,9,0,0,12,6,10},{7,15,8,8,7,11,0,11,12,0,0,5,11,5},
     {14,7,7,5,12,6,0,9,8,0,0,10,9,15},{9,8,10,10,8,9,0,9,11,0,0,5,9,8},{9,9,9,9,9,10,0,9,9,0,0,9,9,9}
   };
- //les différentes possibilités de répartition de compétence pour un gouverneur par rapport à sa race.
+ //les diffï¿½rentes possibilitï¿½s de rï¿½partition de compï¿½tence pour un gouverneur par rapport ï¿½ sa race.
 
  public static final int DEBRIS_METEORITE=-1;
  public static final int DEBRIS_TROU_NOIR=-2;
  public static final int DEBRIS_RESTE_VAISSEAUX=-3;
  public static final int DEBRIS_MINES_CLASSIQUES=-4;
- //les types de débris(les mines intelligentes sont désignées par le numéro de leur joueur).
+ //les types de dï¿½bris(les mines intelligentes sont dï¿½signï¿½es par le numï¿½ro de leur joueur).
 
  public static final int[][] HABITAT_RADIATION={ {1,85},{0,150},{1,95},{5,75},{1,120},
                                                  {50,200},{0,200},{10,160}
@@ -439,13 +439,13 @@ public interface Const{
  public static final int[][] HABITAT_GRAVITE={ {1,40},{0,35},{15,85},{1,45},{5,55},
                                                {1,60},{0,100},{10,90}
                                                 };
-  //Les conditions supportées par les différentes races(min et max).
+  //Les conditions supportï¿½es par les diffï¿½rentes races(min et max).
 
  public static final int[][] RACES_ATMOSPHERES={ 
                                         {2,1,0,-1,-2},{3,2,0,-2,-3},{1,0,0,0,-1},{3,2,1,-2,-2},{-1,0,2,0,-1},
                                         {-2,-1,0,1,2},{-2,-2,0,1,1},{1,0,-2,0,1}
   };
-  // Le modificateur de progression de population suivant la race et le type d'atmosphère.
+  // Le modificateur de progression de population suivant la race et le type d'atmosphï¿½re.
 
  public static final int[][] RACES_CARACTERISTIQUES={
   {0,0,0,0,0,0},{-2,0,-5,10,0,0},{-5,10,3,-5,-3,3},{0,-5,0,5,3,-3},{4,-10,10,0,-6,0},
@@ -459,7 +459,7 @@ public interface Const{
  public static final int RACE_CARACTERISTIQUE_BONUS_CONTRE_ESPIONNAGE=5;        //########## 
  public static final String[] RACE_TECHNOLOGIES={"raffineI","metauxI","extraI","diploI","armeI",
                                                  "pharmaI",null,null};
- // les modificateurs propres à chaque race.
+ // les modificateurs propres ï¿½ chaque race.
 
  public static final int STRATEGIE_AGRESSIVITE_RAGE=5;
  public static final int STRATEGIE_AGRESSIVITE_COMBATIF=4;
@@ -467,21 +467,21 @@ public interface Const{
  public static final int STRATEGIE_AGRESSIVITE_PRUDENT=2;
  public static final int STRATEGIE_AGRESSIVITE_FUYARD=1;
  public static final int STRATEGIE_AGRESSIVITE_PILLAGE=0;
- //Les différents types d'agressivite.
+ //Les diffï¿½rents types d'agressivite.
  public static final int STRATEGIE_AGRESSIVITE_NB_MAXIMAL=STRATEGIE_AGRESSIVITE_RAGE;
- //le numéro le plus élevé d'agressivité(pour vérification des ordres);
+ //le numï¿½ro le plus ï¿½levï¿½ d'agressivitï¿½(pour vï¿½rification des ordres);
 
  public static final int STRATEGIE_CIBLE_CARGO=3;
  public static final int STRATEGIE_CIBLE_BOMBARDIER=2;
  public static final int STRATEGIE_CIBLE_CHASSEUR=1;
  public static final int STRATEGIE_CIBLE_PROCHE=0;
- //Les différents types de cibles possibles.
+ //Les diffï¿½rents types de cibles possibles.
  public static final int STRATEGIE_CIBLE_NB_MAXIMAL=STRATEGIE_CIBLE_CARGO;
- //le numéro le plus élevé de type de cible(pour vérification des ordres);
+ //le numï¿½ro le plus ï¿½levï¿½ de type de cible(pour vï¿½rification des ordres);
 
  public static final StrategieDeCombatSpatial STRATEGIE_DEFAUT=new StrategieDeCombatSpatial(
       "{0}",STRATEGIE_AGRESSIVITE_NORMAL,STRATEGIE_CIBLE_PROCHE,new String[0],new int[0][0],new int[0][0]);
- //Les stratégies possibles au départ pour une flotte.
+ //Les stratï¿½gies possibles au dï¿½part pour une flotte.
 
  public static final int COMBAT_X_MAX=30;
  public static final int COMBAT_X_MIN=0;
@@ -493,7 +493,7 @@ public interface Const{
  public static final int COMBAT_Y_FIN1=-1000;
  public static final int COMBAT_Y_FIN2=-COMBAT_Y_FIN1+COMBAT_Y_MAX+COMBAT_Y_ESPACE;
 
- //Les dimensions des deux camps lors d'un combat au départ.
+ //Les dimensions des deux camps lors d'un combat au dï¿½part.
 
 /* public static final int[][] TAILLE_VAISSEAUX={{1,2,9},{3,4,8},{5,8,7},{9,20,6},{21,50,5},
          {51,100,4},{101,200,3},{201,500,2},{501,1000,1},{1001,1000000,0}};*/
@@ -501,7 +501,7 @@ public interface Const{
          {51,100,6},{101,200,6},{201,500,6},{501,1000,6},{1001,1000000,6}};
  public static final int[][] TAILLE_VAISSEAUX_COMBAT={{1,2,9},{3,4,8},{5,8,7},{9,20,6},{21,50,5},
          {51,100,4},{101,200,3},{201,500,2},{501,1000,1},{1001,1000000,0}};
- //Les paramétrages de la taille des vaisseaux(min nb cases,max nb cases,vitesse de base)
+ //Les paramï¿½trages de la taille des vaisseaux(min nb cases,max nb cases,vitesse de base)
 
  public static final int TAILLE_MAXIMAL_VAISSEAU=10;
  //La taille maximale d'un vaisseau.
@@ -509,27 +509,27 @@ public interface Const{
  public static final int BASE_NIVEAU_EXPERIENCE=2000;
  public static final int BASE_NIVEAU_MORAL=1000;
  public static final int BASE_NIVEAU_PUISSANCE=10;
- //la base pour calculer le niveau d'expérience.
+ //la base pour calculer le niveau d'expï¿½rience.
  //la base pour calculer le niveau de moral.
  //la base pour calculer le niveau de puissance.
 
  public static final int CHANCE_EXPLOSION_MOTEUR=1;
-  //le pourcentage de chance pour qu'un moteur explose quand il est touché.
+  //le pourcentage de chance pour qu'un moteur explose quand il est touchï¿½.
 
  public static final int NOMBRE_SALVE_BATTERIE=100;
-  //le nombre de tirs par batterie de défense planétaire.
+  //le nombre de tirs par batterie de dï¿½fense planï¿½taire.
 
  public static float COUT_CHANGER_CAPITALE=100F;
-  //Le coût d'un changement de capitale.
+  //Le coï¿½t d'un changement de capitale.
 
  public static int[][] MODIFICATEUR_STABILITE_CAPITALE={{0,3},{1,2},{2,1},{6,0},{8,-1},{11,-3},{Integer.MAX_VALUE,-8}};
-  //Les modificateurs de stabilité en fonction de la distance par rapport à la capitale.
+  //Les modificateurs de stabilitï¿½ en fonction de la distance par rapport ï¿½ la capitale.
  public static int[] MODIFICATEUR_STABILITE_TAXATION={6,3,0,-3,-7,-12};
-  //Les modificateurs de stabilité en fonction de la taxation de la planète.
+  //Les modificateurs de stabilitï¿½ en fonction de la taxation de la planï¿½te.
 
 
  public static float COUT_CHANGER_POLITIQUE=30F;
-  //Le coût d'un changement de politique.
+  //Le coï¿½t d'un changement de politique.
 
 
  public static final String[] NOMS_TABLES_ORDRES={
@@ -549,8 +549,8 @@ public interface Const{
   "renommer_systeme","renommer_planete","renommer_flotte","renommer_lieutenant","renommer_alliance",
   "ecrire_adresse_commandant","ecrire_adresse_alliance","ecrire_article",
   "diviser_flotte_ajouter","creer_plan_ajouter","creer_strategie_ajouter"};
-  //le nom des tables des différents ordres.Attention! elles servent également à définir les méthodes de réception d'ordre,
-  //ainsi que les productions d'ordres! Données sensibles :o) !!!
+  //le nom des tables des diffï¿½rents ordres.Attention! elles servent ï¿½galement ï¿½ dï¿½finir les mï¿½thodes de rï¿½ception d'ordre,
+  //ainsi que les productions d'ordres! Donnï¿½es sensibles :o) !!!
 
  public static final int BORNE_ORDRES_VISIBLES=NOMS_TABLES_ORDRES.length-3;
  //la borne des ordres visibles.
@@ -640,7 +640,7 @@ public interface Const{
  public static final String TABLE_VAISSEAUX="z_vaisseaux";
  public static final String TABLE_COMPOSANTS="z_composants";
  public static final String TABLE_PLANS_CIBLES="z_plans_cibles";
- //Les différentes tables où sont stockées les données nécessaires aux ordres.
+ //Les diffï¿½rentes tables oï¿½ sont stockï¿½es les donnï¿½es nï¿½cessaires aux ordres.
 
  public static final int TAILLE_LOGIN=10;
   //le nombre de lettres du login.
@@ -648,11 +648,11 @@ public interface Const{
  public static final int MESSAGE_TYPE_COMMANDANT=0;
  public static final int MESSAGE_TYPE_SYSTEME=1;
 
- //Les différents types de message.
+ //Les diffï¿½rents types de message.
 
- //Les messages systèmes lors de la gestion d'un univers.
+ //Les messages systï¿½mes lors de la gestion d'un univers.
  public static final String MESSAGE_U_00000="Initialisation d'un univers";
- public static final String MESSAGE_U_00001="Création d'une nouvelle galaxie";
+ public static final String MESSAGE_U_00001="CrÃ©ation d'une nouvelle galaxie";
 
  public static final String TEMP="temp.txt";
  public static final String TEMP2="temp2.txt";
