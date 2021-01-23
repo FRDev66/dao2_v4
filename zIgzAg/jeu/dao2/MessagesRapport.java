@@ -8,90 +8,90 @@ package zIgzAg.jeu.oceane;
 
 public class MessagesRapport extends MessagesAbstraits{
 
- public static final String[] INFO_GENERALES={"Informations générales","Numéro du tour","Numéro du Commandant","Nom",
-   "Race","Puissance","Nombre de planètes contrôlées","Grade","Réputation","Statut"};
+ public static final String[] INFO_GENERALES={"Informations gÃ©nÃ©rales","NumÃ©ro du tour","NumÃ©ro du Commandant","Nom",
+   "Race","Puissance","Nombre de planÃ¨tes contrÃ´lÃ©es","Grade","RÃ©putation","Statut"};
 
  public static final String[] VOTRE_PEUPLE={"Votre Peuple","Type","Nombre","Total"};
 
- public static final String[] RESUME_SYSTEMES={"Résumé de vos systèmes","&nbsp;","Position","Nom","Pop","Pop Max",
-                                               "Planètes",
-                                               "Taxe","Stabilité","RM","SM","PdC","Budget T.","Budget S.","Budget C.",
-                                               "Propriétaire(s)","Gouverneur"};
+ public static final String[] RESUME_SYSTEMES={"RÃ©sumÃ© de vos systÃ¨mes","&nbsp;","Position","Nom","Pop","Pop Max",
+                                               "PlanÃ¨tes",
+                                               "Taxe","StabilitÃ©","RM","SM","PdC","Budget T.","Budget S.","Budget C.",
+                                               "PropriÃ©taire(s)","Gouverneur"};
 
- public static final String[] SYSTEMES_GENERAL={"Rapport des Systèmes","Capitale : ","Aucune"};
+ public static final String[] SYSTEMES_GENERAL={"Rapport des SystÃ¨mes","Capitale : ","Aucune"};
 
- public static final String[] SYSTEME={"Nombre de planètes : ","(voir planètes)","Populations","Population max",
+ public static final String[] SYSTEME={"Nombre de planÃ¨tes : ","(voir planÃ¨tes)","Populations","Population max",
    "Augmentation","Population totale","Population totale max","Augmentation moyenne","Ressources","Revenu minerai",
-   "Stock minerai","Points de construction","Caractéristiques","Taux d'impôts","Stabilité","Politique","Revenu",
-   "Révoltes","Terraformation","Budget","Technologie","Services spéciaux","Contre-espionnage","Constructions en cours",
-   "Type","Nombre","Points constru. nécessaires","Pour la planète","Non précisé","Équipement","Postes commerciaux",
+   "Stock minerai","Points de construction","CaractÃ©ristiques","Taux d'impÃ´ts","StabilitÃ©","Politique","Revenu",
+   "RÃ©voltes","Terraformation","Budget","Technologie","Services spÃ©ciaux","Contre-espionnage","Constructions en cours",
+   "Type","Nombre","Points constru. nÃ©cessaires","Pour la planÃ¨te","Non prÃ©cisÃ©","Ã‰quipement","Postes commerciaux",
    "Gouverneur","Programmation construction"};
 
  public static final String[] POSTES_COMMERCIAUX={"Rapport de vos postes commerciaux","Production","Stock","Prix",
-                                                "Rapport des postes commerciaux étrangers"};
+                                                "Rapport des postes commerciaux Ã©trangers"};
 
- public static final String[] DETAIL_SYSTEME={"Détail des planètes du système ","Propriétaire : ",
-   "Caractéristiques de la planète","Atmosphère","Marchandise Produite",
-   "Radiations","Température","Gravité","Caractéristiques d'exploitation",
-   "Révolte","NON DISPONIBLES","Production de minerai"};
+ public static final String[] DETAIL_SYSTEME={"DÃ©tail des planÃ¨tes du systÃ¨me ","PropriÃ©taire : ",
+   "CaractÃ©ristiques de la planÃ¨te","AtmosphÃ¨re","Marchandise Produite",
+   "Radiations","TempÃ©rature","GravitÃ©","CaractÃ©ristiques d'exploitation",
+   "RÃ©volte","NON DISPONIBLES","Production de minerai"};
 
- public static final String[] FLOTTES={"Rapport des flottes"," (Pour voir le détail des flottes)","Nom de la flotte",
-  "Numéro de la flotte","Position","Direction","Héros présent","Directive","Puissance","Attaque spatiale",
-  "Attaque planétaire","Vitesse","État","Expérience","Moral","Postes commerciaux survolés",
-  "Transport n°","Type transport","Contenu","État de la soute",
-  "Capacité maximale ville spatiale","Population présente","Nombre", "Production"};
+ public static final String[] FLOTTES={"Rapport des flottes"," (Pour voir le dÃ©tail des flottes)","Nom de la flotte",
+  "NumÃ©ro de la flotte","Position","Direction","HÃ©ros prÃ©sent","Directive","Puissance","Attaque spatiale",
+  "Attaque planÃ©taire","Vitesse","Ã‰tat","ExpÃ©rience","Moral","Postes commerciaux survolÃ©s",
+  "Transport nÂ°","Type transport","Contenu","Ã‰tat de la soute",
+  "CapacitÃ© maximale ville spatiale","Population prÃ©sente","Nombre", "Production"};
 
 
- public static final String[] RESUME_FLOTTES={"Résumé de vos flottes","Nom-Numéro","Position","Direction","Directive",
-  "Vitesse","Force spatiale","Force planétaire","État","Cargaison","Héros"};
+ public static final String[] RESUME_FLOTTES={"RÃ©sumÃ© de vos flottes","Nom-NumÃ©ro","Position","Direction","Directive",
+  "Vitesse","Force spatiale","Force planÃ©taire","Ã‰tat","Cargaison","HÃ©ros"};
 
- public static final String[] DETAIL_FLOTTES={"Description de vos flottes","Nom de la flotte","Numéro de la flotte","Nom",
-  "Type de vaisseau","Dommages","Expérience","Moral","Composants détruits","Équipage"};
+ public static final String[] DETAIL_FLOTTES={"Description de vos flottes","Nom de la flotte","NumÃ©ro de la flotte","Nom",
+  "Type de vaisseau","Dommages","ExpÃ©rience","Moral","Composants dÃ©truits","Ã‰quipage"};
 
  public static final String[] RESUME_TECHNOLOGIES={"Rapport des technologies","Technologies connues",
-  "Technologies pouvant être cherchées","Bâtiments",
-  "Nom","Prix","Points de construction","Minerai","Produits nécessaires","Encombrement transport",
-  "Trouvée à partir de",
-  "Composants de vaisseaux","Nom","Prix","Minerai","Nombre de cases","Produits nécessaires","Trouvée à partir de",
-  "Autres","Nom","Description","Trouvée à partir de",
+  "Technologies pouvant Ãªtre cherchÃ©es","BÃ¢timents",
+  "Nom","Prix","Points de construction","Minerai","Produits nÃ©cessaires","Encombrement transport",
+  "TrouvÃ©e Ã  partir de",
+  "Composants de vaisseaux","Nom","Prix","Minerai","Nombre de cases","Produits nÃ©cessaires","TrouvÃ©e Ã  partir de",
+  "Autres","Nom","Description","TrouvÃ©e Ã  partir de",
   "Les technologies publiques sont en <FONT color=\"#80FF80\">vert</FONT>.",
-  "Recherches actuelles","Technologie","Pourcentage du budget technologique affecté","Points de recherche"};
+  "Recherches actuelles","Technologie","Pourcentage du budget technologique affectÃ©","Points de recherche"};
 
- public static final String[] TECHNOLOGIES={"Détail des technologies","Technologies connues",
-  "Technologies pouvant être cherchées",
-  "Nom","Prix","Minerai","Points de construction","Produits nécessaires","Points de structure",
+ public static final String[] TECHNOLOGIES={"DÃ©tail des technologies","Technologies connues",
+  "Technologies pouvant Ãªtre cherchÃ©es",
+  "Nom","Prix","Minerai","Points de construction","Produits nÃ©cessaires","Points de structure",
   "Prix","Minerai","Nombre de cases",
-  "Produits nécessaires","Vitesse","Dommages bouclier","Dommages coque","Dommages au sol","Portée","Fiabilité",
-  "Pourcentage de chance de toucher les différents types de coque","Caractéristique(s) spéciale(s)"};
+  "Produits nÃ©cessaires","Vitesse","Dommages bouclier","Dommages coque","Dommages au sol","PortÃ©e","FiabilitÃ©",
+  "Pourcentage de chance de toucher les diffÃ©rents types de coque","CaractÃ©ristique(s) spÃ©ciale(s)"};
 
  public static final String[] PLANS_DE_VAISSEAUX={"Plans de vaisseaux","Nom","Concepteur","Marque","Taille","Vitesse",
-   "Points de construction nécessaires","Côut en centaures","Côut en minerai","Matériaux spéciaux nécessaires",
-   "Capacité d'attaque spatiale","Capacité d'attaque planétaire","Soutes à cargo",
+   "Points de construction nÃ©cessaires","CÃ´ut en centaures","CÃ´ut en minerai","MatÃ©riaux spÃ©ciaux nÃ©cessaires",
+   "CapacitÃ© d'attaque spatiale","CapacitÃ© d'attaque planÃ©taire","Soutes Ã  cargo",
    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composants&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
    "Royalties","Domaine"};
 
- public static final String[] ALLIANCES={"Alliances","Nom","Type","Concepteur","Dirigeant","Droits d'entrée","Secrète",
+ public static final String[] ALLIANCES={"Alliances","Nom","Type","Concepteur","Dirigeant","Droits d'entrÃ©e","SecrÃ¨te",
    "Membres de l'Alliance"};
 
  public static final String[] ALLIANCES_DETAIL={"Membres de l'alliance ","Nom","Adresse Electronique","Race","Puissance",
-   "Nombre de planètes","Grade","Réputation","Statut"};
+   "Nombre de planÃ¨tes","Grade","RÃ©putation","Statut"};
 
- public static final String[] LEADERS={"Nom","Position","Niveau","Race","Vitesse","Attaque","Défense","Moral",
-  "Marchandage","Compétences","Expérience","Valeur de base"};
+ public static final String[] LEADERS={"Nom","Position","Niveau","Race","Vitesse","Attaque","DÃ©fense","Moral",
+  "Marchandage","CompÃ©tences","ExpÃ©rience","Valeur de base"};
 
- public static final String[] STRATEGIES={"Stratégies de combat","Nom","Agressivité","Cible prioritaire",
- "Type de vaisseau","Position","Taille visée 1","TV 2","TV 3","TV 4","TV 5","TV 6","TV 7","TV 8","TV 9","TV 10"};
+ public static final String[] STRATEGIES={"StratÃ©gies de combat","Nom","AgressivitÃ©","Cible prioritaire",
+ "Type de vaisseau","Position","Taille visÃ©e 1","TV 2","TV 3","TV 4","TV 5","TV 6","TV 7","TV 8","TV 9","TV 10"};
 
- public static final String[] DETECTION_FLOTTES={"Flottes étrangères détectées par vos radars",
-  "Position","Nom","Nombre de vaisseaux","Description","Puissance estimée","Coordonnées Commandant"};
- public static final String[] DETECTION_SYSTEMES={"Systèmes étrangers détectés par vos radars",
-  "Position","Nom","Population","Nombre de planètes","Propriétaire(s)"};
+ public static final String[] DETECTION_FLOTTES={"Flottes Ã©trangÃ¨res dÃ©tectÃ©es par vos radars",
+  "Position","Nom","Nombre de vaisseaux","Description","Puissance estimÃ©e","CoordonnÃ©es Commandant"};
+ public static final String[] DETECTION_SYSTEMES={"SystÃ¨mes Ã©trangers dÃ©tectÃ©s par vos radars",
+  "Position","Nom","Population","Nombre de planÃ¨tes","PropriÃ©taire(s)"};
 
- public static final String[] MESSAGES={"Erreurs détectées lors de la réception des ordres",
-  "Résultats des actions importantes","Déroulement des combats","Ordres passés"};
+ public static final String[] MESSAGES={"Erreurs dÃ©tectÃ©es lors de la rÃ©ception des ordres",
+  "RÃ©sultats des actions importantes","DÃ©roulement des combats","Ordres passÃ©s"};
 
- public static final String[] RAPPORT_COMBAT={"Attaquant","Attaqué","Type de combat","Flotte attaquante",
-  "Flotte ou système attaquée (éventuellement planètes prises ou pillées)"};
+ public static final String[] RAPPORT_COMBAT={"Attaquant","AttaquÃ©","Type de combat","Flotte attaquante",
+  "Flotte ou systÃ¨me attaquÃ©e (Ã©ventuellement planÃ¨tes prises ou pillÃ©es)"};
 
  public static final String RAPPORT_FINANCIER="Rapport financier";
  public static final String HEROS="Amiraux sous vos ordres";
@@ -99,21 +99,21 @@ public class MessagesRapport extends MessagesAbstraits{
  public static final String PACTE_NON_AGRESSION="Pactes de non-agression avec les commandants suivants";
 
  public static final String TITRE_RAPPORT="Rapport du commandant ";
- public static final String TITRE_DETAIL_SYSTEME="Détail du système ";
- public static final String TITRE_DETAIL_FLOTTES="Détail des flottes";
- public static final String TITRE_DETAIL_TECHNOLOGIES="Détail des technologies";
- public static final String TITRE_DETAIL_COMBAT="Détail des combats";
+ public static final String TITRE_DETAIL_SYSTEME="DÃ©tail du systÃ¨me ";
+ public static final String TITRE_DETAIL_FLOTTES="DÃ©tail des flottes";
+ public static final String TITRE_DETAIL_TECHNOLOGIES="DÃ©tail des technologies";
+ public static final String TITRE_DETAIL_COMBAT="DÃ©tail des combats";
  public static final String RETOUR_PRINCIPAL="Pour revenir au rapport principal";
 
  //Viennent ensuite les messages pour la production des ordres.
 
- public static final String[] CHAPITRES_ORDRES={"Diplomatie et recherche","Gestion des systèmes","Déplacement",
-  "Dons et prêts","Divers"};
+ public static final String[] CHAPITRES_ORDRES={"Diplomatie et recherche","Gestion des systÃ¨mes","DÃ©placement",
+  "Dons et prÃªts","Divers"};
 
  public static final String[] DEROULEMENT_EVENEMENTS={
-  "Résolution des collisions entre les astéroïdes, les mines anti-matières,etc. et les flottes",
-  "Résolution des votes au sein des alliances","Résolution des enchères sur les lieutenants",
-  "- Résolution des combats<BR>- Perception des revenus<BR>- Gestion des systèmes et des constructions"+
+  "RÃ©solution des collisions entre les astÃ©roÃ¯des, les mines anti-matiÃ¨res,etc. et les flottes",
+  "RÃ©solution des votes au sein des alliances","RÃ©solution des enchÃ¨res sur les lieutenants",
+  "- RÃ©solution des combats<BR>- Perception des revenus<BR>- Gestion des systÃ¨mes et des constructions"+
   "<BR>- Finalisation du budget"};
 
  public static final String ORDRE_PRINCIPAL="Page principale des ordres";
@@ -123,35 +123,35 @@ public class MessagesRapport extends MessagesAbstraits{
  //Et pour le combat.
 
  public static final String[] COMBAT_FLOTTE={"Tour {0} du combat","Flotte {0} du commandant {1}","Type de vaisseau",
-  "Nombre","Dommages encaissés","Dommages infligés"};
+  "Nombre","Dommages encaissÃ©s","Dommages infligÃ©s"};
  public static final String[] COMBAT_PLANETE={"Planete {0} du commandant {1}","Milices",
-  "Nombre","Dommages encaissés","Bâtiments planétaires"};
+  "Nombre","Dommages encaissÃ©s","BÃ¢timents planÃ©taires"};
 
  //Et pour les stats.
 
- public static final String[] STATS_PUISSANCE={"Statistiques de puissance des commandants","Place","Nom","Numéro",
+ public static final String[] STATS_PUISSANCE={"Statistiques de puissance des commandants","Place","Nom","NumÃ©ro",
    "Race","Puissance"};
- public static final String[] STATS_REPUTATION={"Réputation des commandants","Place","Nom","Numéro",
-   "Race","Réputation","Statut"};
- public static final String[] STATS_PLANETES={"Possessions des commandants","Place","Nom","Numéro",
-   "Race","Nombre de planètes","Grade"};
+ public static final String[] STATS_REPUTATION={"RÃ©putation des commandants","Place","Nom","NumÃ©ro",
+   "Race","RÃ©putation","Statut"};
+ public static final String[] STATS_PLANETES={"Possessions des commandants","Place","Nom","NumÃ©ro",
+   "Race","Nombre de planÃ¨tes","Grade"};
  public static final String[] STATS_TAUX_POSTE={"Taxation des postes commerciaux",
-  "Place","Nom","Numéro","Race","Taxation"};
- public static final String[] STATS_CENTAURES={"Etats des comptes à la Banque Orionaise de Crédit",
-  "Place","Nom","Numéro","Race","Centaures"};
+  "Place","Nom","NumÃ©ro","Race","Taxation"};
+ public static final String[] STATS_CENTAURES={"Etats des comptes Ã  la Banque Orionaise de CrÃ©dit",
+  "Place","Nom","NumÃ©ro","Race","Centaures"};
  public static final String[] STATS_POPULATION={"Recensement (en millions d'habitants)",
-  "Place","Nom","Numéro","Race","Population totale"};
+  "Place","Nom","NumÃ©ro","Race","Population totale"};
  public static final String[] STATS_VAISSEAUX={"Nombre d'exemplaires en circulation",
   "Place","Nom","Nombre"};
- public static final String[] STATS_ALLIANCES={"Alliances non-secrètes","Place","Nom","Nombre d'adhérents","Type",
+ public static final String[] STATS_ALLIANCES={"Alliances non-secrÃ¨tes","Place","Nom","Nombre d'adhÃ©rents","Type",
   "Site web"};
  public static final String[] STATS_ENCHERES={"Lieutenants disponibles","Amiraux en vente","Gouverneurs en vente"};
  public static final String[] STATS_VAISSEAUX_PUBLICS={"Vaisseaux publics"};
- public static final String[] STATS_UNIVERS={"Statistiques générales sur l'univers connu","Population","Marchandises",
-  "Relations entre races","Détail"};
+ public static final String[] STATS_UNIVERS={"Statistiques gÃ©nÃ©rales sur l'univers connu","Population","Marchandises",
+  "Relations entre races","DÃ©tail"};
  public static final String[] STATS_UNIVERS_POPULATION={"Population (en millions)","Type","Nombre","Total"};
- public static final String[] STATS_UNIVERS_POSTE={"Marchandises","Type","Nombre en circulation","Prix moyen constaté"};
- public static final String[] STATS_UNIVERS_RELATIONS={"Relations entres les différentes races"};
+ public static final String[] STATS_UNIVERS_POSTE={"Marchandises","Type","Nombre en circulation","Prix moyen constatÃ©"};
+ public static final String[] STATS_UNIVERS_RELATIONS={"Relations entres les diffÃ©rentes races"};
  public static final String[] STATS_UNIVERS_SITES={"Sites des commandants","Sites des alliances","Sites de Dark Age of Orion"};
 
 
