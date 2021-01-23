@@ -96,7 +96,7 @@ public class Messages extends MessagesAbstraits{
  public static final String[] DOMAINES_PLAN_DE_VAISSEAU={"public","privé"};
   //domaine public ou privé...
 
- public static final String[] CHAMPS_BUDGET={"centaures du tour précedent","revenus des systèmes","revenus des alliances",
+ public static final String[] CHAMPS_BUDGET={"centaures du tour precedent","revenus des systèmes","revenus des alliances",
   "taxe d'entrée dans alliance","dons centaures","vente de marchandises","licenciement lieutenant",
   "politiques d'extermination","perception de royalties","villes spatiales","pillage de planète","revenus divers",
   "vente flotte","revenus commerciaux","","","","","",
@@ -107,7 +107,7 @@ public class Messages extends MessagesAbstraits{
   "entretien flotte","entretien système","budget technologique","budget services spéciaux",
   "budget contre-espionnage","entretien des lieutenants","entretien des technologies","réparation des flottes",
   "achat flotte","divers","franchissement porte intra-galactique",
-  "total des dépenses","total disponible"};
+  "total des depenses","total disponible"};
   //les différents champs de budget.
 
  public static final String[] TYPE_ALLIANCE={"démocratique","autocratique","anarchique"};

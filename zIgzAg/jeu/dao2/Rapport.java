@@ -721,7 +721,7 @@ public class Rapport{
 
   BaliseHTML[][] a=new BaliseHTML[Const.BUDGET_COMMANDANT_TOTAL_DISPONIBLE+1][3];
   a[0][0]=getTD(BaliseHTML.CENTER,"3").ajout(getFont(cC[3],"6").ajout(getText(t)));
-  a[1][0]=getTD(null,BaliseHTML.T_2).ajout(getText(b[0].toUpperCase(Locale.FRANCE)));
+  a[1][0]=getTD(null,BaliseHTML.T_2).ajout(getText(b[0].toUpperCase()));
   a[1][1]=getTD("right",null).ajout(getText(Float.toString(Utile.a1D(c.getBudget(0)))));
   int ligne=2;
   for(int i=1;i<Const.BUDGET_COMMANDANT_TOTAL_RECETTE;i++)
