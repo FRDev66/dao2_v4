@@ -162,7 +162,7 @@ import java.lang.reflect.*;
 
 
    cL=null;m=null;listeOrdresRendus=null;
-
+   
    Rapport.ecrireMessagesSystemes();
    Stats.afficher(Locale.FRENCH);
    ProductionOrdres.produireOrdresGeneraux();
