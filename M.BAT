@@ -1,1 +1,1 @@
-java -Xmx200m -Xms200m -classpath classes;api/mail.jar;api/activation.jar;api/mysql.jar; zIgzAg.jeu.oceane.Essai12
+java -Xmx200m -Xms200m -classpath classes;api/activation.jar;api/mysql.jar;api/javax.mail.jar; zIgzAg.jeu.oceane.Essai12
