@@ -622,7 +622,7 @@ public class Rapport{
    a[ligne][0]=getTD(null,null).ajout(getFont(cC[11],null).ajout(getText(t2[5])));
    a[ligne][1]=getTD(null,null).ajout(getText(Integer.toString(p.getRadiation())+"mR"));
    a[ligne][2]=getTD(null,null).ajout(getFont(cC[11],null).ajout(getText(t2[6])));
-   a[ligne][3]=getTD(null,null).ajout(getText(Integer.toString(p.getTemperature())+"�C"));
+   a[ligne][3]=getTD(null,null).ajout(getText(Integer.toString(p.getTemperature())+"°C"));
    a[ligne][4]=getTD(null,null).ajout(getFont(cC[11],null).ajout(getText(t2[7])));
    a[ligne++][5]=getTD(null,null).ajout(getText(Float.toString(Utile.a1D(((float)p.getGravite())/10F))+"g"));
 
