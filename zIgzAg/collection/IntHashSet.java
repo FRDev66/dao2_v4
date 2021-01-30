@@ -8,13 +8,13 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.io.Serializable;
 
-/** Similaire à la classe <i>java.util.HashSet</i>, sauf que seuls
- * des entiers sont stockés.
+/** Similaire Ã  la classe <i>java.util.HashSet</i>, sauf que seuls
+ * des entiers sont stockÃ©s.
  *
  * Comme d'habitude pour les classes de ce package,
- * il faut garder à l'esprit que les objets éventuellement stockés
- * ne le sont que sous la forme d'entiers représentant le résultat
- * de leur méthode <i>hashCode()</i>.
+ * il faut garder Ã  l'esprit que les objets Ã©ventuellement stockÃ©s
+ * ne le sont que sous la forme d'entiers reprÃ©sentant le rÃ©sultat
+ * de leur mÃ©thode <i>hashCode()</i>.
  *
  * @author  Julien Buret
  * @version 1.00, 26/12/00
@@ -24,13 +24,13 @@ import java.io.Serializable;
 public class IntHashSet extends AbstractIntSet implements IntSet, Cloneable, Serializable{
 
  /**
-  * La map utilisé pour le stockage.
+  * La map utilisÃ© pour le stockage.
   */
  private transient IntHashMap map;
 
 
  /**
-  * L'objet stocké (toujours le même, normal non? :o) )
+  * L'objet stockÃ© (toujours le mÃªme, normal non? :o) )
   */
  private static final Object PRESENT = new Object();
 

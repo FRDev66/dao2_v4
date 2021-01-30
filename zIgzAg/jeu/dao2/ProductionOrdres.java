@@ -325,7 +325,7 @@ public class ProductionOrdres{
     String adresse=r.getString("ADRESSE");
     try{
      InternetAddress.parse(adresse);
-     //pour vérifier que l'adresse est correcte.
+     //pour vÃ©rifier que l'adresse est correcte.
      String nom=r.getString("NOM").replace('#','\'').replace(',',' ');
      int race=r.getInt("RACE");
      r2.first();
@@ -372,7 +372,7 @@ public class ProductionOrdres{
     listeMenu.add(new Integer(numeroOrdre));
    }
   catch(Exception e){
-   System.out.println("erreur méthode inconnue : "+Const.NOMS_TABLES_ORDRES[numeroOrdre]);
+   System.out.println("erreur mÃ©thode inconnue : "+Const.NOMS_TABLES_ORDRES[numeroOrdre]);
    e.printStackTrace();
    }
   }

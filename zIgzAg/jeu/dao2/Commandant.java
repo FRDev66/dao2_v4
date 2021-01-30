@@ -53,7 +53,7 @@ public class Commandant extends Joueur implements Serializable{
 
   private transient HashMap correspondanceFlotteDivisee;
 
-  //pour contrer la "spÈculation"
+  //pour contrer la "sp√©culation"
   private transient Map speculation;
 
   private void ajouterVisaDechargement(Position p,int numeroCommandant,int numeroMarchandise){
@@ -77,7 +77,7 @@ public class Commandant extends Joueur implements Serializable{
    }
 
 
- //les mÈthodes d'accËs.
+ //les m√©thodes d'acc√®s.
 
   public void setCapitale(Position pos){capitale=pos;}
   public boolean existenceCapitale(){if(capitale==null) return false; else return true;}
@@ -666,7 +666,7 @@ public class Commandant extends Joueur implements Serializable{
   public void ajouterTechnologieConnue(String code){
    if(!estTechnologieConnue(code))
     technologiesConnues.add(code);
-   //nÈcessaire pour Èliminer des recherches Èventuelles sur cette technologie ->
+   //n√©cessaire pour √©liminer des recherches √©ventuelles sur cette technologie ->
    suppressionDomaineDeRecherche(code);
 
    }
@@ -702,13 +702,13 @@ public class Commandant extends Joueur implements Serializable{
    for(int i=0;i<l.length;i++)
     if(!Univers.getTechnologie(l[i]).estComposantDeVaisseau()) compteur++;
    entretien = compteur*getBudget(Const.BUDGET_COMMANDANT_REVENUS_SYSTEMES)/200;
- //Entretien moindre pour les Toroks n∞race=2. 
+ //Entretien moindre pour les Toroks n¬∞race=2. 
   if(race == 2)
     entretien = entretien/4;   
- //Entretien moindre pour les Syltarides n∞race=6.
+ //Entretien moindre pour les Syltarides n¬∞race=6.
   if(race==6)
    entretien=entretien/2;
- //Entretien supÈrieur pour les Morglorhs n∞race=4.
+ //Entretien sup√©rieur pour les Morglorhs n¬∞race=4.
   if(race==4)
     entretien=entretien*2;
   return entretien;      
@@ -934,7 +934,7 @@ public class Commandant extends Joueur implements Serializable{
   public Commentaire getCombats(){return combat;}
   public Commentaire getOrdres(){return ordres;}
 
- //mÈthodes statiques
+ //m√©thodes statiques
 
  public static String getListeCommandants(int[] l){
   Commandant[] inter=new Commandant[l.length];
@@ -975,7 +975,7 @@ public class Commandant extends Joueur implements Serializable{
   initialiserChampsTransients();
   }
 
- //Les mÈthodes de gestion de fin  et de dÈbut de tour.
+ //Les m√©thodes de gestion de fin  et de d√©but de tour.
 
  public void resolutionCollisions(){
   Flotte[] f=listeFlottes();
@@ -1148,7 +1148,7 @@ public class Commandant extends Joueur implements Serializable{
    int puissance=getPuissance();
    Position[] p=listePossession();
 
-   //banqueroute ---> mise en place des fonds de solidaritÈ.
+   //banqueroute ---> mise en place des fonds de solidarit√©.
    if((puissance<75000)&&(getCentaures()<(float)Univers.getInt(7500))){
     float gain=Univers.getInt(1000)*1F+100F;
     int choix=Univers.getInt(3);
@@ -1156,7 +1156,7 @@ public class Commandant extends Joueur implements Serializable{
     ajouterEvenement("EVENEMENT_0000_"+Integer.toString(choix),gain);
     }
 
-   //Gain financiers provenant des hÈros possÈdant la compÈtences marchandages
+   //Gain financiers provenant des h√©ros poss√©dant la comp√©tences marchandages
    Heros[] h=listeHeros();
    Gouverneur[] g=listeGouverneur();
    if(h.length !=0){
@@ -1207,7 +1207,7 @@ public class Commandant extends Joueur implements Serializable{
       }
      }
 
-    //nÈgatif population
+    //n√©gatif population
 	 nb=1;
 	 //if(((Univers.getInt(10)<7)&&(puissance >Univers.getInt(500000)+reputation)))
          if(((Univers.getInt(10)>4)&&(puissance >Univers.getInt(500000)+reputation)))
@@ -1220,7 +1220,7 @@ public class Commandant extends Joueur implements Serializable{
 		 int[] ra=pla.racesPresentes();
 		 if(ra.length>0){
 	      int raPop=ra[Univers.getInt(ra.length)];
-              //division par (1,5) de la diminution de la pop en cas d'ÈvÍnement nÈgatif
+              //division par (1,5) de la diminution de la pop en cas d'√©v√™nement n√©gatif
             int division=(3/2);  
 	    int popDiminution=(Math.min(pla.getPopActuelle(raPop),150+Univers.getInt(1+pla.getPopActuelle(raPop)/2)))/division;
 		  if(popDiminution!=0){
@@ -1408,7 +1408,7 @@ public class Commandant extends Joueur implements Serializable{
    }
 
 
- //Les mÈthodes utilitaires.
+ //Les m√©thodes utilitaires.
 
   public static void transfertPlanete(Commandant ancien,Commandant nouveau,Systeme sys,int numPlanete){
    sys.getPlanete(numPlanete).setProprio(nouveau.getNumero());
@@ -1526,7 +1526,7 @@ public class Commandant extends Joueur implements Serializable{
    return null;
    }
 
- //les mÈthodes utilitaires privÈes.
+ //les m√©thodes utilitaires priv√©es.
 
  private void repartirDroitsEntreeAlliance(Alliance a){
   if(a.estAutocratique())
@@ -1549,7 +1549,7 @@ public class Commandant extends Joueur implements Serializable{
   }
 
 
- //les mÈthodes pour gÈrer les commandants.
+ //les m√©thodes pour g√©rer les commandants.
 
  public boolean dechirerPacteDeNonAgression(int numeroCible){
   if(!existencePacteDeNonAgression(numeroCible))
@@ -1758,7 +1758,7 @@ public class Commandant extends Joueur implements Serializable{
   modifierBudget(Const.BUDGET_COMMANDANT_PRET_FLOTTE,-cout);
   Univers.ajouterRelationRaces(cible.getCapitale(),getRace(),cible.getRace(),
        2*Vaisseau.retournerNiveauPuissance(f.getPuissance()));
-  Univers.ajouterTransfert(this,cible,"prÍt flotte puissance : "+Integer.toString(f.getPuissance()));
+  Univers.ajouterTransfert(this,cible,"pr√™t flotte puissance : "+Integer.toString(f.getPuissance()));
 
   ajouterEvenement("EV_COMMANDANT_DON_FLOTTE_0000",cible.getNomNumero(),numeroFlotte+1,nbTours);
   if((modeTransfert==Const.DON_MODE_NORMAL)&&(Univers.getTest(Const.CHANCE_DON_FLOTTE_PUBLIC)))
@@ -1797,7 +1797,7 @@ public class Commandant extends Joueur implements Serializable{
   }
 
   
-//Fonction permettant le transfert d'une flotte suite ‡ un combat perdu - Capture de la flotte  
+//Fonction permettant le transfert d'une flotte suite √† un combat perdu - Capture de la flotte  
 /* public boolean capturerFlotte(int capteur,int numeroFlotte){
    if(!Univers.existenceCommandant(capteur))
    return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0000",numeroFlotte+1,capteur);
@@ -1832,7 +1832,7 @@ public class Commandant extends Joueur implements Serializable{
   if((cout!=0F)&&(cout>centaures)) return ajouterErreur("ER_COMMANDANT_DON_SYSTEME_0000",pos,destinataire);
 
   Commandant cible=Univers.getCommandant(destinataire);
-  Univers.ajouterTransfert(this,cible,"don systËme puissance : "+Integer.toString(sys.getPuissance(numero)));
+  Univers.ajouterTransfert(this,cible,"don syst√®me puissance : "+Integer.toString(sys.getPuissance(numero)));
   sys.changementDeProprietaire(numero,destinataire);
   Univers.setSysteme(sys);
   cible.transfererPossession(pos,getPossession(pos));
@@ -1867,7 +1867,7 @@ public class Commandant extends Joueur implements Serializable{
   transfertPlanete(this,cible,sys,numPlanete);
   Univers.setSysteme(sys);
   if(cout!=0F) modifierBudget(Const.BUDGET_COMMANDANT_DON_PLANETE,-cout);
-  Univers.ajouterTransfert(this,cible,"don planËte");
+  Univers.ajouterTransfert(this,cible,"don plan√®te");
 
   if((modeTransfert==Const.DON_MODE_NORMAL)&&(Univers.getTest(Const.CHANCE_DON_PLANETE_PUBLIC)))
    Univers.ajouterEvenement("EV_COMMANDANT_DON_PLANETE_0002",getNomNumero(),cible.getNomNumero(),pos);
@@ -2090,7 +2090,7 @@ public class Commandant extends Joueur implements Serializable{
   if(sys.getPlanete(nPlanete).getProprio()==0) reussite=0; //##########
   //##########
   }
-  //Annulation de tous les vols technologique entre joueurs d'une mÍme alliance
+  //Annulation de tous les vols technologique entre joueurs d'une m√™me alliance
   if(typeMission==Const.MISSION_VOL_TECHNOLOGIE){          //##########
         int[] p=numerosAlliances();
         if(p.length>0){
@@ -2396,12 +2396,12 @@ public class Commandant extends Joueur implements Serializable{
 
   int numRace=f.trouverColonisateur().getRaceEquipage();
   
-  /*********************************** Rajout jÈrÙme ********************************************/
+  /*********************************** Rajout j√©r√¥me ********************************************/
 //Si un commandant non arachnyde veut coloniser une planete en arachnyde :
 /*
 if(numRace == 3 && getRace() != 3 )
 {
- //On recupËre la liste des planets du systËme :
+ //On recup√®re la liste des planets du syst√®me :
  Planete pla[] = sys.getPlanetes();  
  for(int i=0;i<pla.length;i++)
  {
@@ -2409,10 +2409,10 @@ if(numRace == 3 && getRace() != 3 )
    pla[i].setStabilite(pla[i].getStabilite() - 6) ; 
  }
 }
-//colonisation d'un systËme par un commandant arachnyde :
+//colonisation d'un syst√®me par un commandant arachnyde :
 if( numRace != 3 && getRace() == 3)
 {
-  //On recupËre la liste des planets du systËme :
+  //On recup√®re la liste des planets du syst√®me :
  Planete pla[] = sys.getPlanetes();  
  for(int i=0;i<pla.length;i++)
  {
@@ -2420,7 +2420,7 @@ if( numRace != 3 && getRace() == 3)
    pla[i].setStabilite(pla[i].getStabilite() - 6) ; 
  }
 }
-/************************ Fin rajout JÈrÙme ***********************/
+/************************ Fin rajout J√©r√¥me ***********************/
  
   boolean reussite=sys.getPlanete(numPlanete).explorerPlanete(numRace);
   if(reussite) {

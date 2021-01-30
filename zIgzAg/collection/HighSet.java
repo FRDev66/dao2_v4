@@ -7,9 +7,9 @@ package zIgzAg.collection;
 import java.util.Set;
 
 /**
- * Cette interface hérite de l'interface <i>java.util.Set</i> mais
- * ses caractéristiques sont légèrement différentes.
- * Consultez la documentation de la classe HighHashSet à ce propos.
+ * Cette interface hÃ©rite de l'interface <i>java.util.Set</i> mais
+ * ses caractÃ©ristiques sont lÃ©gÃ¨rement diffÃ©rentes.
+ * Consultez la documentation de la classe HighHashSet Ã  ce propos.
  *
  * @author  Julien Buret
  * @version 1.00, 20/12/00

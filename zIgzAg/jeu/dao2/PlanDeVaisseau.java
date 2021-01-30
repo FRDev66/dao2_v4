@@ -26,23 +26,23 @@ public class PlanDeVaisseau extends Produit implements Serializable{
  private String marque;
  private String description;
  private int acces;
- //0 si public 1 si privÈ 2 si d'alliance 3 si rÈservÈ ‡ une race.
+ //0 si public 1 si priv√© 2 si d'alliance 3 si r√©serv√© √† une race.
  private int precisionAcces;
- //-1 si public ou privÈ, sinon le numÈro de l'alliance ou de la race.
+ //-1 si public ou priv√©, sinon le num√©ro de l'alliance ou de la race.
  private int tourDeCreation;
 
  private int nbCases;
 
  private transient ComposantDeVaisseau[] composantsDeVaisseau;
 
- //les mÈthodes d'accËs
+ //les m√©thodes d'acc√®s
 
-// --> mÈthode provisoire :
+// --> m√©thode provisoire :
  public String[] getC(){return composants;}
  public void setAcces(int a){acces=a;}
  public void setPrecisionAcces(int a){precisionAcces=a;}
 
-// fin mÈthodes provisoires
+// fin m√©thodes provisoires
 
  public boolean estPublic(){if(acces==0) return true; else return false;}
  public boolean estPrive(){if(acces==1) return true; else return false;}
@@ -121,7 +121,7 @@ public class PlanDeVaisseau extends Produit implements Serializable{
  public boolean concepteurInconnu(){if(concepteurNum==-1) return true; else return false;}
  public boolean marqueInconnue(){if(marque==null) return true; else return false;}
 
- //les mÈthodes statiques "basiques"
+ //les m√©thodes statiques "basiques"
 
  public static int[] traductionDomaine(String d){
   int[] retour=new int[2];
@@ -234,7 +234,7 @@ public class PlanDeVaisseau extends Produit implements Serializable{
   tourDeCreation=tour;
   }
 
- //les autres mÈthodes
+ //les autres m√©thodes
 
  public boolean possedeCaracteristiqueSpeciale(int carac,int[] invalides){
   determinerComposantsDeVaisseau();
@@ -554,8 +554,8 @@ public class PlanDeVaisseau extends Produit implements Serializable{
         compo,
         nom,mark,"",
         domaine,domaine2,royal,
-        //domaine : 0 public, 1 privÈ, 2 alliance, 3 race
-        //domaine2 : -1 public privÈ, numero alliance ou race
+        //domaine : 0 public, 1 priv√©, 2 alliance, 3 race
+        //domaine2 : -1 public priv√©, numero alliance ou race
         capaspe,
         minerai,prix,
         marchan,

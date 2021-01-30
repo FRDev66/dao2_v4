@@ -40,7 +40,7 @@ public class Vaisseau implements Serializable{
   private boolean detruit;
 
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public void setType(String entree){type=entree;}
  public void setRaceEquipage(int entree){raceEquipage=entree;}
@@ -486,13 +486,13 @@ public class Vaisseau implements Serializable{
   initialiserCargaison();
   }
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
  public static Vaisseau creer(String typeDeVaisseau,int race){
   return new Vaisseau(Utile.getNom(),typeDeVaisseau,race);
   }
 
- //autres méthodes.
+ //autres mÃ©thodes.
 
  public void planifierTransmission(int numeroDonneur,int tourRetour){
   proprietaire=numeroDonneur;
@@ -681,7 +681,7 @@ public class Vaisseau implements Serializable{
   return retour;
   }
 
- //méthodes statiques.
+ //mÃ©thodes statiques.
 
  public static int retournerNiveauExperience(int entree){
   if(entree<Const.BASE_NIVEAU_EXPERIENCE*2) return 0;
@@ -717,11 +717,11 @@ public class Vaisseau implements Serializable{
   if(entree<500*Const.BASE_NIVEAU_PUISSANCE)return 7;
   if(entree<1000*Const.BASE_NIVEAU_PUISSANCE)return 8;
   if(entree<2000*Const.BASE_NIVEAU_PUISSANCE)return 9;  //gargantuesque
-  if(entree<4000*Const.BASE_NIVEAU_PUISSANCE)return 10;  //cyclopéenne
+  if(entree<4000*Const.BASE_NIVEAU_PUISSANCE)return 10;  //cyclopÃ©enne
   return 11;  //inimaginable
   }
 
- //Méthode Vaisseau.getNbCibleMax()-- nombre de tir = return+1.
+ //MÃ©thode Vaisseau.getNbCibleMax()-- nombre de tir = return+1.
   public int getNbCibleMax()
   {
 	determinerCaracteristiquesTemporaires();

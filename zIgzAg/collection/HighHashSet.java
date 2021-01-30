@@ -9,12 +9,12 @@ import java.util.Iterator;
 import java.util.AbstractSet;
 import java.io.Serializable;
 
-/** Similaire à la classe <i>java.util.HashSet</i>, sauf que si les références des objets
- * sont bien stockés, ils sont classés en utilisant le résultat de leur méthode
- * <i>hashCode()</i> uniquement. Deux objets ayant le même résultat par la méthode
- * <i>hashCode()</i> seront donc considérés comme identiques.
- * Le gros avantage de cette classe est que l'on peut récupérer les objets stockés
- * grace à la méthode <i>get(int o)</i>.
+/** Similaire Ã  la classe <i>java.util.HashSet</i>, sauf que si les rÃ©fÃ©rences des objets
+ * sont bien stockÃ©s, ils sont classÃ©s en utilisant le rÃ©sultat de leur mÃ©thode
+ * <i>hashCode()</i> uniquement. Deux objets ayant le mÃªme rÃ©sultat par la mÃ©thode
+ * <i>hashCode()</i> seront donc considÃ©rÃ©s comme identiques.
+ * Le gros avantage de cette classe est que l'on peut rÃ©cupÃ©rer les objets stockÃ©s
+ * grace Ã  la mÃ©thode <i>get(int o)</i>.
  *
  * @author  Julien Buret
  * @version 1.00, 26/12/00
@@ -24,7 +24,7 @@ import java.io.Serializable;
 public class HighHashSet extends AbstractSet implements HighSet, Cloneable, Serializable{
 
  /**
-  * La map utilisé pour le stockage.
+  * La map utilisÃ© pour le stockage.
   */
  private transient IntHashMap map;
 

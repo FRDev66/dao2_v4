@@ -41,7 +41,7 @@ public class SessionMysql extends SessionSQL{
   }
 
 
- // méthodes temporaires "spécial mysql" --->
+ // mÃ©thodes temporaires "spÃ©cial mysql" --->
 
   public String[] listeTables(Connection c){
   ArrayList a=new ArrayList();

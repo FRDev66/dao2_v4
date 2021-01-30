@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.Collection;
 
 /**
- * Similaire à la classe <i>java.util.AbstractCollection</i> mais pour les entiers.
+ * Similaire Ã  la classe <i>java.util.AbstractCollection</i> mais pour les entiers.
  *
  * @author  Julien Buret
  * @version 1.00, 20/12/00
@@ -66,10 +66,10 @@ public abstract class AbstractIntCollection implements IntCollection {
   }
 
  /**
-  * Ajoute un entier à la collection.
-  * @param l'entier à ajouter.
-  * @return <tt>true</tt> si la collection a changée après l'utilisation de
-  *         cette méthode.
+  * Ajoute un entier Ã  la collection.
+  * @param l'entier Ã  ajouter.
+  * @return <tt>true</tt> si la collection a changÃ©e aprÃ¨s l'utilisation de
+  *         cette mÃ©thode.
   */
  public boolean add(int o) {throw new UnsupportedOperationException();}
 

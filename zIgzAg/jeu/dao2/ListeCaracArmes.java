@@ -24,7 +24,7 @@ public interface ListeCaracArmes {
 
  
 public static final String[] CARACTERISTIQUES_ARMES={"Vitesse de base","Dommage bouclier","Dommage coque","Dommage au sol",
-    "Portée","Fiabilité"};
+    "PortÃ©e","FiabilitÃ©"};
 */
 
 

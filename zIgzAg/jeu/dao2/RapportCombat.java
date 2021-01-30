@@ -36,7 +36,7 @@ public class RapportCombat{
  public void setCombatPlanetaire(Flotte flotteAtt,Systeme s,int[] numPlanetes){
   nomFlotteAttaquante=flotteAtt.getNom();
   nomSystemeAttaque=s.getNom();
-  if((numPlanetes==null)||(numPlanetes.length==0)) nomsPlanetesPrises=" (aucune planète prise)";
+  if((numPlanetes==null)||(numPlanetes.length==0)) nomsPlanetesPrises=" (aucune planÃ¨te prise)";
    else nomsPlanetesPrises=" (";
   if(numPlanetes!=null)
    for(int i=0;i<numPlanetes.length;i++){
@@ -49,8 +49,8 @@ public class RapportCombat{
  public Position getPosition(){return position;}
 
  public BaliseHTML[] getDescription(){
-  // attaquant - défenseur - type combat - nom flotte attaquante -
-  //  { nom flotte défensive ou nom système && planètes prises}
+  // attaquant - dÃ©fenseur - type combat - nom flotte attaquante -
+  //  { nom flotte dÃ©fensive ou nom systÃ¨me && planÃ¨tes prises}
   BaliseHTML[] retour=new BaliseHTML[5];
   retour[0]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(
               Rapport.getFont(Rapport.cC[3],null).ajout(
@@ -62,7 +62,7 @@ public class RapportCombat{
    retour[2]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(
               Rapport.getText("spatial") );
    else retour[2]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(
-              Rapport.getText("planétaire") );
+              Rapport.getText("planÃ©taire") );
 
   retour[3]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(
               Rapport.getText(nomFlotteAttaquante) );

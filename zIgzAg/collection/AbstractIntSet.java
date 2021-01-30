@@ -7,7 +7,7 @@ package zIgzAg.collection;
 import java.util.Collection;
 
 /**
- * Similaire à la classe <i>java.util.AbstractSet</i>
+ * Similaire Ã  la classe <i>java.util.AbstractSet</i>
  * mais pour les entiers.
  *
  * @author  Julien Buret

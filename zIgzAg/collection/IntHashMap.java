@@ -14,17 +14,19 @@ import java.util.Iterator;
 import java.util.ConcurrentModificationException;
 import java.util.NoSuchElementException;
 import java.io.Serializable;
-import java.io.IOException;
 
-/**
- * Cette classe est similaire ‡ la classe <i>java.util.HashMap</i>, exceptÈ
- * le fait qu'elle n'accepte que des entiers comme clÈs.
+import java.io.IOException;
+
+
+/**
+ * Cette classe est similaire √† la classe <i>java.util.HashMap</i>, except√©
+ * le fait qu'elle n'accepte que des entiers comme cl√©s.
  *
- * La compatibilitÈ avec l'interface <i>java.util.Map</i> est assurÈe,
+ * La compatibilit√© avec l'interface <i>java.util.Map</i> est assur√©e,
  * mais comme d'habitude pour les classes de ce package,
- * il faut garder ‡ l'esprit que les objets Èventuellement stockÈs comme clÈs
- * ne le sont que sous la forme d'entiers reprÈsentant le rÈsultat
- * de leur mÈthode <i>hashCode()</i>.
+ * il faut garder √† l'esprit que les objets √©ventuellement stock√©s comme cl√©s
+ * ne le sont que sous la forme d'entiers repr√©sentant le r√©sultat
+ * de leur m√©thode <i>hashCode()</i>.
  *
  * @author  Julien Buret
  * @version 1.00, 20/12/00
@@ -347,7 +349,7 @@ public class IntHashMap extends AbstractMap implements IntMap, Cloneable, Serial
    return new Entry(hash, value,(next==null ? null : (Entry)next.clone()));
    }
 
-   //juste l‡ pour l'interface(‡ ne pas utiliser :) )
+   //juste l√† pour l'interface(√† ne pas utiliser :) )
   public Object getKey() {return new Integer(hash);}
 
   public int getIntKey(){return hash;}

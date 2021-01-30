@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * Cette interface prolonge l'interface <i>java.util.Map</i>,
- * mais avec des entiers comme clés et comme valeurs.
+ * mais avec des entiers comme clÃ©s et comme valeurs.
  *
  * @author  Julien Buret
  * @version 1.00, 20/12/00

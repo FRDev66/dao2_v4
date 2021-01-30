@@ -67,10 +67,10 @@ import zIgzAg.html.BaliseHTML;
   public void setPos(int[] e){pos=e;}
 
   public int getNumeroSecteur(){
-   return 1+((pos[1]-1)/20)+7*((pos[0]-1)/20); //########## remplacé le 5 par 7.
+   return 1+((pos[1]-1)/20)+7*((pos[0]-1)/20); //########## remplacÃ© le 5 par 7.
    }
 
-  //méthode pour obtenir une position au hasard.
+  //mÃ©thode pour obtenir une position au hasard.
 
   public static Position auHasard(int galaxie){
    Position retour=new Position();
@@ -79,7 +79,7 @@ import zIgzAg.html.BaliseHTML;
    return retour;
    }
 
-  //methode pour vérifier si une position est dans les bornes prévues.
+  //methode pour vÃ©rifier si une position est dans les bornes prÃ©vues.
 
   public static boolean existe(Position p){
    if((p.getNumeroGalaxie()<0)||(p.getNumeroGalaxie()>Const.NB_GALAXIES)) return false;
@@ -88,7 +88,7 @@ import zIgzAg.html.BaliseHTML;
    return true;
    }
 
-  //méthodes pour tester l'égalité et utiliser la classe Position comme clé dans une Hashtable ou une TreeMap.
+  //mÃ©thodes pour tester l'Ã©galitÃ© et utiliser la classe Position comme clÃ© dans une Hashtable ou une TreeMap.
 
   public boolean equals(Object objet){
    if(objet==null) return false;
@@ -116,7 +116,7 @@ import zIgzAg.html.BaliseHTML;
    return new Position(galaxie,pos);
    }
 
-  //représentation "de base".
+  //reprÃ©sentation "de base".
 
   public String toString(){
    return Integer.toString(galaxie)+"_"+Integer.toString(pos[0])+"_"+Integer.toString(pos[1]);
@@ -148,7 +148,7 @@ import zIgzAg.html.BaliseHTML;
     }
    }
 
-  //nouvelle position après un déplacement de x case et autres fonctions de déplacement.
+  //nouvelle position aprÃ¨s un dÃ©placement de x case et autres fonctions de dÃ©placement.
 
   public static Position positionAtteinte(Position depart,Position arrivee,int x){
    Position retour=(Position)depart.clone();

@@ -13,7 +13,7 @@ public class Batiment extends Produit{
  private int pointsDeConstructionNecessaires;
  private String codeArme;
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public int getPointsDeConstruction(){return pointsDeConstructionNecessaires;}
  public int getPointsDeStructure(){return structure;}
@@ -24,7 +24,7 @@ public class Batiment extends Produit{
    else return (Arme)Univers.getTechnologie(codeArme+getRepresentationNiveau());
   }
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
  //Le constructeur
 
@@ -39,7 +39,7 @@ public class Batiment extends Produit{
   codeArme=cA;
   }
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
 
 

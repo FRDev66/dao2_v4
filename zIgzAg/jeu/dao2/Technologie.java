@@ -21,7 +21,7 @@ public class Technologie implements Serializable{
  private transient int pointsDeRecherche;
  private int[][] caracteristiquesSpeciales;
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public String getCode(){return (codeDeBase+getRepresentationNiveau());}
  public String getCorpsCode(){return codeDeBase;}
@@ -90,7 +90,7 @@ public class Technologie implements Serializable{
  public boolean estComposantDeVaisseau(){return this instanceof ComposantDeVaisseau;}
  public boolean estTechnologieSimple(){return (!estBatiment())&&(!estComposantDeVaisseau());}
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
  public static Technologie[] transformationCode(String[] entree){
   Technologie[] retour=new Technologie[entree.length];
@@ -145,7 +145,7 @@ public class Technologie implements Serializable{
   caracteristiquesSpeciales=caracS;
   }
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
 
 

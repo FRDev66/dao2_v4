@@ -15,7 +15,7 @@ import zIgzAg.utile.Mdt;
  public class Utile{
 
   public static final String[] ROMAINS={"I","II","III","IV","V","VI","VII","VIII","IX","X"};
-  //Les chiffres romains de 1 à 10
+  //Les chiffres romains de 1 Ã  10
 
   public static String getNom(){
    char[] alpha=
@@ -40,18 +40,18 @@ import zIgzAg.utile.Mdt;
   if(entree.length()==1) return entree.toUpperCase();
   return entree.substring(0,1).toUpperCase()+entree.substring(1,entree.length());
   }
-  //met la première lettre du mot en majuscule.
+  //met la premiÃ¨re lettre du mot en majuscule.
 
  public static float aD(float valeur,int nbDecimales){
   float ar=nbDecimales*10F;
   Integer a=new Integer(Math.round(valeur*ar));
   return a.floatValue()/ar;
   }
- //arrondit à nbDecimales.
+ //arrondit Ã  nbDecimales.
 
  public static float a1D(float valeur){return aD(valeur,1);}
  public static float a2D(float valeur){return aD(valeur,2);}
- //arrondit à une ou deux décimales.
+ //arrondit Ã  une ou deux dÃ©cimales.
 
 
   public static int getRaceDeDepart(Position pos){
@@ -66,7 +66,7 @@ import zIgzAg.utile.Mdt;
    return -1;
    }
 
-  // Une fonction qui retourne la race de départ pour une position donnée.
+  // Une fonction qui retourne la race de dÃ©part pour une position donnÃ©e.
 
   public static String getDate(){
    GregorianCalendar gc=new GregorianCalendar();
@@ -79,7 +79,7 @@ import zIgzAg.utile.Mdt;
    return retour;
    }
 
-  // Une fonction qui retourne une version de la date en chaine de caractères.
+  // Une fonction qui retourne une version de la date en chaine de caractÃ¨res.
 
   private static String changeInt(int entree){
    String retour=Integer.toString(entree);
@@ -87,7 +87,7 @@ import zIgzAg.utile.Mdt;
    return retour;
    }
 
-  //Une fonction qui retourne un nombre à un ou deux chiffres comme String de deux chiffres.
+  //Une fonction qui retourne un nombre Ã  un ou deux chiffres comme String de deux chiffres.
 
 
 
@@ -129,7 +129,7 @@ import zIgzAg.utile.Mdt;
    return retour;
    }
 
-  //une fonction qui transforme un tableau d'Objet en un tableau des résultats des fonctions toString() coorespondants.
+  //une fonction qui transforme un tableau d'Objet en un tableau des rÃ©sultats des fonctions toString() coorespondants.
 
   public static Integer[] retournerTableauEntiers(int borne){
    Integer[] retour=new Integer[borne+1];
@@ -147,7 +147,7 @@ import zIgzAg.utile.Mdt;
    return Mdt.position(Messages.RACES,code);
    }
 
-   //fonctions pour trouver le numéro correspondant au code.
+   //fonctions pour trouver le numÃ©ro correspondant au code.
 
   public static String choisirLogin(){
    char[] alpha={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
@@ -176,7 +176,7 @@ import zIgzAg.utile.Mdt;
    return r;
    }
 
-  //renvoit un tableau d'entier de taille t remplis avec t entiers distincts de 0 à t-1 dans un ordre au hasard.
+  //renvoit un tableau d'entier de taille t remplis avec t entiers distincts de 0 Ã  t-1 dans un ordre au hasard.
 
 
   }

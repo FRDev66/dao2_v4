@@ -13,7 +13,7 @@ public class ComposantDeVaisseau extends Produit{
  private String type;
  private int nombreDeCasesPrises;
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public boolean estArme(){if(type.equals(Const.CV_ARME)) return true; else return false;}
  public boolean estMoteur(){if(type.equals(Const.CV_MOTEUR)) return true; else return false;}
@@ -26,7 +26,7 @@ public class ComposantDeVaisseau extends Produit{
   return getValeurCaracteristiqueSpeciale(Const.COMPOSANT_CAPACITE_BOUCLIER_MAGNETIQUE);
   }
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
  //Le constructeur
 
@@ -40,7 +40,7 @@ public class ComposantDeVaisseau extends Produit{
   nombreDeCasesPrises=nbCases;
   }
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
 
 

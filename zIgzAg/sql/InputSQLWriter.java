@@ -31,13 +31,13 @@ public class InputSQLWriter{
   registreClasses=new HashMap();
   }
 
-// accéder et remplir le registre des ObjetSQL -->
+// accÃ©der et remplir le registre des ObjetSQL -->
 
  public void putObjetSQL(int valeur,Object o){
   registreChargement.put(valeur,o);
   }
 
-// méthodes pour type de classes spécial --->
+// mÃ©thodes pour type de classes spÃ©cial --->
 
  public int ajouterMap(Map m){
   int cles=ajouterTable(m.keySet().toArray());
@@ -61,7 +61,7 @@ public class InputSQLWriter{
   return ajouterObjet(c);
   }
 
-//méthode de départ --->
+//mÃ©thode de dÃ©part --->
 
  public Object chargerObjet(Object o,int index){
 
@@ -71,7 +71,7 @@ public class InputSQLWriter{
   }
 
 
-// méthode principale --->
+// mÃ©thode principale --->
 
  public Object charger(Object o,int index){
   if(index==-1) return null;
@@ -126,7 +126,7 @@ public class InputSQLWriter{
     else if(o instanceof Collection) return ajouterCollection((Collection)o);
    //Map
     else if(o instanceof Map) return ajouterMap((Map)o);
- //Cas général
+ //Cas gÃ©nÃ©ral
   else{
    Class c=o.getClass();
 
@@ -183,7 +183,7 @@ public class InputSQLWriter{
   super(host,nomBase);
   chargerDescriptionTables();
   chargerResultats();
-  System.out.println("Phase accès fichier du chargement terminée");
+  System.out.println("Phase accÃ¨s fichier du chargement terminÃ©e");
   }
 
  public void chargerDescriptionTables(){
@@ -215,7 +215,7 @@ public class InputSQLWriter{
     r.close();
     s.close();
     resultat.put(liste[i],h);
-    System.out.println("Table "+Integer.toString(i+1)+" sur "+Integer.toString(liste.length)+" chargée");
+    System.out.println("Table "+Integer.toString(i+1)+" sur "+Integer.toString(liste.length)+" chargÃ©e");
     }
    catch(SQLException e){
     System.out.println("SQLException: " + e.getMessage());
@@ -322,7 +322,7 @@ public class InputSQLWriter{
    for(int j=0;j<d[1];j++)
     remplirTableau(o2,j,c,typeC,tableauIndex++);
    }
-  else{System.out.println("Taille tableau non supportée");System.exit(0);}
+  else{System.out.println("Taille tableau non supportÃ©e");System.exit(0);}
 
  supprimerResultat(TABLEAU,cle);
  return o;

@@ -41,7 +41,7 @@ public abstract class Leader implements Serializable{
 
  private int nombreDeMorts;
 
- //méthodes d'accès.
+ //mÃ©thodes d'accÃ¨s.
 
  public void setExperience(int xp){experience=xp;}
  public void setTourApparition(int ta){tourApparition=ta;}
@@ -101,7 +101,7 @@ public abstract class Leader implements Serializable{
   String retour=new String();
   for(int i=0;i<m.length;i++){
    retour=retour+Utile.maj(t[((Integer)m[i].getKey()).intValue()])+" "+
-            Utile.ROMAINS[Math.max(0,((Integer)m[i].getValue()).intValue()-1)]; //modifier après béta
+            Utile.ROMAINS[Math.max(0,((Integer)m[i].getValue()).intValue()-1)]; //modifier aprÃ¨s bÃ©ta
    if(m.length!=i+1) retour=retour+"<BR>";
    }
   return retour;
@@ -114,7 +114,7 @@ public abstract class Leader implements Serializable{
  public int getNiveauCompetence(int comp){
   Object o=competences.get(new Integer(comp));
   if(o==null) return 0;
-  //à modifier après la béta.
+  //Ã  modifier aprÃ¨s la bÃ©ta.
    if(((Integer)o).intValue()==0) return 1;
     else return ((Integer)o).intValue();
   }
@@ -193,7 +193,7 @@ public abstract class Leader implements Serializable{
   niveau=1;
   }
 
- //méthodes abstraites.
+ //mÃ©thodes abstraites.
 
  public abstract boolean estEnReserve();
  public abstract void mettreEnReserve();
@@ -201,7 +201,7 @@ public abstract class Leader implements Serializable{
  public abstract int competenceNouvelleAuHasard(int ra);
  public abstract String descriptionPosition(Locale l);
 
- //méthodes statiques.
+ //mÃ©thodes statiques.
 
  public static Leader creer(String sorte){
   Leader l;
@@ -252,7 +252,7 @@ public abstract class Leader implements Serializable{
   tourApparition=tour;
   }
 
- // autres méthodes.
+ // autres mÃ©thodes.
 
  public int ajouterCompetenceAuHasard(){
   int retour=competenceNouvelleAuHasard(race);

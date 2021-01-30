@@ -11,11 +11,11 @@ import zIgzAg.utile.Copie;
 
 public class Chemin{
 
- /* Cette classe contient les différents chemins où sont stockés certains fichiers*/
+ /* Cette classe contient les diffÃ©rents chemins oÃ¹ sont stockÃ©s certains fichiers*/
 
  //public static final String RACINE="c:/o2/Univers/";
  public static final String RACINE="D:/JEU/dao2_v4/Univers/";
-  //le repertoire où on va tout ranger.
+  //le repertoire oÃ¹ on va tout ranger.
 
  public static final String CARNET_DE_BORD=RACINE+"carnet.txt";
  public static final String NUMERO_DU_TOUR=RACINE+"tour.txt";
@@ -26,22 +26,22 @@ public class Chemin{
  public static final String SITE_REGISTRE="http://millesroyaumes.fr/dao2/registre/registre.php3";
 
  public static final String MJ=RACINE+"mj/";
-  //Le repertoire où est stocké les informations nécessaires au mj.
+  //Le repertoire oÃ¹ est stockÃ© les informations nÃ©cessaires au mj.
 
  public static final String IMAGES_RESERVE=RACINE+"images/";
-  //les images de réserve
+  //les images de rÃ©serve
 
  public static final String ATLAS=RACINE+"atlas/";
-  //Le repertoire où est stocké les informations de l'atlas.
+  //Le repertoire oÃ¹ est stockÃ© les informations de l'atlas.
 
  public static final String FICHIERS=RACINE+"fichiers/";
-  //Le repertoire où sont stockés les fichiers "persistants";
+  //Le repertoire oÃ¹ sont stockÃ©s les fichiers "persistants";
 
  public static final String FICHIER_RAPPORTS_IMAGES=FICHIERS+"images";
  public static final String FICHIER_STATS=FICHIERS+"stats.htm";
 
  public static String DONNEES;
-  //le repertoire où sont stokées les données.
+  //le repertoire oÃ¹ sont stokÃ©es les donnÃ©es.
 
  public static String COMMANDANTS;
  public static String SYSTEMES;
@@ -58,31 +58,31 @@ public class Chemin{
  public static String TRANSIENTS;
 
  public static String RAPPORTS;
-  //le repertoire où sont stockés les rapports.
+  //le repertoire oÃ¹ sont stockÃ©s les rapports.
 
  public static String ZIP;
-  //le repertoire où sont stockés les rapports.
+  //le repertoire oÃ¹ sont stockÃ©s les rapports.
 
  public static String RAPPORTS_IMAGES;
-  //Le répertoire où sont stockées les images des rapports.
+  //Le rÃ©pertoire oÃ¹ sont stockÃ©es les images des rapports.
 
  public static String ORDRES;
-  //le repertoire où sont stockés les fichiers nécessaires pour passer les ordres.
+  //le repertoire oÃ¹ sont stockÃ©s les fichiers nÃ©cessaires pour passer les ordres.
 
  public static String DONNEES_ORDRES;
  //le fichier sql principal.
 
  public static String SECURITE_RAPPORT;
- //le répertoire de sécurité pour les rapports.
+ //le rÃ©pertoire de sÃ©curitÃ© pour les rapports.
 
  public static String DONNEES_RACES;
  //le fichier descriptif des races.
 
  public static String SECURITE;
-  //le repertoire où sont stockés les informations à sécuriser.
+  //le repertoire oÃ¹ sont stockÃ©s les informations Ã  sÃ©curiser.
 
  public static String STATS;
-  //Le repertoire où sont stockées les différentes stats.
+  //Le repertoire oÃ¹ sont stockÃ©es les diffÃ©rentes stats.
 
  private static String c(String valeur,boolean rep){
   String inter=valeur;

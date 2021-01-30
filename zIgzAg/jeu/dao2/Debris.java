@@ -17,7 +17,7 @@ public class Debris implements Serializable{
  private Position position;
  private HashMap debris;
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public Position getPosition(){return position;}
 
@@ -43,7 +43,7 @@ public class Debris implements Serializable{
 
 
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
 
  //Le constructeur
@@ -59,7 +59,7 @@ public class Debris implements Serializable{
   ajouterObstacle(type,nombre);
   }
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
  public void ajouterObstacle(int type,int nombre){
   if (debris==null) debris=new HashMap(1);

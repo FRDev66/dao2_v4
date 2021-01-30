@@ -550,8 +550,8 @@ public interface Const{
   "renommer_systeme","renommer_planete","renommer_flotte","renommer_lieutenant","renommer_alliance",
   "ecrire_adresse_commandant","ecrire_adresse_alliance","ecrire_article",
   "diviser_flotte_ajouter","creer_plan_ajouter","creer_strategie_ajouter"};
-  //le nom des tables des diff�rents ordres.Attention! elles servent �galement � d�finir les m�thodes de r�ception d'ordre,
-  //ainsi que les productions d'ordres! Donn�es sensibles :o) !!!
+  //le nom des tables des différents ordres. Attention! elles servent également à définir les méthodes de réception d'ordre,
+  //ainsi que les productions d'ordres! Données sensibles :o) !!!
 
  public static final int BORNE_ORDRES_VISIBLES=NOMS_TABLES_ORDRES.length-3;
  //la borne des ordres visibles.

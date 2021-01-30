@@ -21,7 +21,7 @@ public class StrategieDeCombatSpatial implements Serializable {
  int agressivite;
  int typeCible;
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public String getNom(){return nom;}
 
@@ -48,7 +48,7 @@ public class StrategieDeCombatSpatial implements Serializable {
 
  public static boolean estStrategieParDefaut(String code){return code.equals(Const.STRATEGIE_DEFAUT.getNom());}
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
  public static boolean[] estStrategieValide(Commandant c,int agress,int typeC,String[] vaisseau,int[][] pos,int[][] tC){
   if(agress>Const.STRATEGIE_AGRESSIVITE_NB_MAXIMAL){
@@ -102,7 +102,7 @@ public class StrategieDeCombatSpatial implements Serializable {
    }
   }
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
 
 

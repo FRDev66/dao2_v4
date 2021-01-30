@@ -7,13 +7,13 @@ package zIgzAg.utile;
 
 import java.lang.reflect.Array;
 
-/** Cette classe contient des méthodes statiques permettant de modifier et d'utiliser des tableaux de types primitifs,
+/** Cette classe contient des mÃ©thodes statiques permettant de modifier et d'utiliser des tableaux de types primitifs,
   * des tableaux d'objets ainsi que des index simples.<br><br>
-  * En fait son nom est l'abréviation de &quot;Manipulation de Tableau&quot;.<br><br>
-  * Les opérations ne sont pas synchronisées. Les index(en ce qui concerne les types primitifs) sont à utiliser
+  * En fait son nom est l'abrÃ©viation de &quot;Manipulation de Tableau&quot;.<br><br>
+  * Les opÃ©rations ne sont pas synchronisÃ©es. Les index(en ce qui concerne les types primitifs) sont Ã  utiliser
   * dans le cas d'index changeant rarement de taille.
-  * On économise alors le temps utilisé par les &quot;casts&quot; des autres classes de ce type.
-  * Dans le cas contraire, il est préférable d'utiliser des <code>ArrayList</code>, ou des <code>HashMap</code>...
+  * On Ã©conomise alors le temps utilisÃ© par les &quot;casts&quot; des autres classes de ce type.
+  * Dans le cas contraire, il est prÃ©fÃ©rable d'utiliser des <code>ArrayList</code>, ou des <code>HashMap</code>...
   * @author Julien Buret
   * @version 1.4
   * @see java.util.HashMap
@@ -21,15 +21,15 @@ import java.lang.reflect.Array;
   */
 public class Mdt{
 
-/** cette classe ne peut être instanciée.
+/** cette classe ne peut Ãªtre instanciÃ©e.
   */
  private Mdt(){}
 
 
-/** Retourne un tableau d'entiers auquel on a ajouté un élément.
-  * @param tab le tableau de départ.
+/** Retourne un tableau d'entiers auquel on a ajoutÃ© un Ã©lÃ©ment.
+  * @param tab le tableau de dÃ©part.
   * @param val la nouvelle valeur.
-  * @return le tableau résultat.
+  * @return le tableau rÃ©sultat.
   */
  public static int[] ajout(int[] tab,int val){
   int[] retour;
@@ -42,10 +42,10 @@ public class Mdt{
   return retour;
   }
 
-/** Retourne la première position d'un élément dans un tableau.
-  * @param tab le tableau de départ.
-  * @param val la valeur cherchée.
-  * @return la première position. <tt>-1</tt> si la valeur n'est pas présente.
+/** Retourne la premiÃ¨re position d'un Ã©lÃ©ment dans un tableau.
+  * @param tab le tableau de dÃ©part.
+  * @param val la valeur cherchÃ©e.
+  * @return la premiÃ¨re position. <tt>-1</tt> si la valeur n'est pas prÃ©sente.
   */
  public static int position(int[] tab,int val){
   if(tab!=null)
@@ -54,10 +54,10 @@ public class Mdt{
   return -1;
   }
 
-/** Indique si un élément est présent ou non.
-  * @param tab le tableau de départ.
-  * @param val la valeur cherchée.
-  * @return <tt>true</tt> si l'élément est présent, <tt>false</tt> sinon.
+/** Indique si un Ã©lÃ©ment est prÃ©sent ou non.
+  * @param tab le tableau de dÃ©part.
+  * @param val la valeur cherchÃ©e.
+  * @return <tt>true</tt> si l'Ã©lÃ©ment est prÃ©sent, <tt>false</tt> sinon.
   */
  public static boolean estPresent(int[] tab,int val){
   if(position(tab,val)==-1) return false;
@@ -65,11 +65,11 @@ public class Mdt{
   }
 
 
-/** Dans le cas d'un tableau à deux dimensions <code>int[<i>n</i>][2]</code> où la première coordonnée correspond à l'index
-  * et la deuxième à la valeur indexée, retourne la valeur correspondant à l'index.
-  * @param tab le tableau de départ.
+/** Dans le cas d'un tableau Ã  deux dimensions <code>int[<i>n</i>][2]</code> oÃ¹ la premiÃ¨re coordonnÃ©e correspond Ã  l'index
+  * et la deuxiÃ¨me Ã  la valeur indexÃ©e, retourne la valeur correspondant Ã  l'index.
+  * @param tab le tableau de dÃ©part.
   * @param index l'index.
-  * @return la première valeur trouvée correspondant à l'index. <tt>0</tt> si l'index n'est pas présent.
+  * @return la premiÃ¨re valeur trouvÃ©e correspondant Ã  l'index. <tt>0</tt> si l'index n'est pas prÃ©sent.
   */
  public static int valeurCorrespondante(int[][] tab,int index){
   if((tab!=null)&&(tab[0].length==2))
@@ -78,11 +78,11 @@ public class Mdt{
   return 0;
   }
 
-/** Dans le cas d'un tableau à deux dimensions <code>int[<i>n</i>][2]</code> où la première coordonnée correspond à l'index
-  * et la deuxième à la valeur indexée, retourne la coordonnée du tableau correspondant à l'index.
-  * @param tab le tableau de départ.
+/** Dans le cas d'un tableau Ã  deux dimensions <code>int[<i>n</i>][2]</code> oÃ¹ la premiÃ¨re coordonnÃ©e correspond Ã  l'index
+  * et la deuxiÃ¨me Ã  la valeur indexÃ©e, retourne la coordonnÃ©e du tableau correspondant Ã  l'index.
+  * @param tab le tableau de dÃ©part.
   * @param index l'index.
-  * @return la première coordonnée trouvée correspondant à l'index. <tt>-1</tt> si l'index n'est pas présent.
+  * @return la premiÃ¨re coordonnÃ©e trouvÃ©e correspondant Ã  l'index. <tt>-1</tt> si l'index n'est pas prÃ©sent.
   */
  public static int indexCorrespondant(int[][] tab,int index){
   if((tab!=null)&&(tab[0].length==2))
@@ -91,13 +91,13 @@ public class Mdt{
   return -1;
   }
 
-/** Dans le cas d'un tableau à deux dimensions <code>int[<i>n</i>][2]</code> où la première coordonnée correspond à l'index
-  * et la deuxième à la valeur indexée, ajoute la valeur de <code>modification</code> à la valeur indexé par
+/** Dans le cas d'un tableau Ã  deux dimensions <code>int[<i>n</i>][2]</code> oÃ¹ la premiÃ¨re coordonnÃ©e correspond Ã  l'index
+  * et la deuxiÃ¨me Ã  la valeur indexÃ©e, ajoute la valeur de <code>modification</code> Ã  la valeur indexÃ© par
   * <code>index</code>.
-  * @param tab le tableau de départ.
+  * @param tab le tableau de dÃ©part.
   * @param index l'index.
   * @param modification la modification.
-  * @return le tableau modifié, le tableau inchangé si l'index n'est pas présent.
+  * @return le tableau modifiÃ©, le tableau inchangÃ© si l'index n'est pas prÃ©sent.
   */
  public static int[][] modifierIndex(int[][] tab,int index,int modification){
   if((tab!=null)&&(tab[0].length==2)){
@@ -107,11 +107,11 @@ public class Mdt{
   return tab;
   }
 
-/** Dans le cas d'un tableau à deux dimensions <code>int[<i>n</i>][2]</code> où la première coordonnée correspond à l'index
-  * et la deuxième à la valeur indexée, ajoute au tableau principal un index et sa valeur.
-  * @param tab le tableau de départ.
-  * @param ajout le couple à rajouter : <code>{index,valeur}</code>.
-  * @return le tableau résultat.
+/** Dans le cas d'un tableau Ã  deux dimensions <code>int[<i>n</i>][2]</code> oÃ¹ la premiÃ¨re coordonnÃ©e correspond Ã  l'index
+  * et la deuxiÃ¨me Ã  la valeur indexÃ©e, ajoute au tableau principal un index et sa valeur.
+  * @param tab le tableau de dÃ©part.
+  * @param ajout le couple Ã  rajouter : <code>{index,valeur}</code>.
+  * @return le tableau rÃ©sultat.
   */
  public static int[][] ajoutCoupleIndex(int[][] tab,int[] ajout){
   if(ajout==null) return tab;
@@ -125,19 +125,19 @@ public class Mdt{
   return retour;
   }
 
-/** Dans le cas d'un tableau à deux dimensions <code>int[<i>n</i>][2]</code> où la première coordonnée correspond à l'index
-  * et la deuxième à la valeur indexée, fusionne deux tableaux de ce type.
+/** Dans le cas d'un tableau Ã  deux dimensions <code>int[<i>n</i>][2]</code> oÃ¹ la premiÃ¨re coordonnÃ©e correspond Ã  l'index
+  * et la deuxiÃ¨me Ã  la valeur indexÃ©e, fusionne deux tableaux de ce type.
   * @param tab1 le premier tableau.
-  * @param tab2 le deuxième tableau.
-  * @return le tableau résultat.
-  * @exception IllegalArgumentException si <code>tab1</code> ou <code>tab2</code> a sa deuxième dimension différente de
+  * @param tab2 le deuxiÃ¨me tableau.
+  * @return le tableau rÃ©sultat.
+  * @exception IllegalArgumentException si <code>tab1</code> ou <code>tab2</code> a sa deuxiÃ¨me dimension diffÃ©rente de
   * <tt>2</tt>.
   */
  public static int[][] ajoutIndex(int[][] tab1,int[][] tab2){
   if(tab2==null) return tab1;
   if(tab1==null) return (int[][])cloneTableau(tab2);
   if((tab1[0].length!=2)||(tab2[0].length!=2))
-   throw new IllegalArgumentException("Index non conforme : la deuxième dimension du tableau n'a pas la bonne dimension");
+   throw new IllegalArgumentException("Index non conforme : la deuxiÃ¨me dimension du tableau n'a pas la bonne dimension");
   int[][] retour=(int[][])cloneTableau(tab1);
   for(int i=0;i<tab2.length;i++){
    int inter=indexCorrespondant(retour,tab2[i][0]);
@@ -147,10 +147,10 @@ public class Mdt{
   return retour;
   }
 
-/** Fusionne deux tableaux d' <code>Object</code> et renvoit le résultat.
+/** Fusionne deux tableaux d' <code>Object</code> et renvoit le rÃ©sultat.
   * @param tab1 le premier tableau.
-  * @param tab2 le deuxième tableau.
-  * @return le tableau résultat.
+  * @param tab2 le deuxiÃ¨me tableau.
+  * @return le tableau rÃ©sultat.
   */
  public static Object[] fusion(Object[] tab1,Object[] tab2){
   if(tab1==null) return tab2;
@@ -161,11 +161,11 @@ public class Mdt{
   return retour;
   }
 
-/** Retourne la première position d'un élément dans un tableau. Le type d'objet utilisé doit implémenter la méthode
-  * <i>equals(Object)</i> pour que cette méthode fonctionne correctement.
-  * @param tab le tableau de départ.
-  * @param val la valeur cherchée.
-  * @return la première position. <tt>-1</tt> si la valeur n'est pas présente.
+/** Retourne la premiÃ¨re position d'un Ã©lÃ©ment dans un tableau. Le type d'objet utilisÃ© doit implÃ©menter la mÃ©thode
+  * <i>equals(Object)</i> pour que cette mÃ©thode fonctionne correctement.
+  * @param tab le tableau de dÃ©part.
+  * @param val la valeur cherchÃ©e.
+  * @return la premiÃ¨re position. <tt>-1</tt> si la valeur n'est pas prÃ©sente.
   */
  public static int position(Object[] tab,Object val){
   if((tab!=null)&&(val!=null))
@@ -174,24 +174,24 @@ public class Mdt{
   return -1;
   }
 
-/** Indique si un élément est présent ou non. Le type d'objet utilisé doit implémenter la méthode
-  * <i>equals(Object)</i> pour que cette méthode fonctionne correctement.
-  * @param tab le tableau de départ.
-  * @param val la valeur cherchée.
-  * @return <tt>true</tt> si l'élément est présent, <tt>false</tt> sinon.
+/** Indique si un Ã©lÃ©ment est prÃ©sent ou non. Le type d'objet utilisÃ© doit implÃ©menter la mÃ©thode
+  * <i>equals(Object)</i> pour que cette mÃ©thode fonctionne correctement.
+  * @param tab le tableau de dÃ©part.
+  * @param val la valeur cherchÃ©e.
+  * @return <tt>true</tt> si l'Ã©lÃ©ment est prÃ©sent, <tt>false</tt> sinon.
   */
  public static boolean estPresent(Object[] tab,Object val){
   if(position(tab,val)==-1) return false;
    else return true;
   }
 
-/** Permet de cloner complètement un tableau ayant un nombre de dimensions supérieur ou égal à 2. <br>
-  * En effet la méthode <code>clone()</code> * des tableaux ne clone que la première dimension... <br>
+/** Permet de cloner complÃ¨tement un tableau ayant un nombre de dimensions supÃ©rieur ou Ã©gal Ã  2. <br>
+  * En effet la mÃ©thode <code>clone()</code> * des tableaux ne clone que la premiÃ¨re dimension... <br>
   * Celle-ci clone toutes les dimensions.<br><br>
-  * Attention, cette méthode ne clone pas les éléments &quot;de base&quot; du tableau, sauf si ceux-ci sont de
+  * Attention, cette mÃ©thode ne clone pas les Ã©lÃ©ments &quot;de base&quot; du tableau, sauf si ceux-ci sont de
   * type primitif.
-  *@param o le tableau (cela peut être un tableau int[][] par exemple)
-  *@return le tableau cloné, <tt>null</tt>, si le tableau est <tt>null</tt>.
+  *@param o le tableau (cela peut Ãªtre un tableau int[][] par exemple)
+  *@return le tableau clonÃ©, <tt>null</tt>, si le tableau est <tt>null</tt>.
   */
  public static Object cloneTableau(Object[] o){
   if(o==null) return null;
@@ -234,7 +234,7 @@ public class Mdt{
   return o2;
   }
 
-/** Renvoit les tailles des différentes dimensions du tableau. <BR><BR>
+/** Renvoit les tailles des diffÃ©rentes dimensions du tableau. <BR><BR>
   * Par exemple, <code>dimensionsTableau(<tt>new int[5][6]</tt>) renverra <tt>{5,6}</tt></code>. <br>
   * Cas particulier : <code>dimensionsTableau(<tt>new int[5][0][4]</tt>) renverra <tt>{5,0,0}</tt></code>.
   *@param o le tableau
@@ -267,10 +267,10 @@ public class Mdt{
   }
 
 
- /** Retourne la liste des positions d'un élément dans un tableau.
-  * @param tab le tableau de départ.
-  * @param val la valeur cherchée.
-  * @return la liste des positions. <tt>null</tt> si la valeur n'est pas présente.
+ /** Retourne la liste des positions d'un Ã©lÃ©ment dans un tableau.
+  * @param tab le tableau de dÃ©part.
+  * @param val la valeur cherchÃ©e.
+  * @return la liste des positions. <tt>null</tt> si la valeur n'est pas prÃ©sente.
   */
  public static int[] listePosition(Object[] tab,Object val){
   int[] retour=null;

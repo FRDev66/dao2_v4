@@ -12,7 +12,7 @@ import java.util.Locale;
 import java.text.MessageFormat;
 import java.io.Serializable;
 
-//un arbre de commentaires à un niveau.
+//un arbre de commentaires Ã  un niveau.
 
 public class Commentaire implements Serializable{
 
@@ -128,8 +128,8 @@ public class Commentaire implements Serializable{
       if(Univers.existenceMessageSysteme(textePrincipal))
         phrase=Univers.getMessageSysteme(textePrincipal)+" ({"+Integer.toString(parametres.length-1)+"})";
          else phrase=textePrincipal;
-   MessageFormat m=new MessageFormat(phrase.replace('\'','£'));
-   return m.format(trad).replace('£','\'');
+   MessageFormat m=new MessageFormat(phrase.replace('\'','$'));
+   return m.format(trad).replace('$','\'');
    }
 
   private String colorier(String entree,int num){

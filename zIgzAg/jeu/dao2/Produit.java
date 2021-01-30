@@ -18,14 +18,14 @@ public class Produit extends Technologie implements Serializable{
  private float prix;
  private int[][] marchandisesNecessaires;
 
-//méthode provisoire
+//mÃ©thode provisoire
 
 public void setPrix(float p){prix=p;}
 
-//fin méthode provisoire
+//fin mÃ©thode provisoire
 
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
  public int getMineraiNecessaire(){return mineraiNecessaire;}
  public float getPrix(){return prix;}
@@ -63,7 +63,7 @@ public void setPrix(float p){prix=p;}
   }
 
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
 
 

@@ -68,12 +68,12 @@ import java.io.*;
   private static transient HashMap CAPACITES_SPECIALES_BATIMENTS;
   private static transient int[][] MARCHANDISES_UNIVERS;
 
-  //Pour obtenir la langue système.
+  //Pour obtenir la langue systÃ¨me.
 
   public static Locale getLocale(){return LANGUE;}
 
 
-  //Pour obtenir un message système.
+  //Pour obtenir un message systÃ¨me.
 
   public static String getMessageSysteme(String code){
    return (String)((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.MessagesSystemes",LANGUE)).handleGetObject(code);
@@ -85,8 +85,8 @@ import java.io.*;
 
 
 
-  //Les méthodes statiques pour obtenir un message de base du programme
-  //(respectivement à partir d'une String ou d'un tableau de String).
+  //Les mÃ©thodes statiques pour obtenir un message de base du programme
+  //(respectivement Ã  partir d'une String ou d'un tableau de String).
 
   public static String getMessage(String code,Locale loc){
    return (String)((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.Messages",loc)).handleGetObject(code);
@@ -100,8 +100,8 @@ import java.io.*;
    return (String[])((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.Messages",loc)).handleGetObject(code);
    }
 
-  //Les méthodes statiques pour obtenir un élément de document HTML.
-  //(respectivement à partir d'une String ou d'un tableau de String).
+  //Les mÃ©thodes statiques pour obtenir un Ã©lÃ©ment de document HTML.
+  //(respectivement Ã  partir d'une String ou d'un tableau de String).
 
   public static Object getMessageRapport(String code,Locale loc){
    return ((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.MessagesRapport",loc)).handleGetObject(code);
@@ -111,7 +111,7 @@ import java.io.*;
    return ((String[])getMessageRapport(code,loc))[index];
    }
 
-  //La méthode statique pour obtenir un message d'information du programme.
+  //La mÃ©thode statique pour obtenir un message d'information du programme.
 
   public static String getMessageInfo(String code,Locale loc){
    return (String)((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.MessagesInfo",loc)).handleGetObject(code);
@@ -121,7 +121,7 @@ import java.io.*;
    return ((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.MessagesInfo",Locale.FRENCH)).handleGetObject(code)!=null;
    }
 
-  //Les méthodes statiques pour obtenir les descriptions d'un type de technologie.
+  //Les mÃ©thodes statiques pour obtenir les descriptions d'un type de technologie.
 
   public static Object getTechnoDescription(String code,Locale loc){
    return ((ListResourceBundle)ResourceBundle.getBundle("zIgzAg.jeu.oceane.ListeDescription",loc)).handleGetObject(code);
@@ -145,19 +145,19 @@ import java.io.*;
     else return getNomPlurielTechno(getTechnologie(code).getCorpsCode(),loc);
    }
 
-  //Les méthodes statiques pour obtenir les caractéristiques d'un type d'arme.
+  //Les mÃ©thodes statiques pour obtenir les caractÃ©ristiques d'un type d'arme.
 
   public static int[] getCaracArme(String code){
    return (int[])LISTE_CARAC_ARMES.get(code);
    }
 
-  //Les méthodes statiques pour obtenir les chances de toucher d'un type d'arme.
+  //Les mÃ©thodes statiques pour obtenir les chances de toucher d'un type d'arme.
 
   public static int[] getChanceToucheArme(String code){
    return (int[])LISTE_CHANCES_TOUCHE.get(code);
    }
 
-  //méthode statique pour savoir si un code est pris ou non
+  //mÃ©thode statique pour savoir si un code est pris ou non
 
   public static boolean existenceCode(String code){
    if(Univers.existenceTechnologie(code)) return true;
@@ -165,7 +165,7 @@ import java.io.*;
    return false;
    }
 
-  //Les méthodes statiques pour accéder aux technologies.
+  //Les mÃ©thodes statiques pour accÃ©der aux technologies.
 
   public static Technologie getTechnologie(String code){
    return (Technologie)LISTE_TECHNOLOGIES.get(code);
@@ -230,7 +230,7 @@ import java.io.*;
    return t;
    }
 
-  //Les méthodes statiques pour accéder aux technologies publiques.
+  //Les mÃ©thodes statiques pour accÃ©der aux technologies publiques.
 
   public static void ajouterTechnologieAuDomainePublic(String code){
    TECHNOLOGIES_PUBLIQUES.add(code);
@@ -245,8 +245,8 @@ import java.io.*;
    }
 
 
-  //Les méthodes statiques pour obtenir un nombre, un booléen, un tableau
-  //  ou le résultat d'un test(en pourcentage) au hasard.
+  //Les mÃ©thodes statiques pour obtenir un nombre, un boolÃ©en, un tableau
+  //  ou le rÃ©sultat d'un test(en pourcentage) au hasard.
 
   public static int getInt(int borne){
    return HASARD.nextInt(borne);
@@ -271,7 +271,7 @@ import java.io.*;
     else return false;
    }
 
-  //les méthodes d'accès au numéro du tour.
+  //les mÃ©thodes d'accÃ¨s au numÃ©ro du tour.
 
   public static void setTour(int t){NUMERO_DU_TOUR=t;}
   public static int getTour(){return NUMERO_DU_TOUR;}
@@ -290,7 +290,7 @@ import java.io.*;
    Fiche.ecriture(Chemin.NUMERO_DU_TOUR,Integer.toString(NUMERO_DU_TOUR));
    }
 
-  //les méthodes d'accès aux leaders en vente.
+  //les mÃ©thodes d'accÃ¨s aux leaders en vente.
 
   public static void ajouterLeaderEnVente(Leader l){
    l.mettreEnReserve();
@@ -305,7 +305,7 @@ import java.io.*;
    LEADERS_EN_VENTE.remove(l);
    }
 
-  //les méthodes d'accès aux alliances.
+  //les mÃ©thodes d'accÃ¨s aux alliances.
 
   public static Map clonerListeAlliance(){
    return (Map)ALLIANCES.clone();
@@ -354,7 +354,7 @@ import java.io.*;
    return l.length;
    }
 
-//méthode en sursis -->
+//mÃ©thode en sursis -->
   public static int getNumeroAlliance(String nom){
    Alliance[] a=getListeAlliances();
    for(int i=0;i<a.length;i++)
@@ -362,14 +362,14 @@ import java.io.*;
    return -1;
    }
 
-//méthode en sursis -->
+//mÃ©thode en sursis -->
   public static boolean allianceExistante(String nom){
    if(getNumeroAlliance(nom)==-1) return false;
     else return true;
    }
 
 
-  //les méthodes d'accès aux débris.
+  //les mÃ©thodes d'accÃ¨s aux dÃ©bris.
 
   public static void setDebris(Debris entree){
    DEBRIS.put(entree.getPosition(),entree);
@@ -391,7 +391,7 @@ import java.io.*;
    return (Position[])DEBRIS.keySet().toArray(new Position[0]);
    }
 
-  //les méthodes d'accès aux systèmes de l'univers.
+  //les mÃ©thodes d'accÃ¨s aux systÃ¨mes de l'univers.
 
   public static void setSysteme(Systeme entree){
    SYSTEMES.put(entree.getPosition(),entree);
@@ -460,7 +460,7 @@ import java.io.*;
    return (Position[])a.toArray(new Position[0]);
    }
 
-  //liste des flottes en jeu : cle --> [numero joueur][numéro flotte] valeur --> [position flotte]
+  //liste des flottes en jeu : cle --> [numero joueur][numÃ©ro flotte] valeur --> [position flotte]
 
   public static HashMap listeFlottes(){
    HashMap retour=new HashMap();
@@ -479,7 +479,7 @@ import java.io.*;
 
    //liste des flottes en jeu par directive :
    // cle --> position   valeur --> map h
-   //                   h : cle --> directive(Integer)  valeur --> int[n][2] : [numero joueur][numéro flotte]
+   //                   h : cle --> directive(Integer)  valeur --> int[n][2] : [numero joueur][numÃ©ro flotte]
 
   public static Map listeFlottesDirectives(){
    HashMap retour=new HashMap();
@@ -527,7 +527,7 @@ import java.io.*;
    return retour;
    }
 
- //Les méthodes d'accès aux joueurs & commandants.
+ //Les mÃ©thodes d'accÃ¨s aux joueurs & commandants.
 
   public static void setJoueur(Joueur entree){
    COMMANDANTS.put(new Integer(entree.getNumero()),entree);
@@ -585,7 +585,7 @@ import java.io.*;
    return retour;
    }
 
-  //Les méthodes d'accès aux plans de vaisseaux.
+  //Les mÃ©thodes d'accÃ¨s aux plans de vaisseaux.
 
   public static void ajouterPlanDeVaisseau(PlanDeVaisseau entree){
    PLANS_DE_VAISSEAUX.put(entree.getNom(),entree);
@@ -616,15 +616,15 @@ import java.io.*;
    }
 
 
-  //Les méthodes d'accès aux composants de vaisseaux.
+  //Les mÃ©thodes d'accÃ¨s aux composants de vaisseaux.
 
 
 
 
-  //Les méthodes d'accès aux batiments.
+  //Les mÃ©thodes d'accÃ¨s aux batiments.
 
 
-  //Les méthodes d'accès aux stats.
+  //Les mÃ©thodes d'accÃ¨s aux stats.
    public static Map getStats(){return STATS;}
 
    public static Map getStatsDernierTour(){
@@ -638,7 +638,7 @@ import java.io.*;
     }
  
 
-  //Les méthodes d'accès aux relations entre races.
+  //Les mÃ©thodes d'accÃ¨s aux relations entre races.
 
    public static void ajouterRelationRaces(Position pos,int race1,int race2,int modif){
     if(pos!=null)
@@ -679,7 +679,7 @@ import java.io.*;
     else return ((Integer)o2).intValue();
     }
 
-  //méthodes d'accès aux différents transferts.
+  //mÃ©thodes d'accÃ¨s aux diffÃ©rents transferts.
    private static List ajouterTransfert(Object l,String cle,String mode,String message){
     if(l==null) l=new ArrayList();
     String[] inter=new String[3];
@@ -733,7 +733,7 @@ import java.io.*;
 
 
 
-  //méthodes d'accès aux prix moyens de marchandises de l'univers
+  //mÃ©thodes d'accÃ¨s aux prix moyens de marchandises de l'univers
 
    public static int getPrixMoyenMarchandise(int marchandise){
     return MARCHANDISES_UNIVERS[marchandise][1];
@@ -772,9 +772,9 @@ import java.io.*;
     descriptionSession=s;
     }
 
-  //fonction initialisatrice : à n'appeler qu'une fois, lors de la création de l'univers.
+  //fonction initialisatrice : Ã  n'appeler qu'une fois, lors de la crÃ©ation de l'univers.
 
-  //les plans de départ -->
+  //les plans de dÃ©part -->
   private static final Object[][] PLAN_DEPART={
 	  {"Inconnu",new String[]{"moteurI","laserI"},new int[]{1,1},"Intercepteur ScS","TechnoTronik"},
 	  {"Inconnu",new String[]{"moteurI","laserI","torpI"},new int[]{1,2,3},"Corvette ScS","Gelenn"},
@@ -783,18 +783,18 @@ import java.io.*;
 	  {"Inconnu",new String[]{"moteurI","laserI","bouclierI","plasmaI","hscanI","torpI"},new int[]{1,12,3,12,1,12},"Cuirassier ScS","TechnoTronik"},
 	  {"Inconnu",new String[]{"moteurI","bombeI","laserI","bouclierI","scanI","plasmaI"},new int[]{1,10,10,2,1,10},"Croiseur ScS","TechnoTronik"},
 	  {"Inconnu",new String[]{"moteurI","laserI","bouclierI","plasmaI","torpI"},new int[]{1,3,1,6,6},"Destroyer ScS","Gelenn"},
-	  {"Inconnu",new String[]{"moteurI","laserI","plasmaI","torpI"},new int[]{1,6,6,2},"Frégate ScS","Gelenn"},
+	  {"Inconnu",new String[]{"moteurI","laserI","plasmaI","torpI"},new int[]{1,6,6,2},"Escorteur ScS","Gelenn"},
 	  {"Inconnu",new String[]{"moteurI","bombeI"},new int[]{1,7},"Grand Bombardier ScS","Global"},
 	  {"Inconnu",new String[]{"moteurI","bombeI","laserI","bouclierI","plasmaI","torpI","scanI","hscanI"},new int[]{1,20,17,4,17,9,1,1},"Supercroiseur ScS","Varn"},
-	  {"Inconnu",new String[]{"moteurI","cargoI"},new int[]{1,7},"Cargo ScS","Arsenaux Athenaïk"},
+	  {"Inconnu",new String[]{"moteurI","cargoI"},new int[]{1,7},"Cargo ScS","Arsenaux AthenaÃ¯k"},
 	  {"Inconnu",new String[]{"moteurI","scanI","hscanI"},new int[]{1,1,1},"Eclaireur ScS","TechnoTronik"},
   };
 
   private static final Object[][] PLAN_RACIAUX={
           {"Oswald Koenig",new String[]{"moteurV","bombeIV","cargoIV","bouclierIII","scanV","hscanIII","dmineIV"},new int[]{1,20,5,1,1,1,1},"Galion Stellaire","Koenig Corporation",new Integer(0)},
 	  {"Yynn Fendragon",new String[]{"moteurI","laserV","missV"},new int[]{1,2,1},"Chasseur Faucon","Faerie Technologie",new Integer(1)},
-	  {"Yynn Fendragon",new String[]{"moteurIII","laserV","missVI"},new int[]{1,3,6},"Goélette Phoenix","Faerie Technologie",new Integer(1)},
-          {"Techno-Prêtre Thorgrim",new String[]{"moteurIV","cargoV","bouclierV","scanIII","dmineIII"},new int[]{1,10,1,1,1},"Super Tanker Goliath II","Iron Forge Mechanicus",new Integer(2)},
+	  {"Yynn Fendragon",new String[]{"moteurIII","laserV","missVI"},new int[]{1,3,6},"Goelette Phoenix","Faerie Technologie",new Integer(1)},
+          {"Techno-PrÃªtre Thorgrim",new String[]{"moteurIV","cargoV","bouclierV","scanIII","dmineIII"},new int[]{1,10,1,1,1},"Super Tanker Goliath II","Iron Forge Mechanicus",new Integer(2)},
           {"inconnu",new String[]{"moteurIII","laserV","plasmaV","torpV","bouclierIV","scanIII","hscanIII","dmineIV"},new int[]{1,18,18,18,2,1,1,1},"Super Cuirassier Tigre","Shinarii Industrie",new Integer(3)},
 	  {"Gutzmek Mekano",new String[]{"moteurI","laserV","bombeV"},new int[]{1,2,1},"Chassa Bomba","Kosmos Uzine-Hulk",new Integer(4)},
 	  {"Zodgrod Mekano",new String[]{"moteurII","bombeV"},new int[]{1,15},"Balaiz Wizz Bomba","Kosmos Uzine-Hulk",new Integer(4)},
@@ -805,7 +805,7 @@ import java.io.*;
   public static void initialisation(){
    Univers univers=new Univers(true,Const.MESSAGE_U_00000);
 
-   //création du commandant neutre ->
+   //crÃ©ation du commandant neutre ->
    Commandant neutre=new Commandant("neutre",0,0,"neutre@neutre.fr","nnnnnnnnnn","nnnnnnnnnn",0);
    neutre.setTypeDeJoueur(1);
    //le commandant neutre connait un certain nombre de technos pour pouvoir concevoir les plans -->
@@ -858,7 +858,7 @@ import java.io.*;
      
    setCommandant(neutre);
 
-   //création des plans public de départ ->
+   //crÃ©ation des plans public de dÃ©part ->
    for(int i=0;i<PLAN_DEPART.length;i++){
 	   String[] comp=(String[])PLAN_DEPART[i][1];
 	   int[] num=(int[])PLAN_DEPART[i][2];
@@ -884,7 +884,7 @@ import java.io.*;
    	   Univers.ajouterPlanDeVaisseau(plan);
 	   }
 	
-   //création des plans raciaux de départ->
+   //crÃ©ation des plans raciaux de dÃ©part->
    for(int i=0;i<PLAN_RACIAUX.length;i++){
 	   String[] comp=(String[])PLAN_RACIAUX[i][1];
 	   int[] num=(int[])PLAN_RACIAUX[i][2];
@@ -911,7 +911,7 @@ import java.io.*;
            
  
 	
-  //création des relations raciales de départ ->
+  //crÃ©ation des relations raciales de dÃ©part ->
   for(int y=1;y<=49;y++){
           Univers.ajouterRelationRaces(0,y,0,0,0);
           Univers.ajouterRelationRaces(0,y,0,1,1000);
@@ -986,7 +986,7 @@ import java.io.*;
 	  initialisation();
   	  }
 
-  //Les accès fichiers.
+  //Les accÃ¨s fichiers.
 
   public static Map chargerMap(String fichier){
    File fiche=new File(fichier);
@@ -1125,13 +1125,13 @@ import java.io.*;
    Fiche.ecriture(Chemin.CARNET_DE_BORD,Utile.getDate()+" "+laius);
    }
 
-  //pour gérer les phases de développement de l'univers.
+  //pour gÃ©rer les phases de dÃ©veloppement de l'univers.
 
   public static Integer getPhase(){return PHASE;}
 
   public static void phaseSuivante(){PHASE=new Integer(PHASE.intValue()+1);}
 
- //pour gérer les ordres non conformes(erreur de programme,répétition de mêmes ordres ou triche).
+ //pour gÃ©rer les ordres non conformes(erreur de programme,rÃ©pÃ©tition de mÃªmes ordres ou triche).
 
   public static Commentaire getMessagesErreurs(){return ORDRES_NON_CONFORMES;}
 
@@ -1170,7 +1170,7 @@ import java.io.*;
    return false;
    }
 
- //pour gérer les évènements publics.
+ //pour gÃ©rer les Ã©vÃ¨nements publics.
 
   public static Commentaire getMessagesEvenements(){return EVENEMENTS_PUBLICS;}
 
@@ -1199,7 +1199,7 @@ import java.io.*;
    return true;
    }
 
-  //pour gérer les articles produits par les commandants.
+  //pour gÃ©rer les articles produits par les commandants.
 
   public static Commentaire getMessagesArticles(){return ARTICLES;}
 

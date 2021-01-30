@@ -64,13 +64,13 @@ public class SecteursAtlas
    BaliseHTML[][] b=new BaliseHTML[9][2];
    BaliseHTML u=new BaliseHTML(BaliseHTML.U);
    b[0][0]=Rapport.getTD(BaliseHTML.CENTER,"2").ajout(Rapport.getFont(Rapport.cC[4],"4").ajout(Rapport.getP().ajout(
-     u.ajout(Rapport.getText("Légende")))));
+     u.ajout(Rapport.getText("LÃ©gende")))));
    b[1][0]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(Rapport.getImage("../images/etoile1.gif",0,0));
-   b[1][1]=Rapport.getTD("left",null).ajout(Rapport.getText("Étoile bleue"));
+   b[1][1]=Rapport.getTD("left",null).ajout(Rapport.getText("Ã‰toile bleue"));
    b[2][0]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(Rapport.getImage("../images/etoile2.gif",0,0));
    b[2][1]=Rapport.getTD("left",null).ajout(Rapport.getText("Nova"));
    b[3][0]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(Rapport.getImage("../images/etoile3.gif",0,0));
-   b[3][1]=Rapport.getTD("left",null).ajout(Rapport.getText("Étoile blanche"));
+   b[3][1]=Rapport.getTD("left",null).ajout(Rapport.getText("Ã‰toile blanche"));
    b[4][0]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(Rapport.getImage("../images/etoile4.gif",0,0));
    b[4][1]=Rapport.getTD("left",null).ajout(Rapport.getText("Naine orange"));
    b[5][0]=Rapport.getTD(BaliseHTML.CENTER,null).ajout(Rapport.getImage("../images/etoile5.gif",0,0));
@@ -126,7 +126,7 @@ public class SecteursAtlas
                                                ajout(BaliseHTML.CELLPADING,"0").ajout(BaliseHTML.BGCOLOR,""));
   div.ajout(Rapport.getText("<HR>"));
   div.ajout(Rapport.getP().ajout(Rapport.getALienE(Integer.toString(galaxie)+".htm").
-                 ajout(Rapport.getText("Retour à l'atlas"))));
+                 ajout(Rapport.getText("Retour Ã  l'atlas"))));
   div.ajout(Rapport.getP().ajout(Rapport.getALienE("../principal.htm").ajout(Rapport.getText("Retour au menu"))));
   DocumentHTML d=Rapport.getDocument(
         Chemin.ATLAS+Integer.toString(galaxie)+"_"+Integer.toString(i)+".htm",

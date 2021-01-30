@@ -21,7 +21,7 @@ public class Possession implements Serializable{
  private HashMap budget;
  private HashMap poste;
 
- // Les méthodes d'accès
+ // Les mÃ©thodes d'accÃ¨s
 
  public void setPolitique(int entree){politique=entree;}
  public int getPolitique(){return politique;}
@@ -181,7 +181,7 @@ public class Possession implements Serializable{
   initialiserProgrammationConstruction();
   }
 
- // Les méthodes statiques.
+ // Les mÃ©thodes statiques.
 
  public static Possession creerAuHasard(){
   Possession retour=new Possession();
@@ -192,7 +192,7 @@ public class Possession implements Serializable{
   return retour;
   }
 
- //méthodes pour gérer les fins de tour.
+ //mÃ©thodes pour gÃ©rer les fins de tour.
 
  public void miseAJourReputation(Commandant c){
   if(politique==Const.POLITIQUE_INTEGRISME) c.ajouterReputation(-20);
@@ -331,7 +331,7 @@ public class Possession implements Serializable{
   }
 
 
- //autres méthodes.
+ //autres mÃ©thodes.
 
  public void transfererPossession(Possession p){
   Construction[] c=p.listeConstructions();

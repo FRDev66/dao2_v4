@@ -209,7 +209,7 @@ public class Combat{
   if(f.getDirective()==Const.DIRECTIVE_FLOTTE_ATTITUDE_NEUTRE) return;
   int[] ordre=Utile.ordreAuHasard(s.getNombrePlanetes());
 
-  System.out.println("Debut d'un combat Flotte-SystËme.");
+  System.out.println("Debut d'un combat Flotte-Syst√®me.");
 
   Univers.phaseSuivante();
   boolean pillage=(f.getDirective()==Const.DIRECTIVE_FLOTTE_PILLAGE_SYSTEME);
@@ -218,9 +218,9 @@ public class Combat{
   int inter=0;
   int memPla=-1;
   int nbPrise=0;
-  int[] dommages=new int[2]; //dommages des flotte 0 -> pt domages 1->Vaisseaux dÈtruits.
-  int[][] nbPrisesd=null;  //0 numÈro de commandant 1 nombre de planËtes prises
-  IntMap numPrises=new IntHashMap(); //les numÈros des planËtes prises
+  int[] dommages=new int[2]; //dommages des flotte 0 -> pt domages 1->Vaisseaux d√©truits.
+  int[][] nbPrisesd=null;  //0 num√©ro de commandant 1 nombre de plan√®tes prises
+  IntMap numPrises=new IntHashMap(); //les num√©ros des plan√®tes prises
   for(int i=0;i<ordre.length;i++)
    if(peutCombattre(v[0],s.getPlanete(ordre[i]).getProprio())){
     if(memPla==-1) memPla=ordre[i];
@@ -231,7 +231,7 @@ public class Combat{
      }
     Commandant d=Univers.getCommandant(s.getPlanete(ordre[i]).getProprio());
     if((d.getNumero()!=0)&&(Mdt.valeurCorrespondante(nbPrisesd,d.getNumero())==0)){
-     Univers.ajouterTransfert(c,d,"C*attaque systËme");
+     Univers.ajouterTransfert(c,d,"C*attaque syst√®me");
      Univers.ajouterTransfert(d,c,"C*attaque flotte");
      }
     if((inter=combatFlottePlanete(c,v[1],d,s,ordre[i],nbTour,dommages))==-1){
@@ -284,13 +284,13 @@ public class Combat{
   if(f.getDirective()==Const.DIRECTIVE_FLOTTE_ATTITUDE_NEUTRE) return;
   if(s.getNombrePlanetes()<=numPla) return;
 
-  System.out.println("Debut d'un combat Flotte-PlanËte.");
+  System.out.println("Debut d'un combat Flotte-Plan√®te.");
   Univers.phaseSuivante();
 
   if(peutCombattre(v[0],s.getPlanete(numPla).getProprio())){
     Commandant d=Univers.getCommandant(s.getPlanete(numPla).getProprio());
     if(d.getNumero()!=0)
-     Univers.ajouterTransfert(c,d,"C*attaque planËte");
+     Univers.ajouterTransfert(c,d,"C*attaque plan√®te");
     combatFlottePlanete(c,v[1],d,s,numPla,0,null);
     if(d.getNumero()!=0){
      RapportCombat rapport=new RapportCombat(s.getPosition(),c,d,RapportCombat.TYPE_COMBAT_PLANETAIRE);
@@ -634,7 +634,7 @@ public class Combat{
    mem1=f1.listeVaisseauxParTypePourCombat();
    mem2=f2.listeVaisseauxParTypePourCombat();
 
-   //phase de dÈtermination de cible.
+   //phase de d√©termination de cible.
    int tailleMax=tailleVaisseauMaximale(m1,m2);
 
    f1.preparerAuCombat(true);
@@ -681,7 +681,7 @@ public class Combat{
    mem1=inter1;
    mem2=inter2;
 
- //DÈtermination du vainqueur du combat
+ //D√©termination du vainqueur du combat
    //if(f1.getNombreDeVaisseaux()==0) vainqueurCombat2=true;
    //if(f2.getNombreDeVaisseaux()==0) vainqueurCombat1=true;
    
@@ -889,7 +889,7 @@ public class Combat{
   HashMap retour=new HashMap(m.length*2,0.5F);
   for(int i=0;i<m.length;i++)
    retour.put(m[i].getKey(),new int[((Vaisseau)m[i].getValue()).getNbCibleMax()+1]);
-   //retour.put(m[i].getKey(),new int[((Vaisseau)m[i].getValue()).getTaille()+1]); //‡ modifier
+   //retour.put(m[i].getKey(),new int[((Vaisseau)m[i].getValue()).getTaille()+1]); //√† modifier
   return retour;
   }
 
@@ -899,7 +899,7 @@ public class Combat{
    int[] inter=(int[])hc.get(m[i].getKey());
    if(inter.length>numTir){
 
-    //dÈtermination des cibles possibles (par type, puis par taille).
+    //d√©termination des cibles possibles (par type, puis par taille).
 
     Integer[] choix1=f.listeNumerosVaisseauxDeType(s.getTypeCible());
     Integer[] choix2=null;
@@ -1057,7 +1057,7 @@ public class Combat{
  private static void tirVaisseau(Object cle,Flotte f1,HashMap pos1,HashMap pos2,HashMap cible,Flotte f2,
                                  int numTir,Heros h1,Heros h2){
   Vaisseau v=f1.getVaisseau((Integer)cle);
-  //DÈtermine le nombre maximum de tirs par vaisseau.
+  //D√©termine le nombre maximum de tirs par vaisseau.
   if((numTir<=v.getNbCibleMax())&&(v.estCombatif())&&(!v.estDetruit())){
   //if((numTir<=v.getTaille())&&(v.estCombatif())&&(!v.estDetruit())){
    Position3D att=(Position3D)pos1.get(cle);

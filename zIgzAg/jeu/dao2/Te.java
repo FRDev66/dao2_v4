@@ -54,7 +54,7 @@ import java.awt.image.*;
           }
 
       public int[][] lsysteme(int x,int y){
-       	int s=1+y+7*x;          //##### remplacé le 5 par 7.
+       	int s=1+y+7*x;          //##### remplacÃ© le 5 par 7.
        Position[] p=Univers.listePositionsSystemesParSecteur(G,s);
        int[][] tab=new int[p.length][2];
        for(int i=0;i<p.length;i++) tab[i]=p[i].getPos();
@@ -255,7 +255,7 @@ import java.awt.image.*;
        }
     }
      screen.setColor(Color.magenta);
-     screen.drawString("Ecriture de la galaxie terminée !",20,150);
+     screen.drawString("Ecriture de la galaxie terminÃ©e !",20,150);
 }
 
   public static void main(String[] args) {

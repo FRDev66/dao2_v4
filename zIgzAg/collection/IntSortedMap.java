@@ -5,7 +5,7 @@ import java.util.SortedMap;
 
 /**
  * Cette interface prolonge l'interface <i>java.util.SortedMap</i>,
- * mais avec des entiers comme clés.
+ * mais avec des entiers comme clÃ©s.
  *
  * @author  Julien Buret
  * @version 1.00, 12/02/01

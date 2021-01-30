@@ -16,19 +16,19 @@ public abstract class SessionSQL{
 
  public SessionSQL(){};
 
- // méthode abstraite persistante --->
+ // mÃ©thode abstraite persistante --->
 
  public abstract Connection getConnection(String host,String base,
                                                  String login,String motDePasse);
 
- // méthode plus simple -->
+ // mÃ©thode plus simple -->
 
  public Connection getConnection(String host,String base){
   return getConnection(host,base,null,null);
   }
 
 
- // méthodes abstraites à implémenter dans cette classe plus tard --->
+ // mÃ©thodes abstraites Ã  implÃ©menter dans cette classe plus tard --->
 
  public abstract int nombreDeLignesTable(Connection c,String nomTable);
 
@@ -38,7 +38,7 @@ public abstract class SessionSQL{
 
  public abstract String[] listeTables(Connection c);
 
- //autres méthodes --->
+ //autres mÃ©thodes --->
 
  public void fermerConnection(Connection c){
   try{
@@ -145,7 +145,7 @@ public abstract class SessionSQL{
   }
 
 
-  // sépare chaque champs par des virgules --->
+  // sÃ©pare chaque champs par des virgules --->
  public String champsTraduction1(String[] t){
   StringBuffer retour=new StringBuffer(50);
   for(int i=0;i<t.length;i++){
@@ -155,7 +155,7 @@ public abstract class SessionSQL{
   return retour.toString();
   }
 
- //sépare chaque valeur par des virgules  --->
+ //sÃ©pare chaque valeur par des virgules  --->
  public String champsTraduction2(String[] t){
   StringBuffer retour=new StringBuffer(50);
   for(int i=0;i<t.length;i++){

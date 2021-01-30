@@ -7,8 +7,8 @@ package zIgzAg.collection;
 import java.util.Iterator;
 
 /**
- * Un IntIterator joue le même rôle que l'interface <i>java.util.Iterator</i>
- * mais concerne spécifiquement les entiers.
+ * Un IntIterator joue le mÃªme rÃ´le que l'interface <i>java.util.Iterator</i>
+ * mais concerne spÃ©cifiquement les entiers.
  *
  * @author  Julien Buret
  * @version 1.00, 20/12/00
@@ -16,6 +16,7 @@ import java.util.Iterator;
 
 public interface IntIterator extends java.util.Iterator{
 
- int nextInt();
+
+ int nextInt();
 
 }

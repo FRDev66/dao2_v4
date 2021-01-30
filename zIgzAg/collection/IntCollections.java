@@ -3,8 +3,8 @@ package zIgzAg.collection;
 import java.io.Serializable;
 
 /**
- * Cette classe fournie quelques méthodes spécifiques pour les classes
- * implémentant l'interface IntCollection.
+ * Cette classe fournie quelques mÃ©thodes spÃ©cifiques pour les classes
+ * implÃ©mentant l'interface IntCollection.
  *
  * @author  Julien Buret
  * @version 1.00, 14/02/01

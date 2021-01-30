@@ -14,7 +14,7 @@ public class Arme extends ComposantDeVaisseau{
  private String typeArme;
 
 
- //les méthodes d'accès
+ //les mÃ©thodes d'accÃ¨s
 
   public int[] getCaracArme(){return caracteristiquesArmes;}
   public int[] getChanceToucher(){return chanceToucher;}
@@ -39,7 +39,7 @@ public class Arme extends ComposantDeVaisseau{
    return (chanceToucher[typeCoque]*(100-(90*distance)/getPortee()))/100;
    }
 
- //les méthodes statiques
+ //les mÃ©thodes statiques
 
  //Le constructeur
 
@@ -54,7 +54,7 @@ public class Arme extends ComposantDeVaisseau{
   calculCaracteristiquesArmes();
   }
 
- //les autres méthodes
+ //les autres mÃ©thodes
 
  public boolean estCombatSpatial(){
   if((typeArme.equals(Const.CV_ARME_CS))||(typeArme.equals(Const.CV_ARME_M))) return true;

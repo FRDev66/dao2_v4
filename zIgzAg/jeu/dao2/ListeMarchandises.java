@@ -21,7 +21,7 @@ package zIgzAg.jeu.oceane;
  public static final int PRODUIT_TIXIUM=13;
  public static final int PRODUIT_LIXIAM=14;
  public static final int PRODUIT_OXOLE=15;
- //Les différents produits commerciaux.
+ //Les diffÃ©rents produits commerciaux.
 */
 
 public interface ListeMarchandises{

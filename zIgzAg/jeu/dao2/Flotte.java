@@ -34,7 +34,7 @@ public class Flotte implements Serializable{
 
   private transient int[] boucliers;            //##################
 
- //méthodes d'accès
+ //mÃ©thodes d'accÃ¨s
 
   public void setNom(String entree){nom=entree;}
   public void setPositionFixe(Position entree){setPosition(entree);setDirection(entree);}
@@ -141,7 +141,7 @@ public class Flotte implements Serializable{
   strategie=Const.STRATEGIE_DEFAUT.getNom();
   }
 
- //méthodes statiques
+ //mÃ©thodes statiques
 
   public static Flotte creerAuHasard(Position pos,String denomination,int race,int coeff){
    Flotte flotte=new Flotte(denomination,pos);
@@ -173,7 +173,7 @@ public class Flotte implements Serializable{
 
   public static void choixFlotteDeDepart(Commandant c,Map m){
    String[] v={"Intercepteur ScS","Chasseur ScS","Bombardier ScS","Corvette ScS",
-               "Grand Bombardier ScS","Destroyer ScS","Frégate ScS","Croiseur ScS","Cuirassier ScS",
+               "Grand Bombardier ScS","Destroyer ScS","Escorteur ScS","Croiseur ScS","Cuirassier ScS",
                "Supercroiseur ScS","Cargo ScS"};
    for(int i=0;i<v.length;i++) if(!Univers.existencePlanDeVaisseau(v[i])) System.out.println(v[i]);
    int[] n={40,20,30,15,20,8,12,3,2,1,5};
@@ -287,7 +287,7 @@ public class Flotte implements Serializable{
    return traductionDirective(directive,directivePrecision,loc);
    }
 
- //autres méthodes
+ //autres mÃ©thodes
 
   public void initialiserEquipages(){
    Vaisseau[] v=listeVaisseaux();
@@ -428,7 +428,7 @@ public class Flotte implements Serializable{
    return retour;
    }
 
-//Calcul de l'entretien d'une flotte en utilisant un héros. [origine = 20%]
+//Calcul de l'entretien d'une flotte en utilisant un hÃ©ros. [origine = 20%]
   public float getEntretien(Heros h,boolean carburant){
    float retour=getValeur()/15F;
    if(estEnGarnison()) retour=retour/2F;
@@ -505,7 +505,7 @@ public class Flotte implements Serializable{
      if(pasArgent) c.ajouterEvenement("EV_COMMANDANT_CONSTRUCTION_0009");
 
      }
-     //si la flotte n'a pas de mconstru, on initialise à null ->
+     //si la flotte n'a pas de mconstru, on initialise Ã  null ->
      else
       constructionEnCours=null;
     }

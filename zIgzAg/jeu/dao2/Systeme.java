@@ -21,7 +21,7 @@ public class Systeme implements Serializable{
  private Planete[] pla;
  private String nom;
 
- // Les méthodes d'accès
+ // Les mÃ©thodes d'accÃ¨s
 
  public Position getPosition(){return position;}
  public int getTypeEtoile(){return typeEtoile;}
@@ -56,7 +56,7 @@ public class Systeme implements Serializable{
  public Systeme(){}
 
 
- // Les méthodes statiques.
+ // Les mÃ©thodes statiques.
 
  public static Systeme creerAuHasard(Position pos){
   Systeme systeme=new Systeme();
@@ -138,7 +138,7 @@ public class Systeme implements Serializable{
   return 5;
   }
 
- //méthodes pour gérer les systèmes en fin de tour.
+ //mÃ©thodes pour gÃ©rer les systÃ¨mes en fin de tour.
 
  public void testerRevoltes(int numero){
   for(int i=0;i<pla.length;i++)
@@ -229,7 +229,7 @@ public class Systeme implements Serializable{
 
 
 
- //autres méthodes.
+ //autres mÃ©thodes.
 
  public void changementDeProprietaire(int ancien,int nouveau){
   for(int i=0;i<pla.length;i++)
@@ -381,7 +381,7 @@ public class Systeme implements Serializable{
   return retour;
   }
 
-//Calcul de l'entretien d'un système en utilisant un gouverneur. [origine = 20%]
+//Calcul de l'entretien d'un systÃ¨me en utilisant un gouverneur. [origine = 20%]
  public float getEntretien(int numero,Gouverneur g,Possession p){
   float retour=0F;
   for(int i=0;i<pla.length;i++)

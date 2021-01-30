@@ -23,7 +23,7 @@ package zIgzAg.jeu.oceane;
     
   public void setPos(int[] e){pos=e;}
 
-  //méthodes pour tester l'égalité.
+  //mÃ©thodes pour tester l'Ã©galitÃ©.
 
   public boolean equals(Object objet){
    if(objet==null) return false;
@@ -40,13 +40,13 @@ package zIgzAg.jeu.oceane;
    return new Position3D(pos);
    }
 
-  //représentation "de base".
+  //reprÃ©sentation "de base".
 
   public String toString(){
    return "("+"x:"+Integer.toString(pos[0])+"|y:"+Integer.toString(pos[1])+"|z:"+Integer.toString(pos[2])+")";
    }
 
-  //fonction spéciale "au hasard"
+  //fonction spÃ©ciale "au hasard"
 
   public static Position3D auHasard(int[] dep,int mod){
    int[] inter=new int[3];
@@ -56,7 +56,7 @@ package zIgzAg.jeu.oceane;
    return new Position3D(inter);
    }
 
-  //nouvelle position après un déplacement de x case et autres fonctions de déplacement.
+  //nouvelle position aprÃ¨s un dÃ©placement de x case et autres fonctions de dÃ©placement.
 
   public static Position3D positionAtteinte(Position3D depart,Position3D arrivee,int x){
    if(arrivee==null) return depart;

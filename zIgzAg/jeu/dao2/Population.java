@@ -13,7 +13,7 @@ import java.io.Serializable;
   private int race;
   private int popActuelle;
 
-  // les méthodes d'accès.
+  // les mÃ©thodes d'accÃ¨s.
 
   public int getRace(){return race;}
   public int getPopActuelle(){return popActuelle;}

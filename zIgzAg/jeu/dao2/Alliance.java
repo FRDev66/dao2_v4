@@ -37,7 +37,7 @@ public class Alliance implements Serializable{
  private transient HashMap votesDirigeant;
  private transient HashMap votesExclusion;
 
-//les méthodes d'accès.
+//les mÃ©thodes d'accÃ¨s.
 
  public int getNumero(){return numeroAlliance;}
  public boolean estSecrete(){return secrete;}

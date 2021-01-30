@@ -309,7 +309,7 @@ import java.util.NoSuchElementException;
   public static void ecrireEncheres(Locale loc){
    String[] t=(String[])Univers.getMessageRapport("STATS_ENCHERES",loc);
    Leader[] l=Univers.listeLeadersEnVente();
-   ArrayList h=new ArrayList(10);	//nombre de lieutenants mis aux enchères.
+   ArrayList h=new ArrayList(10);	//nombre de lieutenants mis aux enchÃ¨res.
    ArrayList g=new ArrayList(10);
    for(int i=0;i<l.length;i++)
     if(l[i].estHeros()) h.add(l[i]);

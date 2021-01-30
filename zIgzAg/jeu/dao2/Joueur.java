@@ -37,7 +37,7 @@ public class Joueur implements Serializable{
  protected int typeDeJoueur;
  //0 humain 1 commandant neutre 2 robot
 
- //Les méthodes d'accès
+ //Les mÃ©thodes d'accÃ¨s
 
   public int getNumero(){return numero;}
   public int getRace(){return race;}
@@ -169,10 +169,10 @@ public class Joueur implements Serializable{
      }
    if(numF==-1) numF=num.length;
    
-   //Déclaration des PNJ existants.
+   //DÃ©claration des PNJ existants.
    //String sylor="Banque intergalactique";
    String Empe="Irik";
-   //Budget de départ, 15000 pour tous, 20000 pour les Vorgleshs.
+   //Budget de dÃ©part, 15000 pour tous, 20000 pour les Vorgleshs.
    Commandant c=new Commandant(n,r,numF,a,Utile.choisirLogin(),a.substring(0,Math.min(a.length(),5)),Univers.getTour());
    //if (sylor.equals(c.getNom()) || Empe.equals(c.getNom())) c.setCentaures(40000F);
    //if (Empe.equals(c.getNom())) c.setCentaures(60000F);
@@ -186,7 +186,7 @@ public class Joueur implements Serializable{
 
    Position[] p=Univers.listePositionsSystemesDisponibles(c.getRace());
    if(p.length==0) p=Univers.listePositionsSystemesDisponibles(-1);
-   if(p.length==0){System.out.println("Systeme nouveau commandant non trouvé");System.exit(0);}
+   if(p.length==0){System.out.println("Systeme nouveau commandant non trouvÃ©");System.exit(0);}
    Position choix1=p[Univers.getInt(p.length)];
    Position choix2=p[Univers.getInt(p.length)];
    /*Position choix3=p[Univers.getInt(p.length)];

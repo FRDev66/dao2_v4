@@ -66,7 +66,7 @@ public class ObjetSQL{
   creerTable(connection,c);
   }
 
-//méthodes d'accès aux champs -->
+//mÃ©thodes d'accÃ¨s aux champs -->
 
  public Field[] getChamps(){return champs;}
 
@@ -79,7 +79,7 @@ public class ObjetSQL{
   }
 
 
-//méthodes statiques utiles --->
+//mÃ©thodes statiques utiles --->
  public static byte getTypeSQL(Class c){
   if(c.isPrimitive()){
    if(c==Integer.TYPE) return TYPE_INT;
@@ -124,7 +124,7 @@ public class ObjetSQL{
 
  public static String getNomTable(Class c){
   String retour=c.getName();
-  //if(retour.indexOf('£')!=-1) throw new IllegalArgumentException();
+  //if(retour.indexOf('Â£')!=-1) throw new IllegalArgumentException();
   return retour.replace('.','_');
   }
 
@@ -136,7 +136,7 @@ public class ObjetSQL{
   String retour=f.getName();
   if(retour.equals("type")) return "_type_";
   if(retour.equals("table")) return "_table_";
-  //if(retour.indexOf('£')!=-1) throw new IllegalArgumentException();
+  //if(retour.indexOf('Â£')!=-1) throw new IllegalArgumentException();
   return retour.replace('.','_');
   }
 
@@ -163,11 +163,11 @@ public class ObjetSQL{
  public static Field[] listeChampsClasse(Class c){
   if(!Serializable.class.isAssignableFrom(c)) return new Field[0];
   if(existenceMethode(c,"writeObject",new Class[]{ObjectOutputStream.class}))
-   System.out.println("Attention,la classe "+c.getName()+" a une méthode writeObject"+
-                       "qui ne peut bien sûr pas être prise en compte.");
+   System.out.println("Attention,la classe "+c.getName()+" a une mÃ©thode writeObject"+
+                       "qui ne peut bien sÃ»r pas Ãªtre prise en compte.");
   if(existenceMethode(c,"readObject",new Class[]{ObjectInputStream.class}))
-   System.out.println("Attention,la classe "+c.getName()+" a une méthode readObject"+
-                       "qui ne peut bien sûr pas être prise en compte.");
+   System.out.println("Attention,la classe "+c.getName()+" a une mÃ©thode readObject"+
+                       "qui ne peut bien sÃ»r pas Ãªtre prise en compte.");
 
 
   Field[] f=c.getDeclaredFields();
@@ -190,7 +190,7 @@ public class ObjetSQL{
   return retour;
   }
 
-//méthodes "output" --->
+//mÃ©thodes "output" --->
  public void executerInsertion() throws SQLException{
   insertion.execute();
   }
@@ -265,7 +265,7 @@ public class ObjetSQL{
    }
   }
 
-//méthodes "input" --->
+//mÃ©thodes "input" --->
 /*
  public static ObjetSQL getObjectSQL(String nomTable){
   try{

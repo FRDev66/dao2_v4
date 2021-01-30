@@ -58,7 +58,7 @@ public class EnvoyerRapport {
 
  public static void envoyerMessage(Commandant c,String texte){
   if(!Mail.envoyerMessageFichiersAttaches(c.getNomNumero(),c.getAdresseElectronique(),Const.ADRESSE_MJ,
-      Const.SMTP_ENVOI,"[Océane]Message-Info",texte,new String[0]))
+      Const.SMTP_ENVOI,"[OcÃ©ane]Message-Info",texte,new String[0]))
         Fiche.ecriture(Const.TEMP,c.getNomNumero()+":erreur envoi message");
   }
 
@@ -66,7 +66,7 @@ public class EnvoyerRapport {
   MessageFormat m=new MessageFormat(new String(texte));
   texte=m.format(param);
   if(!Mail.envoyerMessageFichiersAttaches(c.getNomNumero(),c.getAdresseElectronique(),Const.ADRESSE_MJ,
-      Const.SMTP_ENVOI,"[Océane]Message-Info",texte,new String[0]))
+      Const.SMTP_ENVOI,"[OcÃ©ane]Message-Info",texte,new String[0]))
         Fiche.ecriture(Const.TEMP,c.getNomNumero()+":erreur envoi message");
   }
 

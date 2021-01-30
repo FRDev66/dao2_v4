@@ -16,14 +16,14 @@ import java.io.Serializable;
 import java.io.IOException;
 
 /**
- * Cette classe est similaire à la classe <i>java.util.HashMap</i>, excepté
- * le fait qu'elle n'accepte que des entiers comme clés et comme valeurs.
+ * Cette classe est similaire Ã  la classe <i>java.util.HashMap</i>, exceptÃ©
+ * le fait qu'elle n'accepte que des entiers comme clÃ©s et comme valeurs.
  *
- * La compatibilité avec l'interface <i>java.util.Map</i> est assurée,
+ * La compatibilitÃ© avec l'interface <i>java.util.Map</i> est assurÃ©e,
  * mais comme d'habitude pour les classes de ce package,
- * il faut garder à l'esprit que les objets éventuellement stockés
- * ne le sont que sous la forme d'entiers représentant le résultat
- * de leur méthode <i>hashCode()</i>.
+ * il faut garder Ã  l'esprit que les objets Ã©ventuellement stockÃ©s
+ * ne le sont que sous la forme d'entiers reprÃ©sentant le rÃ©sultat
+ * de leur mÃ©thode <i>hashCode()</i>.
  *
  * @author  Julien Buret
  * @version 1.00, 20/12/00
@@ -106,11 +106,11 @@ public class IntIntHashMap extends AbstractMap implements IntIntMap, Cloneable,S
   }
 
  /**
-   * Retourne la valeur correspondant à la clé spécifiée.
-   * Si la clé n'est pas présente, retourne 0.
+   * Retourne la valeur correspondant Ã  la clÃ© spÃ©cifiÃ©e.
+   * Si la clÃ© n'est pas prÃ©sente, retourne 0.
    *
-   * @return la valeur qui correspond à la clé.
-   * @param key la clé dont la valeur associée est recherchée.
+   * @return la valeur qui correspond Ã  la clÃ©.
+   * @param key la clÃ© dont la valeur associÃ©e est recherchÃ©e.
    */
  public int get(int key) {
   Entry tab[] = table;
@@ -122,15 +122,15 @@ public class IntIntHashMap extends AbstractMap implements IntIntMap, Cloneable,S
   }
 
  /**
-  * Cette méthode est uniquement présente pour implémenter l'interface java.util.Map.
-  * Utilise le résultat de la méthode <tt>hashCode()</tt> de l'object <i>key</i>.
+  * Cette mÃ©thode est uniquement prÃ©sente pour implÃ©menter l'interface java.util.Map.
+  * Utilise le rÃ©sultat de la mÃ©thode <tt>hashCode()</tt> de l'object <i>key</i>.
   * Si il n'y a pas de valeur correspondante
-  * ou que cette valeur est 0, la méthode retourne <tt>null</tt>.
+  * ou que cette valeur est 0, la mÃ©thode retourne <tt>null</tt>.
   *
-  * @return un <i>Integer</i> dont la valeur entière est égale à la valeur,
-            ou <tt>null</tt>, si aucune valeur n'est trouvée ou si la valeur
-  *         trouvée est égale à 0.
-  * @param key la clé dont la valeur associée est recherchée.
+  * @return un <i>Integer</i> dont la valeur entiÃ¨re est Ã©gale Ã  la valeur,
+            ou <tt>null</tt>, si aucune valeur n'est trouvÃ©e ou si la valeur
+  *         trouvÃ©e est Ã©gale Ã  0.
+  * @param key la clÃ© dont la valeur associÃ©e est recherchÃ©e.
   */
  public Object get(Object key) {
   if (key != null){
@@ -378,12 +378,12 @@ public class IntIntHashMap extends AbstractMap implements IntIntMap, Cloneable,S
 	 return new Entry(hash, value,(next==null ? null : (Entry)next.clone()));
 	 }
 
-	//juste là pour l'interface(à ne pas utiliser)
+	//juste lÃ  pour l'interface(Ã  ne pas utiliser)
 	public Object getKey() {return new Integer(hash);}
 
     public int getIntKey(){return hash;}
 
-    //de même ne pas utiliser
+    //de mÃªme ne pas utiliser
 	public Object getValue() {return new Integer(value);}
 
 	public int getIntValue(){return value;}

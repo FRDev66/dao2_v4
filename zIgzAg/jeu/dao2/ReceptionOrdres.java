@@ -62,7 +62,7 @@ public class ReceptionOrdres{
   }
 
  public String tStrat(String e){
-  if(e.equals("par défaut")) return "{0}";
+  if(e.equals("par dÃ©faut")) return "{0}";
    else return e;
   }
 

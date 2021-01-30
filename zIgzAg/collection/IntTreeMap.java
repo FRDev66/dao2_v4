@@ -15,7 +15,7 @@ import java.io.Serializable;
 import java.io.IOException;
 
 /**
- * C'est l'équivalent d'une TreeMap avec des entiers pour clés.
+ * C'est l'Ã©quivalent d'une TreeMap avec des entiers pour clÃ©s.
  *
  * @author  Julien Buret
  * @version 1.00, 12/02/01

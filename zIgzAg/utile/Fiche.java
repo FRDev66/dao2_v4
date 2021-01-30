@@ -13,14 +13,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Vector;
 
-/** Cette classe contient des méthodes statiques permettant de créer et d'accéder à une "fiche" de carnet de bord système.
-  * Chaque ligne correspond à un nouvel ajout.
+/** Cette classe contient des mÃ©thodes statiques permettant de crÃ©er et d'accÃ©der Ã  une "fiche" de carnet de bord systÃ¨me.
+  * Chaque ligne correspond Ã  un nouvel ajout.
   * @author Julien Buret
   * @version 1.0
   */
 public class Fiche{
 
-/** cette méthode efface le fichier spécifié si il existe.
+/** cette mÃ©thode efface le fichier spÃ©cifiÃ© si il existe.
   * @param fichier la localisation du fichier.
   */
  public static void initialisation(String fichier){
@@ -28,12 +28,12 @@ public class Fiche{
    if (fiche.exists()) fiche.delete();
   }
 
-/** cette méthode ajoute au fichier contenant les informations l'information <code>ajout</code>.
-  * Si le fichier n'existait pas précédemment, il est créé.<br><br>
-  * <b>ATTENTION</b> : ne pas mettre de caractère &quot; retour à la ligne &quot; dans la <code>String</code> ajout :
-  * cela fausserait les méthodes &quot; lecture &quot; de cette classe.
+/** cette mÃ©thode ajoute au fichier contenant les informations l'information <code>ajout</code>.
+  * Si le fichier n'existait pas prÃ©cÃ©demment, il est crÃ©Ã©.<br><br>
+  * <b>ATTENTION</b> : ne pas mettre de caractÃ¨re &quot; retour Ã  la ligne &quot; dans la <code>String</code> ajout :
+  * cela fausserait les mÃ©thodes &quot; lecture &quot; de cette classe.
   * @param fichier la localisation du fichier.
-  * @param ajout l'information à rajouter.
+  * @param ajout l'information Ã  rajouter.
   */
  public static void ecriture(String fichier,String ajout){
   try{BufferedWriter fluxE=new BufferedWriter(new FileWriter(fichier,true));
@@ -44,9 +44,9 @@ public class Fiche{
   catch(IOException e){e.printStackTrace();}
   }
 
-/** cette méthode retourne l'information contenue dans le fichier à l'index <tt>index</tt>.
+/** cette mÃ©thode retourne l'information contenue dans le fichier Ã  l'index <tt>index</tt>.
   * @param fichier la localisation du fichier.
-  * @param index le numéro de l'information.
+  * @param index le numÃ©ro de l'information.
   * @return une <code>String</code> contenant les informations, <tt>null</tt> si le fichier ou l'index n'existent pas.
   */
  public static String lecture(String fichier,int index){
@@ -66,7 +66,7 @@ public class Fiche{
   return retour;
   }
 
-/** cette méthode retourne l'ensemble des informations contenues dans le fichier sous forme de tableau de
+/** cette mÃ©thode retourne l'ensemble des informations contenues dans le fichier sous forme de tableau de
   * <code>String</code>.
   * @param fichier la localisation du fichier.
   * @return une <code>String</code> contenant les informations, ou <tt>null</tt> si le fichier n'existe pas.
@@ -92,7 +92,7 @@ public class Fiche{
   return (String[])stock.toArray(new String[0]);
   }
 
- /** cette méthode retourne l'ensemble des informations contenues dans le fichier sous forme d'un
+ /** cette mÃ©thode retourne l'ensemble des informations contenues dans le fichier sous forme d'un
   * <code>StringBuffer</code>.
   * @param fichier la localisation du fichier.
   * @return une <code>StringBuffer</code> contenant les informations, ou <tt>null</tt> si le fichier n'existe pas.

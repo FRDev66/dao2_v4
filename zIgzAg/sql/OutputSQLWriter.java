@@ -30,7 +30,7 @@ public class OutputSQLWriter{
   MARQUEUR=0;
   }
 
-// accéder et remplir le registre des Objets SQL -->
+// accÃ©der et remplir le registre des Objets SQL -->
 
  public ObjetSQL getObjetSQL(Class c){
   Object o=registre.get(c);
@@ -45,7 +45,7 @@ public class OutputSQLWriter{
    else return (ObjetSQL)o;
   }
 
-// méthodes pour type de classes spécial --->
+// mÃ©thodes pour type de classes spÃ©cial --->
 
  public int ajouterMap(Map m){
   int cles=ajouterTable(m.keySet().toArray());
@@ -69,7 +69,7 @@ public class OutputSQLWriter{
   return ajouterObjet(c);
   }
 
-// méthode principale --->
+// mÃ©thode principale --->
 
  public int ajouterObjet(Object o){
   if(o==null) return -1;
@@ -81,7 +81,7 @@ public class OutputSQLWriter{
     else if(o instanceof Collection) return ajouterCollection((Collection)o);
    //Map
     else if(o instanceof Map) return ajouterMap((Map)o);
- //Cas général
+ //Cas gÃ©nÃ©ral
   else{
    Class c=o.getClass();
 

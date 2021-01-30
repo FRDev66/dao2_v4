@@ -15,7 +15,7 @@ public class Planete implements Serializable{
 
  static final long serialVersionUID=-5284664557190021848L;
 
- // Les caractéristiques de base.
+ // Les caractÃ©ristiques de base.
 
  private int radiation;
  private int temperature;
@@ -27,7 +27,7 @@ public class Planete implements Serializable{
  private int productionMarchandise;
  private int nombreProductionMarchandise;
 
-// Les caractéristiques évolutives.
+// Les caractÃ©ristiques Ã©volutives.
 
  private int terraformation;
  private int stockMinerai;
@@ -42,7 +42,7 @@ public class Planete implements Serializable{
 
  private transient boolean estTerraforme;
 
- // Les méthodes d'accès.
+ // Les mÃ©thodes d'accÃ¨s.
 
  public int getRadiation(){return radiation;}
  public int getTemperature(){return temperature;}
@@ -291,7 +291,7 @@ public class Planete implements Serializable{
 
  public Planete(){}
 
- // Les méthodes statiques.
+ // Les mÃ©thodes statiques.
 
  public static Planete creerAuHasard(int raceDeDepart,String nom,int ordre){
   Planete planete=new Planete();
@@ -310,7 +310,7 @@ public class Planete implements Serializable{
   return planete;
   }
 
- //Les méthodes pour gérer les planètes en fin de tour.
+ //Les mÃ©thodes pour gÃ©rer les planÃ¨tes en fin de tour.
 
  public void testerRevolte(){
   revolte=!Univers.getTest(Math.max(1,stabilite+1));
@@ -360,7 +360,7 @@ public class Planete implements Serializable{
   if(!revolte) ajouterMinerai(calculeRevenuMinerai());
   }
 
- // Les autres méthodes.
+ // Les autres mÃ©thodes.
 
  public void creerCaracteristiques(String n,int o){
   nom=n+" "+Integer.toString(o+1);
@@ -445,7 +445,7 @@ public class Planete implements Serializable{
    else return (int) (base / 10F);
   }
 
-//Taux de terraformation à 2.
+//Taux de terraformation Ã  2.
  private int calculeMaxPopDeBase(int race){
   int r,t,g;
   if((radiation<(-4*terraformation+Const.HABITAT_RADIATION[race][0]))||
@@ -456,7 +456,7 @@ public class Planete implements Serializable{
      (gravite>Const.HABITAT_GRAVITE[race][1]))
     return 0;
     else{
-         //formule=-1000*(x-x1)(x-x2)/(x1-x2)²
+         //formule=-1000*(x-x1)(x-x2)/(x1-x2)Â²
      r=1-(1000*(radiation-(-4*terraformation+Const.HABITAT_RADIATION[race][0]))
                *(radiation-(4*terraformation+Const.HABITAT_RADIATION[race][1])))
                /((int)Math.pow(4*terraformation,2)+
@@ -483,7 +483,7 @@ public class Planete implements Serializable{
   }*/
   
 /*
-//Taux de terraformation à 4.
+//Taux de terraformation Ã  4.
  private int calculeMaxPopDeBase(int race){
   int r,t,g;
   if((radiation<(-4*terraformation+Const.HABITAT_RADIATION[race][0]))||
@@ -495,7 +495,7 @@ public class Planete implements Serializable{
     return 0;
 
     else{
-         //formule=-1000*(x-x1)(x-x2)/(x1-x2)²
+         //formule=-1000*(x-x1)(x-x2)/(x1-x2)Â²
 
      r=1-(1000*(radiation-(-4*terraformation+Const.HABITAT_RADIATION[race][0]))
                *(radiation-(4*terraformation+Const.HABITAT_RADIATION[race][1])))
