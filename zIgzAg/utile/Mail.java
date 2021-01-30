@@ -64,7 +64,8 @@ public class Mail {
    Multipart mp = new MimeMultipart();
 
    MimeBodyPart mbp1 = new MimeBodyPart();
-   mbp1.setText(corpsMessage/*,CHARSET*/);
+   //mbp1.setText(corpsMessage/*,CHARSET*/);
+   mbp1.setText(corpsMessage, "ISO8859_1");
    mp.addBodyPart(mbp1);
 
    for(int i=0;i<fichiers.length;i++){

@@ -11,41 +11,41 @@ import java.io.File;
 import java.io.IOException;
 
 
-/** Cette classe permet de créer et d'écrire un document au format HTML.<br>
-  * Elle contient diverses méthodes utiles pour manier les balises HTML.
+/** Cette classe permet de crÃ©er et d'Ã©crire un document au format HTML.<br>
+  * Elle contient diverses mÃ©thodes utiles pour manier les balises HTML.
   * @author Julien Buret
   * @version 1.1
   * @see BaliseHTML
   */
 public class DocumentHTML{
 
- /** Une liste de caractères spéciaux à coder dans un document HTML.
+ /** Une liste de caractÃ¨res spÃ©ciaux Ã  coder dans un document HTML.
   */
- private static final char[] caracteresSpeciaux={'À','Á','Á','Ç','È','É','Ê','Î','Ô','Ö','Ù','Ú','à','á','â','ç','è','é',
-         'ê','î','ô','ö','ù','ú','û','ï'};
+ private static final char[] caracteresSpeciaux={'Ã€','Ã','Ã','Ã‡','Ãˆ','Ã‰','ÃŠ','Ã','Ã”','Ã–','Ã™','Ãš','Ã ','Ã¡','Ã¢','Ã§','Ã¨','Ã©',
+         'Ãª','Ã®','Ã´','Ã¶','Ã¹','Ãº','Ã»','Ã¯'};
 
-/** La traduction des caractères spéciaux à coder dans un document HTML.
+/** La traduction des caractÃ¨res spÃ©ciaux Ã  coder dans un document HTML.
   */
  private static final String[] traduction={"&#192;","&#193;","&#194;","&#199;","&#200;","&#201;","&#202;","&#206;","&#212;",
          "&#214;","&#217;","&#218;","&#224;","&#225;","&#226;","&#231;","&#232;","&#233;","&#234;","&#238;","&#244;",
          "&#246;","&#249;","&#250;","&#251;","&#239;"};
 
-/** La taille par défaut du <code>StringBuffer</code> utilisé. Dans le cas de documents gigantesques ou petits,
-  * il peut être utile pour des raisons de rapidité d'exécution de modifier cette taille en utilisant le constructeur
-  * nécessaire.
+/** La taille par dÃ©faut du <code>StringBuffer</code> utilisÃ©. Dans le cas de documents gigantesques ou petits,
+  * il peut Ãªtre utile pour des raisons de rapiditÃ© d'exÃ©cution de modifier cette taille en utilisant le constructeur
+  * nÃ©cessaire.
   * @see DocumentHTML#DocumentHTML(String,BaliseHTML,int)
   */
  private static final int TAILLE_BUFFER_PAR_DEFAUT=100000;
 
-/** La balise de départ du document.
+/** La balise de dÃ©part du document.
   */
  private BaliseHTML document;
 
-/** Le <code>StringBuffer</code> où sera stocké les caractères du document HTML avant son écriture.
+/** Le <code>StringBuffer</code> oÃ¹ sera stockÃ© les caractÃ¨res du document HTML avant son Ã©criture.
   */
  private StringBuffer texte;
 
-/** Le fichier ou sera écrit le document HTML.
+/** Le fichier ou sera Ã©crit le document HTML.
   */
  private File fichier;
 
@@ -54,7 +54,7 @@ public class DocumentHTML{
  private int tailleDuBuffer;
 
 /** Un constructeur avec comme nom de fichier <tt>fichier</tt>, comme balise racine <tt>baliseRacine</tt> et
-  * comme taille de buffer la taille de buffer par défaut.
+  * comme taille de buffer la taille de buffer par dÃ©faut.
   * @param fichier le nom du fichier.
   * @param baliseRacine la balise racine du document HTML.
   */
@@ -74,7 +74,7 @@ public class DocumentHTML{
   document=baliseRacine;
   }
 
- /** Une méthode pour traduire les caractères spéciaux dans un format lisible en mode HTML.
+ /** Une mÃ©thode pour traduire les caractÃ¨res spÃ©ciaux dans un format lisible en mode HTML.
   */
  public static StringBuffer traduire(StringBuffer entree){
   int pos=0;
@@ -94,7 +94,7 @@ public class DocumentHTML{
   return entree;
   }
 
-/** Ecrit le document HTML dans le fichier spécifié lors de la création du document HTML.
+/** Ecrit le document HTML dans le fichier spÃ©cifiÃ© lors de la crÃ©ation du document HTML.
   */
  public void ecrire(){
   texte=new StringBuffer(tailleDuBuffer);
@@ -110,8 +110,8 @@ public class DocumentHTML{
   catch(IOException e){e.printStackTrace();}
   }
 
-  /** Renvoit une TABLE HTML en utilisant la méthode <code>toString()</code> des objets en paramètres.
-   * Cette méthode n'est pas à utiliser <i>à priori</i>, car plus lente que les autres méthodes <i>creerTable()</i>.
+  /** Renvoit une TABLE HTML en utilisant la mÃ©thode <code>toString()</code> des objets en paramÃ¨tres.
+   * Cette mÃ©thode n'est pas Ã  utiliser <i>Ã  priori</i>, car plus lente que les autres mÃ©thodes <i>creerTable()</i>.
    * @param tableau le tableau d'objects.
    * @return la balise contenant le tableau.
    */
@@ -130,9 +130,9 @@ public class DocumentHTML{
   return table;
   }
 
- /** Renvoit une TABLE HTML en utilisant un <code>tableau</code> de Balises en paramètre qui représentent
+ /** Renvoit une TABLE HTML en utilisant un <code>tableau</code> de Balises en paramÃ¨tre qui reprÃ©sentent
    * les cellules de la TABLE.
-   * De plus <code>lignes</code> permet de définir les paramètres des lignes.
+   * De plus <code>lignes</code> permet de dÃ©finir les paramÃ¨tres des lignes.
    * @param tableau les Balises des cellules.
    * @param lignes les Balises des lignes.
    * @return la balise contenant le tableau.
@@ -147,13 +147,13 @@ public class DocumentHTML{
   return table;
   }
 
- /** Renvoit une TABLE HTML en utilisant un <code>tableau</code> de Balises en paramètre qui représentent
+ /** Renvoit une TABLE HTML en utilisant un <code>tableau</code> de Balises en paramÃ¨tre qui reprÃ©sentent
    * les cellules de la TABLE.<br>
-   * C'est la balise <tt>table</tt> qui est renvoyée.
-   * @param table la Balise tableau où seront stockées les différentes lignes(cette balise doit être de type <tt>TABLE</tt>
-   *               de préférence!).
+   * C'est la balise <tt>table</tt> qui est renvoyÃ©e.
+   * @param table la Balise tableau oÃ¹ seront stockÃ©es les diffÃ©rentes lignes(cette balise doit Ãªtre de type <tt>TABLE</tt>
+   *               de prÃ©fÃ©rence!).
    * @param tableau les Balises des cellules.
-   * @return la balise <tt>table</tt> à laquelle on a rajouté le tableau.
+   * @return la balise <tt>table</tt> Ã  laquelle on a rajoutÃ© le tableau.
    */
  public static BaliseHTML creerTable(BaliseHTML table,BaliseHTML[][] tableau){
   BaliseHTML ligne;

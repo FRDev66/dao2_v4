@@ -8,7 +8,7 @@ package zIgzAg.jeu.oceane;
 
 public class MessagesInfo extends MessagesAbstraits{
 
- public static final String MAIL_TITRE_RAPPORT="[dao2.2] Rapport du tour {0}";
+ public static final String MAIL_TITRE_RAPPORT="[dao2.4] Rapport du tour {0}";
  //public static final String MAIL_TITRE_RAPPORT="[dao2] Dernières informations";
  public static final String MAIL_CORPS_NOUVEAU_RAPPORT="Bonjour,je suis une IA qui répond au nom de KZPGO.\n\nVous vous êtes inscrit à Dark Age of Orion, un jeu qui a comme adresse internet "+Chemin.RACINE_SITE+" .\n\nVotre rapport se trouve ici : {2} \n\nVous aurez besoin de:\n  1)votre login: {0}\n  2)votre mot de passe: {1}\n\n Conservez les précieusement!\n\n           (....) \n\n Humm... Un autre évènement requiert mon attention et je dois vous quitter, momentanément!\n\n Ah oui! Si vous voulez pour une raison ou une autre vous désinscrire, allez sur la page "+Chemin.SITE_REGISTRE+" .\n\nA bientôt et bonne chance!\n\nKZPGO";
  public static final String MAIL_REPRISE="Bonjour,je suis une IA qui répond au doux nom de KZPGO.\n\nVous êtes inscrit à Dark Age of Orion, un jeu qui a comme adresse internet "+Chemin.RACINE_SITE+" .\n\nVotre rapport se trouve ici : {2} \n\nVous aurez besoin de:\n  1)votre login: {0}\n  2)votre mot de passe: {1}\n\n Conservez les précieusement!\n\n  Pour plus de détail sur la reprise, consultez la page : http://10cotech.free.fr/ \n\n Si vous ne souhaitez pas reprendre le jeu, merci de prévenir  ( ;o) ) Cosmos à cette adresse : 10cotech@free.fr \n\n         (....) \n\n Humm... Un autre évènement requiert mon attention et je dois vous quitter, momentanément!\n\n A bientôt et bonne chance!\n\nKZPGO";

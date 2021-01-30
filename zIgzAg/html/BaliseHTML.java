@@ -1,7 +1,3 @@
-// v 1.20 01/01/01
-// Copyright 2001 Julien Buret All Rights Reserved.
-// Use is subject to license terms.
-
 package zIgzAg.html;
 
 import java.util.ArrayList;
@@ -9,31 +5,31 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 
-/** Cette classe repésente une balise HTML et est utilisée dans la confection d'un document au format HTML.
+/** Cette classe repÃ©sente une balise HTML et est utilisÃ©e dans la confection d'un document au format HTML.
   * @author Julien Buret
   * @version 1.2
   * @see DocumentHTML
   */
 public class BaliseHTML implements Cloneable,java.io.Serializable{
 
-/** La <tt>HashMap</tt> où sont stockés les différents modèles.
+/** La <tt>HashMap</tt> oÃ¹ sont stockÃ©s les diffÃ©rents modÃ¨les.
   */
 
  private static HashMap MODELES;
 
-/** Ajoute un modèle. Un modèle répond à une règle simple : lui et ses descendants ne contiennent chacun qu'un
+/** Ajoute un modÃ¨le. Un modÃ¨le rÃ©pond Ã  une rÃ¨gle simple : lui et ses descendants ne contiennent chacun qu'un
   * descendant au plus.
-  * @param nom le nom du modèle.
-  * @param balise le modèle.
+  * @param nom le nom du modÃ¨le.
+  * @param balise le modÃ¨le.
   */
  public static void ajouterModele(String nom,BaliseHTML balise){
   if(MODELES==null) MODELES=new HashMap();
   MODELES.put(nom,balise);
   }
 
-/** Retourne un modèle.
-  * @param nom le nom du modèle.
-  * @return le modèle.
+/** Retourne un modÃ¨le.
+  * @param nom le nom du modÃ¨le.
+  * @return le modÃ¨le.
   */
  public static BaliseHTML getModele(String nom){
   if(MODELES==null) return null;
@@ -41,16 +37,16 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   }
 
 
-/** Indique si la balise est une balise-modèle ou non.
+/** Indique si la balise est une balise-modÃ¨le ou non.
   */
  private boolean modele;
 
-/** Marque que la balise appartient à un modèle.
+/** Marque que la balise appartient Ã  un modÃ¨le.
   */
  public void setModele(){modele=true;}
 
-/** Indique si la balise coorespond à un modèle.
-  * @return <tt>true</tt> si la balise correspond à un modèle, <tt>false</tt> sinon.
+/** Indique si la balise coorespond Ã  un modÃ¨le.
+  * @return <tt>true</tt> si la balise correspond Ã  un modÃ¨le, <tt>false</tt> sinon.
   */
  public boolean estModele(){return modele;}
 
@@ -66,7 +62,7 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   */
  private HashMap attributs;
 
-/** Le texte éventuel contenu à l'interieur de la balise.
+/** Le texte Ã©ventuel contenu Ã  l'interieur de la balise.
   */
  private String texteContenu;
 
@@ -76,19 +72,19 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
  public String getNomBalise(){return balise;}
 
 /** Retourne les attributs de la balise.
-  * @return une enumération des attributs de la balise ou <tt>null</tt> si il n'y en a pas.
+  * @return une enumÃ©ration des attributs de la balise ou <tt>null</tt> si il n'y en a pas.
   */
  public Map.Entry[] getAttributs(){
   if (attributs==null) return null; else return (Map.Entry[])attributs.entrySet().toArray(new Map.Entry[0]);
   }
 
 /** Retourne la valeur de l'attribut correspondant.
-  * @param attribut l'attribut dont la valeur est recherchée.
+  * @param attribut l'attribut dont la valeur est recherchÃ©e.
   * @return les valeurs des attributs de la balise ou <tt>null</tt> si il n'y en a pas.
   */
  public String getValeurAttribut(String attribut){return (String)attributs.get(attribut);}
 
-/** Retourne le texte éventuellement contenu par la balise.
+/** Retourne le texte Ã©ventuellement contenu par la balise.
   * @return le texte contenu par la balise ou <tt>null</tt> si il n'y en a pas.
   */
  public String getTexteContenu(){return texteContenu;}
@@ -98,12 +94,12 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   */
  public ArrayList getDescendants(){return descendants;}
 
-/** Définit le nom de la balise.
+/** DÃ©finit le nom de la balise.
   * @param nom le nom de la balise.
   */
  public void setNomBalise(String nom){balise=nom;}
 
-/** Définit les attributs de la balise avec leurs valeurs correspondantes.
+/** DÃ©finit les attributs de la balise avec leurs valeurs correspondantes.
   * @param att les attributs de la balise avec leurs valeurs correspondantes ou <tt>null</tt> si il n'y a pas d'attributs.
   * @exception IllegalArgumentException si l'un des composants des tableaux <code>att</code> ou <code>valAtt</code>
   *                                      est <tt>null</tt>.
@@ -114,11 +110,11 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
     if(attributs==null) attributs=new HashMap(att.length*2,1F);
     for(int i=0;i<att.length;i++)
      if((att[i][0]!=null)&&(att[i][1]!=null)) attributs.put(att[i][0],att[i][1]);
-      else throw new IllegalArgumentException("Les attributs et leurs valeurs ne peuvent être null");
+      else throw new IllegalArgumentException("Les attributs et leurs valeurs ne peuvent Ãªtre null");
     }
   }
 
-/** Définit l'unique attribut de la balise avec sa valeur.
+/** DÃ©finit l'unique attribut de la balise avec sa valeur.
   * @param att l'attribut de la balise ou <tt>null</tt> si il n'y a pas d'attribut.
   * @param valAtt la valeur de l'attribut de la balise ou <tt>null</tt> si il n'y a pas d'attribut.
   * @exception IllegalArgumentException si <code>val</code> ou <code>valAtt</code> est <tt>null</tt>.
@@ -130,7 +126,7 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   setAttributs(a);
   }
 
-/** Assigne la <tt>Map</tt> décrivant les attributs.
+/** Assigne la <tt>Map</tt> dÃ©crivant les attributs.
   * @param map la map.
   */
  public void setAttribut(Map map){
@@ -138,13 +134,13 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
    else map=null;
   }
 
-/** Définit le texte contenu par la balise.
+/** DÃ©finit le texte contenu par la balise.
   * @param texte le texte contenu par la balise ou <tt>null</tt> pour l'effacer.
   * @return la balise.
   */
  public BaliseHTML setTexteContenu(String texte){texteContenu=texte;return this;}
 
-/** Définit un <code>ArrayList</code> contenant les &quot;filles&quot; de la balise.
+/** DÃ©finit un <code>ArrayList</code> contenant les &quot;filles&quot; de la balise.
   * @param filles un <code>ArrayList</code> ou <tt>null</tt> pour effacer les descendants de la balise.
   */
  public void setDescendants(ArrayList filles){descendants=filles;}
@@ -162,7 +158,7 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
 /** Un constructeur d'une balise toute simple avec le texte qu'elle contient.
   * @param nom le nom de la balise.
   * @param texte le texte qu'elle contient.
-  * @param m indique si la balise est un modèle ou non.
+  * @param m indique si la balise est un modÃ¨le ou non.
   */
  public BaliseHTML(String nom,String texte,boolean m){
   modele=m;
@@ -233,8 +229,8 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   this(nom,null,att,valAtt);
   }
 
-/** Une méthode pour ajouter une &quot;fille&quot; à cette balise.
-  * @param ajout la balise à ajouter.
+/** Une mÃ©thode pour ajouter une &quot;fille&quot; Ã  cette balise.
+  * @param ajout la balise Ã  ajouter.
   * @return un pointeur sur la balise obtenue.
   */
  public BaliseHTML ajout(BaliseHTML ajout){
@@ -243,9 +239,9 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   return this;
   }
 
-/** Une méthode pour ajouter un attribut et sa valeur à cette balise.
-  * @param att l'attribut à rajouter.
-  * @param valAtt la valeur de l'attribut à rajouter.
+/** Une mÃ©thode pour ajouter un attribut et sa valeur Ã  cette balise.
+  * @param att l'attribut Ã  rajouter.
+  * @param valAtt la valeur de l'attribut Ã  rajouter.
   * @return un pointeur sur la balise obtenue.
   * @exception IllegalArgumentException si <code>val</code> ou <code>valAtt</code> est <tt>null</tt>.
   */
@@ -256,7 +252,7 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   return this;
   }
 
-/** Renvoit un clone de la balise. Attention, les attributs et les descendants ne sont eux pas clonés.
+/** Renvoit un clone de la balise. Attention, les attributs et les descendants ne sont eux pas clonÃ©s.
   * @return le clone de la balise.
   */
  public Object clone(){
@@ -275,15 +271,15 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   }
 
 
-/** Cette méthode renvoit une <code>String</code> représentant la balise.
-  * @return la représentation de la balise.
+/** Cette mÃ©thode renvoit une <code>String</code> reprÃ©sentant la balise.
+  * @return la reprÃ©sentation de la balise.
   */
  public String toString(){
   return affiche(new StringBuffer(200),this).toString();
   }
 
-/** Cette méthode renvoit descendant final de la balise <tt>b</tt>. (ca ne marche que en cas de descendant unique!)
-  * @param b la balise en paramètre.
+/** Cette mÃ©thode renvoit descendant final de la balise <tt>b</tt>. (ca ne marche que en cas de descendant unique!)
+  * @param b la balise en paramÃ¨tre.
   * @return la balise descendant final.
   */
  private static BaliseHTML getDescendantFinal(BaliseHTML b){
@@ -293,10 +289,10 @@ public class BaliseHTML implements Cloneable,java.io.Serializable{
   return retour;
   }
 
- /** Cette méthode renvoit un pointeur sur la <code>StringBuffer</code> de base augmentée de la représentation
+ /** Cette mÃ©thode renvoit un pointeur sur la <code>StringBuffer</code> de base augmentÃ©e de la reprÃ©sentation
   * de la balise <i>entree</i>.
-  * @param base la <code>StringBuffer</code> de base.(non pas une <code>String</code> pour des raisons de rapidité.
-  * @param entree la balise à représenter.
+  * @param base la <code>StringBuffer</code> de base.(non pas une <code>String</code> pour des raisons de rapiditÃ©.
+  * @param entree la balise Ã  reprÃ©senter.
   * @return un pointeur sur la base.
   */
  public static StringBuffer affiche(StringBuffer base,BaliseHTML entree){
