@@ -48,7 +48,7 @@ public class EnvoyerRapport {
    else m=new MessageFormat(Univers.getMessageInfo("MAIL_CORPS_RAPPORT",c.getLocale()));
   //Object[] o2={c.getLogin(),c.getMotDePasse(),Const.ADRESSE_SITE_RAPPORTS+Integer.toString(c.getNumero())+"/"+Integer.toString(c.getNumero())+".zip"};
   //Object[] o2={c.getLogin(),c.getMotDePasse(),Const.ADRESSE_SITE_RAPPORTS+Integer.toString(c.getNumero())+"/rapports.php"};
-  Object[] o2={c.getLogin(),c.getMotDePasse(),Const.ADRESSE_SITE_RAPPORTS+"/rapports.php"};
+  Object[] o2={c.getLogin(),c.getMotDePasse(),Const.ADRESSE_SITE_RAPPORTS+"rapports.php"};
   String corpsMessage=m.format(o2);
   String[] fichiers=new String[0];
 
