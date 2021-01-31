@@ -1796,31 +1796,23 @@ public class Commandant extends Joueur implements Serializable{
   return cible.ajouterEvenement("EV_COMMANDANT_VENTE_FLOTTE_0001",getNomNumero(),numeroFlotte+1,cout);
   }
 
-  
-//Fonction permettant le transfert d'une flotte suite à un combat perdu - Capture de la flotte  
-/* public boolean capturerFlotte(int capteur,int numeroFlotte){
-   if(!Univers.existenceCommandant(capteur))
-   return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0000",numeroFlotte+1,capteur);
-  if(!existenceFlotte(numeroFlotte))
-   return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur); 
-  Flotte f=getFlotte(numeroFlotte);
-   if(f.estLoueEnPartie())
-   return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur); 
-  Commandant cible=Univers.getCommandant(capteur);
-  //if(!cible.estJoueurHumain())
-   //return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur);
-  float cout=f.getValeur()/2;
-
-  if(cout>cible.getCentaures())
-   return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0000",f.getNomNumero(numeroFlotte),capteur);
-
-  f.initialiserEquipages();
-  cible.ajouterFlotte(f);
-  eliminerFlotte(numeroFlotte);
-  Univers.ajouterTransfert(this,cible,"capture flotte puissance : "+Integer.toString(f.getPuissance()));
-  return cible.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0001",getNomNumero(),numeroFlotte+1); 
-  } */
-  
+//Fonction permettant le transfert d'une flotte suite à un combat perdu - Capture de la flotte
+public boolean capturerFlotte(int capteur,int numeroFlotte){
+	if(!Univers.existenceCommandant(capteur)) {	return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0000",numeroFlotte+1,capteur); }
+	if(!existenceFlotte(numeroFlotte)) { return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur); }
+	Flotte f=getFlotte(numeroFlotte);
+	if(f.estLoueEnPartie()) { return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur); }
+	Commandant cible=Univers.getCommandant(capteur);
+	float cout=0;
+	if(cout>cible.getCentaures()) { return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0000",f.getNomNumero(numeroFlotte),capteur); }
+	f.initialiserEquipages();
+	cible.ajouterFlotte(f);
+	eliminerFlotte(numeroFlotte);
+	Univers.ajouterTransfert(this,cible,"capture flotte puissance : "+Integer.toString(f.getPuissance()));
+	ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0000",cible.getNomNumero(),numeroFlotte+1);
+	return cible.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0001",getNomNumero(),numeroFlotte+1);
+	}
+ 
  public boolean transfertSysteme(int destinataire,Position pos,int modeTransfert){
   if(!Univers.existenceCommandant(destinataire))
    return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_DON_SYSTEME_0000",destinataire);

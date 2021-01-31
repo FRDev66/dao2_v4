@@ -208,6 +208,7 @@ public interface Const{
  public static final int REPUTATION_SIGNATURE_DE_PACTE=25;
  public static final int REPUTATION_COLONISER_PLANETE=50;
  public static final int REPUTATION_ATTAQUER_PLANETE=-100;
+ public static final int REPUTATION_PIRATERIE=-100;
  //les diff�rents �l�ments agissant sur la r�putation.
 
  public static final int RELATION_ATTAQUE_ERADICATION=-800;
