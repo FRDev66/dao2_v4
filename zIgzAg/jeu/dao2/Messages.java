@@ -90,7 +90,7 @@ public class Messages extends MessagesAbstraits{
 
  public static final String[] DIRECTIVES={"attitude neutre","attaque du système","attaque préventive",
    "attaquer toute flotte rencontrée","pillage du système","attaque de la planète n°","pillage de planète n°",
-   "éradication de la planète n°","attaque des flottes du commandant "};
+   "éradication de la planète n°","attaque des flottes du commandant ","Acte de piraterie"};
   //différentes directives.
 
  public static final String[] DOMAINES_PLAN_DE_VAISSEAU={"public","privé"};
