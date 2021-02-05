@@ -344,6 +344,7 @@ public interface Const{
  //Les diff�rents types de directive
 
  public static final int NB_DIRECTIVES=Messages.DIRECTIVES.length;
+ //public static final int NB_DIRECTIVES=10;
  //Le nombre de types de directive diff�rents.
 
  public static final float COUT_REPARATION_VAISSEAU=0.5F;

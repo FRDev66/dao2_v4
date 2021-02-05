@@ -239,7 +239,8 @@ public class Flotte implements Serializable{
    }
 
   public static int[] retourneNumerosDirectivePossibles(){
-   int[] retour=new int[5+Univers.getNombreCommandants()+3*Const.NB_PLANETES_PAR_SYSTEMES];
+   int[] retour=new int[6+Univers.getNombreCommandants()+3*Const.NB_PLANETES_PAR_SYSTEMES];
+   //int[] retour=new int[5+Univers.getNombreCommandants()+3*Const.NB_PLANETES_PAR_SYSTEMES];
    int k=0;
    for(int i=0;i<Const.NB_DIRECTIVES;i++)
     if(i==Const.DIRECTIVE_FLOTTE_ATTAQUE_JOUEUR){
@@ -247,16 +248,17 @@ public class Flotte implements Serializable{
      for(int j=0;j<inter.length;j++)
       retour[k++]=directiveDonneNombre(i,inter[j]);
      }
-    else if((i==Const.DIRECTIVE_FLOTTE_ATTAQUE_PLANETE)||(i==Const.DIRECTIVE_FLOTTE_PILLAGE_PLANETE)||
-            (i==Const.DIRECTIVE_FLOTTE_ERADICATION_PLANETE))
-           for(int j=0;j<Const.NB_PLANETES_PAR_SYSTEMES;j++)
-            retour[k++]=directiveDonneNombre(i,j);
+    else if((i==Const.DIRECTIVE_FLOTTE_ATTAQUE_PLANETE)||(i==Const.DIRECTIVE_FLOTTE_PILLAGE_PLANETE)||(i==Const.DIRECTIVE_FLOTTE_ERADICATION_PLANETE)) {
+           for(int j=0;j<Const.NB_PLANETES_PAR_SYSTEMES;j++) 
+        	   retour[k++]=directiveDonneNombre(i,j); 
+           }
     else retour[k++]=directiveDonneNombre(i,0);
    return retour;
    }
 
   public static String[] retourneDirectivesPossibles(Locale l){
-   String[] retour=new String[5+Univers.getNombreCommandants()+3*Const.NB_PLANETES_PAR_SYSTEMES];
+   //String[] retour=new String[5+Univers.getNombreCommandants()+3*Const.NB_PLANETES_PAR_SYSTEMES];
+   String[] retour=new String[6+Univers.getNombreCommandants()+3*Const.NB_PLANETES_PAR_SYSTEMES];
    int k=0;
    for(int i=0;i<Const.NB_DIRECTIVES;i++)
     if(i==Const.DIRECTIVE_FLOTTE_ATTAQUE_JOUEUR){
