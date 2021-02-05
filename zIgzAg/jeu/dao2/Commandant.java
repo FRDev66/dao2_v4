@@ -1807,7 +1807,7 @@ public boolean capturerFlotte(int capteur,int numeroFlotte){
 	if(cout>cible.getCentaures()) { return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0000",f.getNomNumero(numeroFlotte),capteur); }
 	f.initialiserEquipages();
 	cible.ajouterFlotte(f);
-	eliminerFlotte(numeroFlotte);
+	//eliminerFlotte(numeroFlotte);
 	Univers.ajouterTransfert(this,cible,"capture flotte puissance : "+Integer.toString(f.getPuissance()));
 	ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0000",cible.getNomNumero(),numeroFlotte+1);
 	return cible.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0001",getNomNumero(),numeroFlotte+1);

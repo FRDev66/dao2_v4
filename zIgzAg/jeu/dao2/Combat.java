@@ -82,7 +82,8 @@ public class Combat{
     int[] ordre=Utile.ordreAuHasard(vaisseauC[i].length);
     for(int j=0;j<vaisseauC[i].length;j++){
      int f=0;
-     while((f=resolutionAttaqueFlotteJoueur(vaisseaux,dP[i][1],vaisseauC[i][ordre[j]],f,ordre2))!=-1);
+     //while((f=resolutionAttaqueFlotteJoueur(vaisseaux,dP[i][1],vaisseauC[i][ordre[j]],f,ordre2))!=-1);
+     while((f=resolutionAttaqueFlotteToutes(vaisseaux,vaisseauC[i][ordre[j]],f,ordre2))!=-1); // Adaptation de la résolution du combat à AttaqueFlotteToutes
      }
     }
 
@@ -717,7 +718,7 @@ public class Combat{
 
     
   if(vainqueurCombat1){
-	  if(f1.getDirective()==Const.DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE){
+	  if(f1.getDirective()==Const.DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE){ //Configuration de la DIRECTIVE FLOTTE - Acte Piraterie
 		     //Commandant neutre=Univers.getCommandant(0);
 		  	int numc1 = c1.getNumero();
 		     c1.capturerFlotte(numc1,numFlotte2);
