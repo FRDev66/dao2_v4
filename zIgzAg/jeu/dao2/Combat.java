@@ -718,18 +718,21 @@ public class Combat{
 
     
   if(vainqueurCombat1){
-	  if(f1.getDirective()==Const.DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE){ //Configuration de la DIRECTIVE FLOTTE - Acte Piraterie
+	  if(f1.getDirective()==Const.DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE){
 		     //Commandant neutre=Univers.getCommandant(0);
 		  	int numc1 = c1.getNumero();
-		     c1.capturerFlotte(numc1,numFlotte2);
+		  	int numc2 = c2.getNumero();
+		     c2.capturerFlotte(numc1,numc2,numFlotte1,numFlotte2);
 		     //c1.modifierBudget(Const.BUDGET_COMMANDANT_PILLAGE_PLANETE,(float)memoirePop-Math.max(0,nbPopDefensive));
 		     c1.ajouterReputation(Const.REPUTATION_PIRATERIE-(f2.getPuissance()/5)-Math.max(0,100));
 		     //Univers.ajouterRelationRaces(s.getPosition(),c1.getRace(),c2.getRace(),Const.RELATION_ATTAQUE_PILLAGE);
 		     //s.getPlanete(numPla).diminuerPopulation(s.getPlanete(numPla).populationTotale());
 		     }
-   if(h2!=Heros.HEROS_NON_PRESENT) h2.mourir(c2);
-   c2.eliminerFlotte(numFlotte2);
+	  
+	  if(h2!=Heros.HEROS_NON_PRESENT) h2.mourir(c2);
+	  c2.eliminerFlotte(numFlotte2);
    }
+  
   if(vainqueurCombat2){
    if(h1!=Heros.HEROS_NON_PRESENT) h1.mourir(c1);
    c1.eliminerFlotte(numFlotte1);

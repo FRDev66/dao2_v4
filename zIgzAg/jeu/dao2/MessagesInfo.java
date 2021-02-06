@@ -249,9 +249,9 @@ public class MessagesInfo extends MessagesAbstraits{
   "Le commandant {0} a vendu une de ses flottes au commandant {1} cette semaine.";
  
  public static final String EV_COMMANDANT_CAPTURE_FLOTTE_0000=
-  "Pirate ! Vous avez capturé la flotte numéro {2} du commandant {1} cette semaine.";
+  "Pirate ! Vous avez capturé la flotte numéro {1} du commandant {0} cette semaine.";
  public static final String EV_COMMANDANT_CAPTURE_FLOTTE_0001=
-  "Votre flotte numéro {2} a été capturée par le commandant {1} cette semaine.";
+  "Votre flotte numéro {1} a été capturée par le commandant {0} cette semaine.";
  
 
  public static final String ER_COMMANDANT_DON_SYSTEME_0000=

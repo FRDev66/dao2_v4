@@ -1797,21 +1797,24 @@ public class Commandant extends Joueur implements Serializable{
   }
 
 //Fonction permettant le transfert d'une flotte suite à un combat perdu - Capture de la flotte
-public boolean capturerFlotte(int capteur,int numeroFlotte){
-	if(!Univers.existenceCommandant(capteur)) {	return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0000",numeroFlotte+1,capteur); }
-	if(!existenceFlotte(numeroFlotte)) { return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur); }
-	Flotte f=getFlotte(numeroFlotte);
-	if(f.estLoueEnPartie()) { return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte+1,capteur); }
-	Commandant cible=Univers.getCommandant(capteur);
-	float cout=0;
-	if(cout>cible.getCentaures()) { return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0000",f.getNomNumero(numeroFlotte),capteur); }
-	f.initialiserEquipages();
-	cible.ajouterFlotte(f);
-	//eliminerFlotte(numeroFlotte);
-	Univers.ajouterTransfert(this,cible,"capture flotte puissance : "+Integer.toString(f.getPuissance()));
-	ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0000",cible.getNomNumero(),numeroFlotte+1);
-	return cible.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0001",getNomNumero(),numeroFlotte+1);
-	}
+ public boolean capturerFlotte(int capteur,int perdant,int numeroFlotte1,int numeroFlotte2){
+		if(!Univers.existenceCommandant(perdant)) {	return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0000",numeroFlotte2+1,perdant); }
+		if(!existenceFlotte(numeroFlotte2)) { return Univers.ajouterErreur(getNomNumero(),"ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte2+1,perdant); }
+		Flotte f2=getFlotte(numeroFlotte2);
+		Flotte f1=getFlotte(numeroFlotte1);
+		if(f2.estLoueEnPartie()) { return ajouterErreur("ER_COMMANDANT_CAPTURE_FLOTTE_0001",numeroFlotte1+1,capteur); }
+		Commandant pirate=Univers.getCommandant(capteur);
+		Commandant cible=Univers.getCommandant(perdant);
+		pirate.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0000",cible.getNomNumero(),f2.getNomNumero(numeroFlotte2));
+		pirate.ajouterFlotte(f2);
+		cible.eliminerFlotte(numeroFlotte2);
+		Univers.ajouterTransfert(this,pirate,"capture flotte puissance : "+Integer.toString(f2.getPuissance()));
+		//pirate.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0000",cible.getNomNumero(),f.getNomNumero(numeroFlotte));
+		return cible.ajouterEvenement("EV_COMMANDANT_CAPTURE_FLOTTE_0001",getNomNumero(),f2.getNomNumero(numeroFlotte2));
+		//c1.ajouterEvenement("COMBAT_FLOTTE_0000",f1.getNomNumero(numF1),f2.getNomNumero(numF2),c2.getNomNumero());
+	//													0							1					2
+	//"Votre flotte {0} vient de combattre contre la flotte {1} du commandant {2}. Cela a donné le résultat suivant:<BR>";
+}
  
  public boolean transfertSysteme(int destinataire,Position pos,int modeTransfert){
   if(!Univers.existenceCommandant(destinataire))
