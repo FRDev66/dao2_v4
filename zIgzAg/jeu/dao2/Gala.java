@@ -2,7 +2,7 @@
 // Copyright 2001 Julien Buret All Rights Reserved.
 // Use is subject to license terms.
 
-package zIgzAg.jeu.oceane;
+package zIgzAg.jeu.dao2;
 
 
 
@@ -12,6 +12,7 @@ import java.awt.event.*;
 import java.io.*;
 import java.awt.image.*;
 import com.sun.image.codec.jpeg.*;
+
  
   
  public class Gala extends Frame  {
