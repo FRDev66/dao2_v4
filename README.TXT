@@ -1,26 +1,21 @@
-//v1.0 03/12/01
+// DAO2 V4 - v1.0.0-dev
+// 17/03/2021
+// FRDev66
 
-Voilà donc l'ensemble des sources d'océane 2.
+**************************
+INFORMATIONS :
+**************************
 
-Comme j'ai quasiment appris à programmer en même temps que
-j'ai créé ce programme, l'ensemble n'est ni commenté, ni très facile
-à faire évoluer. Cependant il a l'avantage de fonctionner et d'avoir été testé 
-en "fonctionnement réel" ;o) pendant plus d'un an.
+Cette versio est désignée comme Version DEV.
 
-Une version 3 est en cours d'élaboration ici :
-http://www.e-oceane.net/
+C'est dans cette version que les Evolutions / Corrections / Modifications seront développées.
 
-Toute question sur ces sources est à poser sur le forum suivant :
-http://jeu.oceane.sources.free.fr/w-agora/index.php3?bn=forumso_progra
+Après validation des Tests de DEV, l'ensemble des fichiers du CODE sera déplacé dans la Version RECETTE ou PREX pour procéder aux différentes phases de test.
 
-Pour installer et faire fonctionner ce programme, les prérequis sont un processeur 500Mhz
-et 256 Mo de RAM. Ces limites sont indicatives : le programme peut tourner avec beaucoup moins que ca!
+Si ces tests sont concluant et validés, l'ensemble des fichiers du CODE sera déplacé dans la Version PROD et utiliser pour faire tourner le JEU.
 
-Au niveau soft, le jdk 1.2 ou supérieur est nécessaire ainsi qu'apache et mysql.
-Pour le jdk, voyez le site de sun :
-http://java.sun.com/products/
-pour apache et mysql, sous windows easyphp fait ca très bien :
-http://www.manucorp.com/
+
+
 
 
 Attention dans certains .bat sous linux, n'oubliez pas de remplacer les ";" par des ":"
