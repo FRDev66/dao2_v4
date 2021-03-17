@@ -720,7 +720,8 @@ public class Combat{
 	  if(f1.getDirective()==Const.DIRECTIVE_FLOTTE_ATTAQUE_PIRATAGE){
 		     //Commandant neutre=Univers.getCommandant(0);
 		  	int numc1 = c1.getNumero();
-		     c1.capturerFlotte(numc1,numFlotte2);
+		  	int numc2 = c2.getNumero();
+		     c1.capturerFlotte(numc1,numc2,numFlotte2);
 		     //c1.modifierBudget(Const.BUDGET_COMMANDANT_PILLAGE_PLANETE,(float)memoirePop-Math.max(0,nbPopDefensive));
 		     c1.ajouterReputation(Const.REPUTATION_PIRATERIE-(f2.getPuissance()/5)-Math.max(0,100));
 		     //Univers.ajouterRelationRaces(s.getPosition(),c1.getRace(),c2.getRace(),Const.RELATION_ATTAQUE_PILLAGE);

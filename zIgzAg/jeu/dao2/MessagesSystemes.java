@@ -265,6 +265,10 @@ public class MessagesSystemes extends MessagesAbstraits{
    "Impossible de spécifier un vaisseau lors d'une création de stratégie.  Pour le vaisseau {0}, position non dans les bornes admises : {1}-{2}.";
 
 
+ public static final String ER_COMMANDANT_CAPTURE_FLOTTE_0000=
+	"Impossible de capturer la flotte numéro {0} au commandant numéro {1} : ce dernier n'existe pas.";
+ public static final String ER_COMMANDANT_CAPTURE_FLOTTE_0001=
+	"Impossible de capturer la flotte numéro {0} du commandant numéro {1} : celle-ci n'existe pas.";
 
  }
 
