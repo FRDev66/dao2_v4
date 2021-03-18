@@ -1,5 +1,7 @@
-// v2.00 01/02/01
-// Copyright 2001 Julien Buret All Rights Reserved.
+// V4.0.0
+// 18/03/2021
+// FRDev66
+// Copyright 2021 Chroniques Ludiques-  All Rights Reserved.
 // Use is subject to license terms.
 
 package zIgzAg.jeu.dao2;

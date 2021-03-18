@@ -1,10 +1,10 @@
-// v2.1.0 - 18/01/2021
-// Copyright 2001 Julien Buret All Rights Reserved.
+// V4.0.0
+// 18/03/2021
+// FRDev66
+// Copyright 2021 Chroniques Ludiques-  All Rights Reserved.
 // Use is subject to license terms.
-// Modifié par : FRDev66
-// Projet : DAO2_V4
 
-package zIgzAg.jeu.oceane;
+package zIgzAg.jeu.dao2;
 
 
 

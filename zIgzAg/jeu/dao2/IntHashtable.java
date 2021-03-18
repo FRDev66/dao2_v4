@@ -1,5 +1,10 @@
-package zIgzAg.jeu.oceane;
+// V4.0.0
+// 18/03/2021
+// FRDev66
+// Copyright 2021 Chroniques Ludiques-  All Rights Reserved.
+// Use is subject to license terms.
 
+package zIgzAg.jeu.dao2;
 
 
 // IntHashtable - a Hashtable that uses ints as the keys
